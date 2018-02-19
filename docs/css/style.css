@@ -518,9 +518,6 @@ body {
 .article-meta:after {
   clear: both;
 }
-.article-date {
-  float: left;
-}
 .article-category {
   float: left;
   line-height: 1em;
