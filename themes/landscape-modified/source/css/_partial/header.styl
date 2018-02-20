@@ -7,13 +7,13 @@
     position: absolute
     left: 0
     right: 0
-    height: 40px
+    height: 60px
   &:before
     top: 0
-    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
+    background: linear-gradient(rgba(0, 0, 0, 0.3), transparent)
   &:after
     bottom: 0
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1))
 
 #header-outer
   height: 100%
@@ -69,9 +69,9 @@ $logo-text
 $nav-link
   float: left
   color: #fff
-  opacity: 0.6
+  opacity: 0.8
   text-decoration: none
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  text-shadow: 0 1px rgba(0, 0, 0, 0.8)
   transition: opacity 0.2s
   display: block
   padding: 20px 15px
@@ -91,7 +91,7 @@ $nav-link
 
 .main-nav-link
   @extend $nav-link
-  font-weight: 300
+  font-weight: 400
   letter-spacing: 1px
   @media mq-mobile
     display: none
