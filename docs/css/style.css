@@ -318,21 +318,21 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 60px;
 }
 #header:before {
   top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.3), transparent);
+  background: -moz-linear-gradient(rgba(0,0,0,0.3), transparent);
+  background: -ms-linear-gradient(rgba(0,0,0,0.3), transparent);
+  background: linear-gradient(rgba(0,0,0,0.3), transparent);
 }
 #header:after {
   bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
+  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.1));
+  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.1));
+  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.1));
+  background: linear-gradient(transparent, rgba(0,0,0,0.1));
 }
 #header-outer {
   height: 100%;
@@ -390,9 +390,9 @@ body {
 .main-nav-link {
   float: left;
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.8;
   text-decoration: none;
-  text-shadow: 0 1px rgba(0,0,0,0.2);
+  text-shadow: 0 1px rgba(0,0,0,0.8);
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
@@ -415,7 +415,7 @@ body {
   cursor: pointer;
 }
 .main-nav-link {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 @media screen and (max-width: 479px) {
@@ -509,6 +509,16 @@ body {
 }
 .article-inner {
   overflow: hidden;
+}
+.article-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: block;
+  height: 200px;
+  width: 100%;
 }
 .article-meta:before,
 .article-meta:after {
