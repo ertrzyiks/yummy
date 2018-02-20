@@ -1,9 +1,13 @@
 ---
-title: Kurczak z pure
+title: Kurczak z purée
+required-time: 60min
+category: 
+ - obiady
 tags:
  - kalafior
  - brokuł
  - kurczak
+featured_image: /content/obiady/banner.jpg
 ---
 
 Originalny przepis: Kwestia Smaku
@@ -16,3 +20,5 @@ Originalny przepis: Kwestia Smaku
  - ryż
  - kurczak
 
+
+## Przygotowanie

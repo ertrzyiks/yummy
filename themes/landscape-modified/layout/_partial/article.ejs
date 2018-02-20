@@ -1,6 +1,8 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-inner">
-      <%- partial('post/gallery') %>
+      <% if (index) { %>
+      <a href="<%- url_for(post.path) %>" class="article-cover" style="background-image: url(<%- url_for(post.featured_image) %>);"></a>
+      <% } %>
     <% if (post.link || post.title){ %>
       <header class="article-header">
           <%- partial('post/title', {class_name: 'article-title'}) %>

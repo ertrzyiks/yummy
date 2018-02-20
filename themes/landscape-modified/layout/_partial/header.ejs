@@ -1,5 +1,9 @@
 <header id="header">
-  <div id="banner"></div>
+  <% if (page.featured_image) { %>
+    <div id="banner" style="background-image: url(<%- url_for(page.featured_image) %>);"></div>
+  <% } else { %>
+    <div id="banner"></div>
+  <% } %>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
