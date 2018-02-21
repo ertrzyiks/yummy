@@ -6,7 +6,7 @@ category:
 tags:
  - kapusta
  - kurczak
-featured_image: /content/zupy/banner.jpg
+featured_image: /content/zupy/zupa-z-kapusty.jpg
 ---
 
 Originalny przepis: Kwestia Smaku

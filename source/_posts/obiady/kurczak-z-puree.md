@@ -7,7 +7,7 @@ tags:
  - kalafior
  - brokuł
  - kurczak
-featured_image: /content/obiady/banner.jpg
+featured_image: /content/obiady/puree.jpg
 ---
 
 Originalny przepis: Kwestia Smaku
