@@ -1,20 +1,10 @@
-<header id="header">
+<header id="header" <% if (page.featured_image) { %>class="has-bg"<% } %>>
   <% if (page.featured_image) { %>
     <div id="banner" style="background-image: url(<%- url_for(page.featured_image) %>);"></div>
   <% } else { %>
     <div id="banner"></div>
   <% } %>
   <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
-      </h1>
-      <% if (theme.subtitle){ %>
-        <h2 id="subtitle-wrap">
-          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
-        </h2>
-      <% } %>
-    </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
