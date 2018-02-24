@@ -75,3 +75,17 @@ theme: landscape-modified
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+asset_pipeline:
+  revisioning:
+    enable: true
+    exclude:
+     - '**/content/**/*'
+  clean_css:
+    enable: true
+  uglify_js:
+    enable: true
+  imagemin:
+    enable: true
+  html_minifier:
+    enable: true
