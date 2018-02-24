@@ -81,6 +81,7 @@ asset_pipeline:
     enable: true
     exclude:
      - '**/content/**/*'
+     - '**/fontawesome-webfont.*'
   clean_css:
     enable: true
   uglify_js:
