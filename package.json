@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.5.0"
   },
+  "scripts": {
+    "start": "hexo server",
+    "build": "hexo clean && hexo generate"
+  },
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-asset-pipeline": "github:vimcaw/hexo-asset-pipeline",
