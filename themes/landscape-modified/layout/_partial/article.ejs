@@ -22,11 +22,15 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
+          <%- fa_inline('share') %>
+          <%= __('share') %>
+      </a>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
+      <%- partial('post/share', {id: post._id, url: post.permalink}) %>
     </footer>
   </div>
   <% if (!index){ %>

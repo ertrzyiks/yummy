@@ -174,10 +174,6 @@
   cursor: pointer
   float: right
   margin-left: 20px
-  &:before
-    content: "\f064"
-    font-family: font-icon
-    padding-right: 6px
 
 #article-nav
   clearfix()
@@ -268,9 +264,8 @@ $article-share-link
   position: relative
   color: #999
   text-shadow: 0 1px #fff
-  &:before
+  svg
     font-size: 20px
-    font-family: font-icon
     absolute-center(@font-size)
     text-align: center
   &:hover
@@ -278,35 +273,27 @@ $article-share-link
 
 .article-share-twitter
   @extend $article-share-link
-  &:before
-    content: "\f099"
   &:hover
     background: color-twitter
-    text-shadow: 0 1px darken(color-twitter, 20%)
+    color: darken(color-twitter, 30%) !important
 
 .article-share-facebook
   @extend $article-share-link
-  &:before
-    content: "\f09a"
   &:hover
     background: color-facebook
-    text-shadow: 0 1px darken(color-facebook, 20%)
+    color: lighten(color-facebook, 30%) !important
 
 .article-share-pinterest
   @extend $article-share-link
-  &:before
-    content: "\f0d2"
   &:hover
     background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
+    color: darken(color-pinterest, 30%) !important
 
 .article-share-google
   @extend $article-share-link
-  &:before
-    content: "\f0d5"
   &:hover
     background: color-google
-    text-shadow: 0 1px darken(color-google, 20%)
+    color: darken(color-google, 30%) !important
 
 .article-gallery
   background: #000

@@ -71,8 +71,8 @@
     $('.article-share-box.on').hide();
 
     box.css({
-      top: offset.top + 25,
-      left: offset.left
+      top: offset.top + 30,
+      left: offset.left + 28
     }).addClass('on');
   }).on('click', '.article-share-box', function(e){
     e.stopPropagation();
