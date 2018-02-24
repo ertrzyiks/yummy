@@ -1,5 +1,6 @@
 ---
 title: Kurczak z purée
+date: 2018/2/21 18:38:00
 required-time: 60min
 category: 
  - obiady
@@ -10,15 +11,26 @@ tags:
 featured_image: /content/obiady/puree.jpg
 ---
 
-Originalny przepis: Kwestia Smaku
+Originalny przepis: [Kwestia Smaku](https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html)
 
+Szybki, pyszny obiad.
+
+<!-- more --> 
 
 ## Lista zakupów
 
- - kalafior / brokuł
- - śmietana
+ - kalafior lub brokuł
+ - śmietana (30% lub 18%)
  - ryż
- - kurczak
-
-
+ - filet z kurczaka
+ - masło
+ 
 ## Przygotowanie
+
+Kalafior lub brokuł pokroić i ugotować w posolonej wodzie. 
+Następnie zblendować w garnku z dodatkiem pieprzu.
+Kurczaka pokroić w kostkę, obsypać przyprawami i usmażyć na oleju albo oliwie.
+
+## Pyszna zielona papka
+
+Przy podgrzewaniu można ugotować sam ryż, wrzucić na patelnię z purée i kurczakiem. Dodać trochę wody i masło.
