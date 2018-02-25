@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yummy</title>
+  
+  
+  <link href="/yummy/atom.xml" rel="self"/>
+  
+  <link href="https://ertrzyiks.github.io/yummy/"/>
+  <updated>2018-02-25T17:58:18.000Z</updated>
+  <id>https://ertrzyiks.github.io/yummy/</id>
+  
+  <author>
+    <name>J. M. Derks</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Zupa z kapusty</title>
+    <link href="https://ertrzyiks.github.io/yummy/zupy/zupa-z-kapusty/"/>
+    <id>https://ertrzyiks.github.io/yummy/zupy/zupa-z-kapusty/</id>
+    <published>2018-02-24T19:46:00.000Z</published>
+    <updated>2018-02-25T17:58:18.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabniamy).&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
+    
+    
+      <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
+    
+      <category term="kapusta" scheme="https://ertrzyiks.github.io/yummy/with/kapusta/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kurczak z purée</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/</id>
+    <published>2018-02-21T17:38:00.000Z</published>
+    <updated>2018-02-25T17:54:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Szybki, pyszny obiad.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
+    
+      <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
+    
+  </entry>
+  
+</feed>

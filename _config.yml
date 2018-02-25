@@ -76,12 +76,22 @@ theme: landscape-modified
 deploy:
   type:
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
 asset_pipeline:
   revisioning:
     enable: true
     exclude:
      - '**/content/**/*'
      - '**/fontawesome-webfont.*'
+     - '**/atom.xml'
   clean_css:
     enable: true
   uglify_js:
