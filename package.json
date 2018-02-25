@@ -6,7 +6,7 @@
     "version": "3.5.0"
   },
   "scripts": {
-    "start": "hexo server",
+    "start": "hexo server --open",
     "build": "hexo clean && hexo generate"
   },
   "dependencies": {

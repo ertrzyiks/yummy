@@ -19,11 +19,11 @@ Szybki, pyszny obiad.
 
 ## Lista zakupów
 
- - kalafior lub brokuł
+ - kalafior lub brokuł (ok. 1kg)
  - śmietana (30% lub 18%)
  - ryż
- - filet z kurczaka
- - masło
+ - filet z kurczaka (~400g)
+ - 2 łyżki masła
  
 ## Przygotowanie
 

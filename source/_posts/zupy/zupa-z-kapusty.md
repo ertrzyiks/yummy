@@ -16,22 +16,22 @@ Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabnia
 
 ## Lista zakupów
 
- - kapusta (zwykła lub pekińska)
- - ziemniaki
- - pomidory
- - marchew
+ - pół kapusty albo mała głowka (zwykła lub pekińska)
+ - 1,5kg ziemniaków
+ - 6 pomidorów
+ - 4 marchewki
  - pietruszka (zielona i korzeń)
- - seler
- - cebula
- - filet z kuczaka
+ - kawałek selera
+ - 1 cebula
+ - filet z kuczaka (~400g)
  
 #### Przyprawy
  - sól
  - pieprz
- - ziele angielskie
- - liść laurowy
+ - ziele angielskie (5 kulek)
+ - 2 liście laurowe
  - lubczyk
- - sos sojowy
+ - 2 łyżki sosu sojowego
  
 ## Przygotowanie
 
