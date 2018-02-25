@@ -10,11 +10,11 @@
     "build": "hexo clean && hexo generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.3",
     "@fortawesome/fontawesome-free-brands": "^5.0.6",
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "hexo": "^3.2.0",
     "hexo-asset-pipeline": "github:vimcaw/hexo-asset-pipeline",
+    "hexo-fontawesome": "github:ertrzyiks/hexo-fontawesome",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
     "hexo-generator-index": "^0.2.0",
