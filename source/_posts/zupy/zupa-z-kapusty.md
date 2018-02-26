@@ -1,6 +1,6 @@
 ---
 title: Zupa z kapusty
-required-time: 60min
+required_time: 60min
 date: 2018/2/24 20:46:00
 category: 
  - zupy

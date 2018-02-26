@@ -1,7 +1,7 @@
 ---
 title: Kurczak z purée
 date: 2018/2/21 18:38:00
-required-time: 60min
+required_time: 60min
 category: 
  - obiady
 tags:

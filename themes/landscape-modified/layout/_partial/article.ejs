@@ -1,3 +1,10 @@
+<% if (!index) { %>
+<div class="article-icons">
+    <%- partial('icons/time.svg') %>
+    <div><%- post.required_time %></div>
+</div>
+<% } %>
+
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <% if (index) { %>
     <a href="<%- url_for(post.path) %>" class="article-cover" style="background-image: url(<%- url_for(post.featured_image) %>);"></a>
