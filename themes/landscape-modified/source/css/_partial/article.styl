@@ -5,13 +5,26 @@
   @extend $block
   overflow: hidden
 
+.article-content
+  display: flex
+  flex-direction: row-reverse
+
+  @media mq-mobile
+    flex-direction: column
+
+.article-content_inner
+  flex-grow: 1
+
 .article-cover
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   display: block
-  height: 200px
+  flex: 0 0 50%
   width: 100%
+
+  @media mq-mobile
+    height: 200px
 
 .article-meta
   clearfix()

@@ -6,35 +6,41 @@
 <% } %>
 
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <% if (index) { %>
-    <a href="<%- url_for(post.path) %>" class="article-cover" style="background-image: url(<%- url_for(post.featured_image) %>);"></a>
-  <% } %>
   <div class="article-inner">
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
-          <%- partial('post/title', {class_name: 'article-title'}) %>
-          <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      </header>
-    <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
+    <div class="article-content">
+      <% if (index) { %>
+      <a href="<%- url_for(post.path) %>" class="article-cover" style="background-image: url(<%- url_for(image_version(post.featured_image, {prefix: 'thumb'})) %>);"></a>
       <% } %>
+
+      <div class="article-content_inner">
+        <% if (post.link || post.title){ %>
+          <header class="article-header">
+              <%- partial('post/title', {class_name: 'article-title'}) %>
+              <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+          </header>
+        <% } %>
+        <div class="article-entry" itemprop="articleBody">
+          <% if (post.excerpt && index){ %>
+            <%- post.excerpt %>
+            <% if (theme.excerpt_link){ %>
+              <p class="article-more-link">
+                <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+              </p>
+            <% } %>
+          <% } else { %>
+            <%- post.content %>
+          <% } %>
+        </div>
+      </div>
     </div>
+
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
-          <%- fa_inline('share') %>
-          <%= __('share') %>
+        <%- fa_inline('share') %>
+        <%= __('share') %>
       </a>
       <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
+      <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
       <%- partial('post/share', {id: post._id, url: post.permalink}) %>
