@@ -37,7 +37,6 @@ function thumbnails() {
         return sharp(buffer).resize(width).toBuffer()
       }).then(function (output) {
         const newPath = getNewPath(filePath, {prefix: 'thumb'})
-        console.log(newPath)
         return hexo.route.set(newPath, output)
       })
   })

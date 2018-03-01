@@ -85,6 +85,11 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 
+markdown:
+  render:
+    breaks: false
+    html: true
+
 asset_pipeline:
   revisioning:
     enable: true
