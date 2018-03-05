@@ -105,3 +105,9 @@ asset_pipeline:
     enable: true
   html_minifier:
     enable: true
+
+responsive_images:
+  pattern: content/**/*.jpg
+  sizes:
+    thumb:
+      width: 900
