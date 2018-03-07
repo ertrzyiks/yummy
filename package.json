@@ -7,13 +7,15 @@
   },
   "scripts": {
     "start": "hexo server --open",
-    "build": "hexo clean && hexo generate"
+    "build": "hexo clean && hexo generate",
+    "deploy": "hexo deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.6",
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "hexo": "^3.2.0",
     "hexo-asset-pipeline": "github:vimcaw/hexo-asset-pipeline",
+    "hexo-deployer-git": "^0.3.1",
     "hexo-filter-responsive-images": "^1.0.1",
     "hexo-fontawesome": "^1.0.1",
     "hexo-generator-archive": "^0.1.4",
