@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-03-02T21:45:43.000Z</updated>
+  <updated>2018-03-07T18:49:44.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pieczone ziemniaki z kurczakiem</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/pieczone-ziemniaki-z-kurczakiem/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/pieczone-ziemniaki-z-kurczakiem/</id>
+    <published>2018-03-07T18:38:00.000Z</published>
+    <updated>2018-03-07T18:49:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/przepis/ziemniaki-hasselback&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ziemniaki Hasselback - Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Proste i pyszne.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
+    
+  </entry>
   
   <entry>
     <title>Kopytka w sosie pomidorowym</title>
@@ -58,9 +80,9 @@
     
       <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
-      <category term="kuchnia japońska" scheme="https://ertrzyiks.github.io/yummy/with/kuchnia-japonska/"/>
-    
       <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
+    
+      <category term="kuchnia japońska" scheme="https://ertrzyiks.github.io/yummy/with/kuchnia-japonska/"/>
     
   </entry>
   
@@ -80,9 +102,9 @@
       <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
     
     
-      <category term="kapusta" scheme="https://ertrzyiks.github.io/yummy/with/kapusta/"/>
-    
       <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
+    
+      <category term="kapusta" scheme="https://ertrzyiks.github.io/yummy/with/kapusta/"/>
     
   </entry>
   
@@ -91,22 +113,22 @@
     <link href="https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/"/>
     <id>https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/</id>
     <published>2018-02-21T17:38:00.000Z</published>
-    <updated>2018-02-26T21:06:40.000Z</updated>
+    <updated>2018-03-07T18:51:06.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Szybki, pyszny obiad.&lt;/p&gt;
+      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Purée z kalafiora - Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Szybki, pyszny obiad.&lt;/p&gt;
     
     </summary>
     
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
       <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
     
       <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   

@@ -11,7 +11,7 @@ tags:
 featured_image: /content/obiady/puree.jpg
 ---
 
-Originalny przepis: [Kwestia Smaku](https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html)
+Originalny przepis: [Purée z kalafiora - Kwestia Smaku](https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html)
 
 Szybki, pyszny obiad.
 
