@@ -1,3 +1,4 @@
 node_modules
 db.json
 .deploy_git
+public
