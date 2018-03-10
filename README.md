@@ -29,11 +29,23 @@ $ yum install imagemagick
 npm i
 ```
 
+If you run into issues with `mozjpeg` not building properly, please follow the solution described here:
+
+https://github.com/imagemin/imagemin-mozjpeg/issues/1
+
+And then run `npm rebuild mozjpeg`
+
+
 ### Working with hexo
 
 Start hexo server
 ```
 npm start
+```
+
+If you'd like to display not only ready posts but also drafts, run the server with an additional flag:
+```
+npm start -- --draft
 ```
 
 Build production version
