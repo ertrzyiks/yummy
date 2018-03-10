@@ -8,7 +8,7 @@ tags:
  - kasza
  - kurczak
  - meksykańskie
-featured_image: /content/obiady/zapiekanka.jpg
+featured_image: /content/obiady/meksykanskie-z-kasza.jpg
 ---
 
 Klasyk w nowej odsłonie
