@@ -113,3 +113,8 @@ responsive_images:
   sizes:
     thumb:
       width: 900
+
+search_index:
+  riak:
+    nodes:
+      - stats.ertrzyiks.me:8087
