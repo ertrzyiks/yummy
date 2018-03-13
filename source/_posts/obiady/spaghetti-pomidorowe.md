@@ -1,7 +1,7 @@
 ---
 title: Spaghetti pomidorowe
-date: 2018/3/10 16:41:00
-required_time: 180min
+date: 2018/3/13 19:41:00
+required_time: 60min
 category:
  - obiady
 tags:
@@ -9,7 +9,7 @@ tags:
  - pomidory
  - wegetariańskie
  - włoskie
-featured_image: /content/obiady/zapiekanka.jpg
+featured_image: /content/obiady/spaghetti-pomidorowe.jpg
 ---
 
 Smak dojrzewających w południowym słońcu pomidorów.
@@ -26,7 +26,6 @@ Smak dojrzewających w południowym słońcu pomidorów.
  - sól, pieprz, papryka ostra, szczypta chili
  - natka pietruszki, bazylia, oregano
  - łyżka masła, 2 łyżki oliwy
-
  - makaron spaghetti
 
 ## Przygotowanie

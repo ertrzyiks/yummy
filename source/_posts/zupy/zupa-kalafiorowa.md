@@ -1,7 +1,7 @@
 ---
 title: Zupa kalafiorowa
 date: 2018/3/10 12:14:00
-required_time: 60min
+required_time: 90min
 category:
  - zupy
 tags:
@@ -24,6 +24,8 @@ Jak grochówka z kalafiora bez laktozy
 - nieduży kawałek kapusty
 - 1 cebula
 - mały kubek śmietany 18%
+
+### Przyprawy
 
 - 5 kulek ziela angielskiego
 - 2 liście laurowe
