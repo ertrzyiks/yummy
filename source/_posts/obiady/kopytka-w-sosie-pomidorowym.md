@@ -6,8 +6,9 @@ category:
  - obiady
 tags:
  - ziemniaki
- - pomidor
+ - pomidory
  - kluski
+ - wegetariańskie
 featured_image: /content/obiady/kopytka.jpg
 ---
 
