@@ -32,11 +32,11 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
-    
       <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
+    
+      <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
     
       <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
     
@@ -80,9 +80,9 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="kasza" scheme="https://ertrzyiks.github.io/yummy/with/kasza/"/>
-    
       <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="kasza" scheme="https://ertrzyiks.github.io/yummy/with/kasza/"/>
     
       <category term="meksykańskie" scheme="https://ertrzyiks.github.io/yummy/with/meksykanskie/"/>
     
@@ -137,7 +137,7 @@
     <link href="https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/"/>
     <id>https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/</id>
     <published>2018-03-01T22:40:00.000Z</published>
-    <updated>2018-03-02T21:45:43.000Z</updated>
+    <updated>2018-03-13T20:30:37.000Z</updated>
     
     <summary type="html">
     
@@ -150,9 +150,11 @@
     
       <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
     
-      <category term="pomidor" scheme="https://ertrzyiks.github.io/yummy/with/pomidor/"/>
+      <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
     
       <category term="kluski" scheme="https://ertrzyiks.github.io/yummy/with/kluski/"/>
+    
+      <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
     
   </entry>
   
@@ -218,11 +220,11 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
       <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
     
       <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   
