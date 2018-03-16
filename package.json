@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "hexo server --open",
-    "deploy": "hexo clean && hexo deploy"
+    "deploy": "npm run clean && hexo deploy",
+    "clean": "hexo clean"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.6",

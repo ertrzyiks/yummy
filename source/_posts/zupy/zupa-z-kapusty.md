@@ -23,7 +23,7 @@ Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabnia
  - pietruszka (zielona i korzeń)
  - kawałek selera
  - 1 cebula
- - filet z kuczaka (~400g)
+ - {% ki %}
  
 #### Przyprawy
  - sól
@@ -36,5 +36,6 @@ Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabnia
 ## Przygotowanie
 
 Warzywa obrać (chyba że są pomidorem i nie masz czasu/ochoty albo bolą nogi) i pokroić powiedzmy 
-w drobną kostkę. Kurczaka umyć, pokroić i wrzucić razem z warzywami do garnka. Dodać przyprawy
-i sos sojowy. Zalać wrzątkiem. Gotować przez godzinę uzupełniając wodę. I tyle
+w drobną kostkę. Dodać przyprawy i sos sojowy. Zalać wrzątkiem. {% kpz %}
+
+Gotować przez godzinę uzupełniając wodę. I tyle.

@@ -17,7 +17,7 @@ Klasyk w nowej odsłonie
 
 ## Lista zakupów
 
-- 400g filetu z kurczaka
+- {% ki %}
 - 1 duża czerwona papryka
 - puszka czerwonej fasoli
 - puszka kukurydzy
@@ -26,13 +26,12 @@ Klasyk w nowej odsłonie
 
 ## Przygotowanie
 
-Kurczaka umyć, pokroić w kostkę i obtoczyć w przyprawie złocistej. Odstawić na 15 min.
+{% kpo true %}
 
 Puszki odsączyć z zalewy i wsypać do dużego garnka.
 Paprykę pokroić w nieduże paski i dodać do garnka.
 Całość zalać szklanką wody i gotować na wolnym ogniu.
-
-Kurczaka obsmażyć na oliwie i dodać do potrawy.
+Dodać kurczaka.
 
 Ugotować 3 woreczki kaszy jęczmiennej.
 

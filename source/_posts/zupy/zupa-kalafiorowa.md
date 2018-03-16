@@ -18,7 +18,7 @@ Jak grochówka z kalafiora bez laktozy
 
 - 1 średni kalafior
 - 1.5kg ziemniaków
-- 400g filetu z kurczaka
+- {% ki %}
 - 4 marchewki
 - 1 pietruszka
 - nieduży kawałek kapusty
@@ -41,7 +41,7 @@ Dodać posiekaną kapustę i przyprawy.
 Wsypać przyprawy, zalać wrzątkiem i wstawić do gotowania.
 
 Cebulę drobno posiekać i zeszklić na oliwie. Dodać do zupy.
-Kurczaka umyć, pokroić i również dorzucić do gotującej się zupy.
+{% kpz %}
 
 Gotować ok 40-50 min. Po tym czasie dodać śmietanę i zagotować.
 

@@ -22,14 +22,14 @@ Szybki, pyszny obiad.
  - kalafior lub brokuł (ok. 1kg)
  - śmietana (30% lub 18%)
  - ryż
- - filet z kurczaka (~400g)
+ - {% ki %}
  - 2 łyżki masła
  
 ## Przygotowanie
 
 Kalafior lub brokuł pokroić i ugotować w posolonej wodzie. 
 Następnie zblendować w garnku z dodatkiem pieprzu.
-Kurczaka pokroić w kostkę, obsypać przyprawami i usmażyć na oleju albo oliwie.
+{% kpo %}
 
 ## Pyszna zielona papka
 
