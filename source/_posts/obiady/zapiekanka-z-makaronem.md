@@ -17,7 +17,7 @@ Może i robi się długo, ale warto!
 ## Lista zakupów
 
 - 500g pieczarek
-- 400g filetu z kurczaka
+- {% ki %}
 - mały kubek śmietany 18%
 - makaron świderki (500g)
 - 1 cebula
@@ -31,8 +31,7 @@ Cebulę zeszklić na oliwie.
 Pieczarki wrzucić na patelnię z pół szklanki wody. Od czasu gdy się skurczą, gotować 10 min po czym dodać cebulę i pieprz czarny.
 Wysmażać jeszcze 5 min (aby nie były zbyt wodniste), dodając soli do smaku.
 
-Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawie złocistej na 15 min.
-Po tym czasie obsmażyć na oliwie do miękkości.
+{% kpo true %}
 
 Makaron ugotować al dente.
 
