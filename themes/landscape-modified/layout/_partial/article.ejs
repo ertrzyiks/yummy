@@ -9,7 +9,7 @@
   <div class="article-inner">
     <div class="article-content">
       <% if (index) { %>
-      <a href="<%- url_for(post.path) %>" class="article-cover" style="background-image: url(<%- url_for(image_version(post.featured_image, {prefix: 'thumb'})) %>);"></a>
+      <a href="<%- url_for(post.path) %>" class="article-cover" data-lazy-src="<%- url_for(image_version(post.featured_image, {prefix: 'thumb'})) %>"></a>
       <% } %>
 
       <div class="article-content_inner">

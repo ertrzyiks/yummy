@@ -1,4 +1,33 @@
 (function($){
+  function throttle(func) {
+    var wait = arguments.length <= 1 || arguments[1] === undefined ? 100 : arguments[1];
+
+    var timer = null;
+    return function () {
+      var _this = this;
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      if (timer === null) {
+        timer = setTimeout(function () {
+          func.apply(_this, args);
+          timer = null;
+        }, wait);
+      }
+    };
+  }
+
+  var isInViewport = function (elem, threshold) {
+    threshold = threshold || 0
+    var bounding = elem.getBoundingClientRect();
+    return (
+      bounding.top >= -threshold &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + threshold
+    );
+  };
+
   // Search
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,
@@ -134,4 +163,24 @@
 
     $container.removeClass('mobile-nav-on');
   });
+
+  function lazyLoadImages() {
+    var $lazyImages = $('[data-lazy-src]')
+
+    if ($lazyImages.length == 0) {
+      $(window).off('scroll.lazy-loading')
+      return
+    }
+
+    $lazyImages.each(function () {
+      var $el = $(this)
+
+      if (isInViewport(this, 500)) {
+        $el.css('background-image', 'url(' + $el.data('lazy-src') + ')').removeAttr('data-lazy-src')
+      }
+    })
+  }
+
+  $(window).on('scroll.lazy-loading', throttle(lazyLoadImages, 200))
+  lazyLoadImages()
 })(jQuery);
