@@ -1,6 +1,6 @@
 <header id="header" <% if (page.featured_image) { %>class="has-bg"<% } %>>
   <% if (page.featured_image) { %>
-    <div id="banner" style="background-image: url(<%- url_for(page.featured_image) %>);"></div>
+    <div id="banner" style="background-image: url(<%- url_for(image_version(page.featured_image, {prefix: 'big'})) %>);"></div>
   <% } else { %>
     <div id="banner"></div>
   <% } %>

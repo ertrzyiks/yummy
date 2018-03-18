@@ -111,5 +111,7 @@ asset_pipeline:
 responsive_images:
   pattern: content/**/*.jpg
   sizes:
+    big:
+      width: 2000
     thumb:
       width: 900
