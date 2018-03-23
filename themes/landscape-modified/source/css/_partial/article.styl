@@ -16,6 +16,8 @@
   flex-grow: 1
 
 .article-cover
+  animation: lazy-image-placeholder 300ms
+  animation-fill-mode: forward
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -25,6 +27,9 @@
 
   @media mq-mobile
     height: 200px
+
+.article-cover.is-loaded
+  animation: none
 
 .article-meta
   clearfix()
@@ -337,6 +342,16 @@ $article-share-link
     display: block
     max-width: 100%
     margin: 0 auto
+
+
+@keyframes lazy-image-placeholder
+  0%
+    opacity: 0
+  99%
+    opacity: 0
+  100%
+    opacity: 1
+
 /*
 $article-gallery-ctrl
   position: absolute

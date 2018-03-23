@@ -176,7 +176,14 @@
       var $el = $(this)
 
       if (isInViewport(this, 500)) {
-        $el.css('background-image', 'url(' + $el.data('lazy-src') + ')').removeAttr('data-lazy-src')
+        var url = $el.data('lazy-src')
+        $el.removeAttr('data-lazy-src')
+
+        var image = new Image()
+        image.onload = function () {
+          $el.addClass('is-loaded').css('background-image', 'url(' + url + ')')
+        }
+        image.src = url
       }
     })
   }

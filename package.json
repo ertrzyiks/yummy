@@ -26,6 +26,10 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "potrace": "^2.1.1",
+    "sharp": "^0.20.1",
+    "string-replace-async": "^1.2.1",
+    "svgo": "^1.0.5"
   }
 }
