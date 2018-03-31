@@ -8,7 +8,7 @@ tags:
  - ser
  - brokuł
  - kurczak
-featured_image: /content/obiady/puree.jpg
+featured_image: /content/zupy/alentejo.jpg
 ---
 
 [Lead text]
