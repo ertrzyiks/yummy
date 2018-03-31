@@ -8,7 +8,7 @@ tags:
  - ser
  - brokuł
  - kurczak
-featured_image: /content/obiady/puree.jpg
+featured_image: /content/obiady/kurczak-serowo-brokulowy.jpg
 ---
 
 [Lead text]
