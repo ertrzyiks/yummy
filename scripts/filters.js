@@ -11,7 +11,7 @@ hexo.extend.filter.register('after_post_render', function(data) {
     return t.name
   })
 
-  var meatPattern = /(kurczak|indyk)/gim
+  var meatPattern = /(kurczak|indyk)/im
   var hasChickenOrTurkey = data.content.match(meatPattern)
 
   var potentiallyMissingTag = hasChickenOrTurkey
