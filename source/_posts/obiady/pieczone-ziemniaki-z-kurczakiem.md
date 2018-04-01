@@ -30,6 +30,7 @@ Proste i pyszne.
 {% kpo %}
 
 Ziemniaki umyć i ponacinać. Piekarnik nagrzać do 250 stopni. Do naczynia żaroodpornego wlać oliwy,
-wrzucić czosnek, położyć ziemniaki i polać resztą oliwy.
+wrzucić czosnek, położyć ziemniaki, posypać solą i polać resztą oliwy.
 
-Piec 30 minut, obrócić ziemniaki, posmarować masłem i posypać ziołową przyprawą. Piec kolejne 30 minut.
+Piec 30 minut pod przykryciem, obrócić ziemniaki, posmarować masłem i posypać ziołową przyprawą.
+Piec kolejne 30 minut, wciąż pod przykryciem.
