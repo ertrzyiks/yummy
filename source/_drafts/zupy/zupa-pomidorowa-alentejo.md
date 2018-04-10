@@ -7,6 +7,7 @@ category:
 tags:
  - pomidory
  - jajka
+ - wegetariańskie
 featured_image: /content/zupy/alentejo.jpg
 ---
 
