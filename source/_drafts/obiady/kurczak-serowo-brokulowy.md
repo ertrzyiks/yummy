@@ -11,7 +11,7 @@ tags:
 featured_image: /content/obiady/kurczak-serowo-brokulowy.jpg
 ---
 
-[Lead text]
+To jaki w końcu ten sos - śmietanowy czy serowy?
 
 <!-- more -->
 
