@@ -17,10 +17,10 @@ Prawdziwy dwuwarstwowy polski mazurek, który każdemu smakuje.
 ## Lista zakupów
 
 ### Ciasto
-- 25dkg mąki ziemniaczanej
-- 20dkg mąki zwykłej
-- 35dkg margaryny
-- 12dkg cukru
+- 250g mąki ziemniaczanej
+- 200g mąki zwykłej
+- 250g margaryny
+- 120g cukru
 - 2 jajka
 - łyżeczka proszku do pieczenia
 - jeżeli jeszcze nie masz to waga kuchenna
