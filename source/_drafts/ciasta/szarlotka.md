@@ -22,7 +22,6 @@ Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!
 - 120g cukru
 - 2 jajka
 - łyżeczka proszku do pieczenia
-- jeżeli jeszcze nie masz to waga kuchenna
 
 ### Owoce
 - 1.5kg jabłek, najlepiej kwaśnych

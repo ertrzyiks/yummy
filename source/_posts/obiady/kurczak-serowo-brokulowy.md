@@ -1,6 +1,6 @@
 ---
 title: Kurczak w sosie serowo-brokułowym
-date: 2018/2/21 18:38:00
+date: 2018/4/14 18:38:00
 required_time: 60min
 category:
  - obiady
@@ -34,7 +34,7 @@ W międzyczasie obrać marchewki, pokroić w talarki i dorzucić do gotujących 
 
 Warzywa odsączyć pozostawiając jedynie wodę do dalszego gotowania. Dodać kurczaka i dusić ok 10 min.
 
-Ser pociąć na mniejsze kawałki, dorzucić do sosu i poczekać aż sie rozpuści. Wtedy wlać śmietanę.
+Ser pociąć na mniejsze kawałki, dorzucić do sosu i poczekać aż się rozpuści. Wtedy wlać śmietanę.
 Wymieszać i zagotować.
 
 Makaron ugotować według przepisu na opakowaniu.

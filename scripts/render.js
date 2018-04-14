@@ -105,8 +105,8 @@ function isHtmlFile(filePath) {
 
 function processHtmlFile(route, content) {
   return replace(content, /__LQIP_COLOR\([^\(]+\)/g, function (placeholder) {
-    var mathes = placeholder.match(/__LQIP_COLOR\(([^\(]+)\)/)
-    var url = mathes[1]
+    var matches = placeholder.match(/__LQIP_COLOR\(([^\(]+)\)/)
+    var url = matches[1]
 
     return loadFileContent(route.get(url))
       .then(function (buffer) {

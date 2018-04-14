@@ -10,7 +10,7 @@ tags:
 featured_image: /content/ciasta/mazurek-orzechowy.jpg
 ---
 
-Prawdziwy dwuwarstwowy polski mazurek, który każdemu smakuje.
+Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.
 
 <!-- more -->
 
