@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-03-13T20:23:31.000Z</updated>
+  <updated>2018-04-14T18:04:01.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kurczak w sosie serowo-brokułowym</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/kurczak-serowo-brokulowy/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/kurczak-serowo-brokulowy/</id>
+    <published>2018-04-14T16:38:00.000Z</published>
+    <updated>2018-04-14T18:04:01.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;To jaki w końcu ten sos - śmietanowy czy serowy?&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="ser" scheme="https://ertrzyiks.github.io/yummy/with/ser/"/>
+    
+      <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Klasyczna zupa pomidorowa</title>
+    <link href="https://ertrzyiks.github.io/yummy/zupy/klasyczna-zupa-pomidorowa/"/>
+    <id>https://ertrzyiks.github.io/yummy/zupy/klasyczna-zupa-pomidorowa/</id>
+    <published>2018-04-10T18:38:00.000Z</published>
+    <updated>2018-04-14T17:57:51.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
+    
+    
+      <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
+    
+      <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mazurek orzechowy</title>
+    <link href="https://ertrzyiks.github.io/yummy/ciasta/mazurek-orzechowy/"/>
+    <id>https://ertrzyiks.github.io/yummy/ciasta/mazurek-orzechowy/</id>
+    <published>2018-03-30T09:30:00.000Z</published>
+    <updated>2018-04-14T17:58:35.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ciasta" scheme="https://ertrzyiks.github.io/yummy/ciasta/"/>
+    
+    
+      <category term="orzechowe" scheme="https://ertrzyiks.github.io/yummy/with/orzechowe/"/>
+    
+      <category term="wielkanoc" scheme="https://ertrzyiks.github.io/yummy/with/wielkanoc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zupa pomidorowa Alentejo</title>
+    <link href="https://ertrzyiks.github.io/yummy/zupy/zupa-pomidorowa-alentejo/"/>
+    <id>https://ertrzyiks.github.io/yummy/zupy/zupa-pomidorowa-alentejo/</id>
+    <published>2018-03-15T19:58:00.000Z</published>
+    <updated>2018-04-14T18:15:13.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Prawdziwie portugalska zupa pomidorowa rodem z Bergen przygotowana w Polsce.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
+    
+    
+      <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
+    
+      <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
+    
+      <category term="jajka" scheme="https://ertrzyiks.github.io/yummy/with/jajka/"/>
+    
+  </entry>
   
   <entry>
     <title>Spaghetti pomidorowe</title>
@@ -137,7 +229,7 @@
     <link href="https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/"/>
     <id>https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/</id>
     <published>2018-03-01T22:40:00.000Z</published>
-    <updated>2018-03-13T20:30:37.000Z</updated>
+    <updated>2018-04-14T17:57:39.000Z</updated>
     
     <summary type="html">
     
