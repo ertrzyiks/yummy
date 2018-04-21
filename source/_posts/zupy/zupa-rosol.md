@@ -1,13 +1,13 @@
 ---
 title: Zupa rosół
-date: 2018/4/15 13:30:00
+date: 2018/4/21 13:30:00
 required_time: 60min
 category:
  - zupy
 tags:
  - kurczak
  - warzywa
-featured_image: /content/zupy/klasyczna-zupa-pomidorowa.jpg
+featured_image: /content/zupy/zupa-rosol.jpg
 ---
 
 Najpyszniejsza zupa rosół tylko z kulką i liściem!
