@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-04-14T18:04:01.000Z</updated>
+  <updated>2018-04-21T11:31:08.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Szarlotka</title>
+    <link href="https://ertrzyiks.github.io/yummy/ciasta/szarlotka/"/>
+    <id>https://ertrzyiks.github.io/yummy/ciasta/szarlotka/</id>
+    <published>2018-04-21T10:11:00.000Z</published>
+    <updated>2018-04-21T11:31:08.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ciasta" scheme="https://ertrzyiks.github.io/yummy/ciasta/"/>
+    
+    
+      <category term="jabłecznik" scheme="https://ertrzyiks.github.io/yummy/with/jablecznik/"/>
+    
+  </entry>
   
   <entry>
     <title>Kurczak w sosie serowo-brokułowym</title>
@@ -124,13 +144,13 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
+      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
+    
       <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
     
       <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
-    
-      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
     
   </entry>
   
