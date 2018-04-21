@@ -1,12 +1,12 @@
 ---
 title: Szarlotka
-date: 2018/4/03 12:11:00
+date: 2018/4/21 12:11:00
 required_time: 150min
 category:
  - ciasta
 tags:
  - jabłecznik
-featured_image: /content/ciasta/mazurek-orzechowy.jpg
+featured_image: /content/ciasta/szarlotka.jpg
 ---
 
 Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!
