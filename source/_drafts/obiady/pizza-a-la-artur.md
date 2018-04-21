@@ -54,5 +54,7 @@ Ciasto wyrabiać na gładką elastyczną masę przez ok. 15 min. Po tym czasie z
 
 Duża prostokątną formę wyłożyć papierem do pieczenia. Na nim rozłożyć ciasto, pozostawiając nieduże wałeczki na brzegach.
 Posmarować przecierem pomidorowym. Na spód rozłożyć pokrojone w talarki pomidory. Posypać połową startego żółtego sera.
-Na to rozłożyć wędlinę oraz pieczarki. Następnie dołożyć paprykę, groszek i kukurydzę. Na górę położyć pokrojoną w plastry mozzarellę i zasypać dziury żółtym serem.
+Na to rozłożyć wędlinę oraz pieczarki. Następnie dołożyć paprykę, groszek i kukurydzę.
 
+Wstawić na 10 minut do piekarnika rozgrzanego do 200 stopni. Na górę dołożyć pokrojoną w plastry mozzarellę i zasypać dziury żółtym serem.
+Piec następne 15 minut.
