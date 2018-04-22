@@ -4,3 +4,4 @@ db.json
 public
 .idea
 tmp.json
+npm-debug.log
