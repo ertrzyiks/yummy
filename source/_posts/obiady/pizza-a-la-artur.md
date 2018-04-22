@@ -1,6 +1,6 @@
 ---
 title: Pizza a'la Artur
-date: 2018/4/20 11:57:00
+date: 2018/4/22 11:57:00
 required_time: 120min
 category:
  - obiady
@@ -8,7 +8,7 @@ tags:
  - włoskie
  - warzywa
  - ser
-featured_image: /content/obiady/meksykanskie-z-kasza.jpg
+featured_image: /content/obiady/pizza-a-la-artur.jpg
 ---
 
 Epizzkie danie.
