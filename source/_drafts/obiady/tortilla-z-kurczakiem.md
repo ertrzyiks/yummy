@@ -17,8 +17,20 @@ featured_image: /content/obiady/puree.jpg
 
 ## Lista zakupów
 
-
+- {% ki %}
+- 2 pomidory
+- 1 papryka czerwona
+- sałata
+- opcjonalnie rzodkiewka
+- 2 plasterki żółtego sera na tortillę
+- majonez
+- tortilla
 
 ## Przygotowanie
 
-[Kurczak albo w zlocistej albo marynacie miso]
+{% kpz %}
+
+Na tortillę wyłożyć potarty ser i 5 ździebełek kurczaka. Podgrzać ok. 1 min w mikrofali lub na patelni.
+Posmarować łyżeczką majonezu.
+Nałożyć pomidor, paprykę, rzodkiewkę i sałatę.
+Tortillę zwinąć i zjeść.
