@@ -1,17 +1,17 @@
 ---
 title: Tortilla z kurczakiem
-date: 2018/2/21 18:38:00
-required_time: 60min
+date: 2018/5/2 18:38:00
+required_time: 30min
 category:
  - obiady
 tags:
- - ser
- - brokuł
  - kurczak
-featured_image: /content/obiady/puree.jpg
+ - tortilla
+ - meksykańskie
+featured_image: /content/obiady/tortilla.jpg
 ---
 
-[Lead text]
+Gdy brak czasu na gotowanie.
 
 <!-- more -->
 
