@@ -1,6 +1,6 @@
 ---
 title: Jabłkowo-ananasowy z jarmużem
-date: 2018/4/22 11:57:00
+date: 2018/4/23 11:57:00
 required_time: 10min
 category:
  - koktajle
@@ -11,7 +11,7 @@ tags:
  - ananas
  - banan
  - jarmuż
-featured_image: /content/obiady/meksykanskie-z-kasza.jpg
+featured_image: /content/koktajle/jab-ans-ban-jar.jpg
 ---
 
 Wieczorne orzeźwienie

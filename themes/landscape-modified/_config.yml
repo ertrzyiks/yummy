@@ -1,9 +1,11 @@
 # Header
 menu:
   Główna: /
+  Śniadaniowe: /sniadaniowe/
   Obiady: /obiady/
   Zupy: /zupy/
   Ciasta: /ciasta/
+  Koktajle: /koktajle/
 rss: /atom.xml
 
 # Content
