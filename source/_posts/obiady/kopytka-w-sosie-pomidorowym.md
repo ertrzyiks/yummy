@@ -7,7 +7,7 @@ category:
 tags:
  - ziemniaki
  - pomidory
- - kluski
+ - mączne
  - wegetariańskie
 featured_image: /content/obiady/kopytka.jpg
 ---
