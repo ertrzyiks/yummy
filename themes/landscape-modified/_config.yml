@@ -36,3 +36,14 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+lqip:
+  potrace:
+    canvas_size:
+      width: 140
+    optTolerance: 5
+    turdSize: 3
+    threshold: 200
+    steps: 2
+    color: '#ec973b'
+    background: 'transparent'

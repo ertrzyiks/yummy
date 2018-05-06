@@ -16,6 +16,7 @@
     "hexo": "^3.2.0",
     "hexo-asset-pipeline": "^1.4.2",
     "hexo-deployer-git": "^0.3.1",
+    "hexo-filter-lqip": "^1.0.0",
     "hexo-filter-responsive-images": "^1.0.1",
     "hexo-fontawesome": "^1.0.1",
     "hexo-generator-archive": "^0.1.4",
