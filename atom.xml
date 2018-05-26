@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-04-21T12:00:38.000Z</updated>
+  <updated>2018-05-26T12:24:59.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,192 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Racuchy</title>
+    <link href="https://ertrzyiks.github.io/yummy/sniadaniowe/racuchy/"/>
+    <id>https://ertrzyiks.github.io/yummy/sniadaniowe/racuchy/</id>
+    <published>2018-05-26T10:38:00.000Z</published>
+    <updated>2018-05-26T12:24:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Najlepsze z kwaśnym jabłkiem i powidłami śliwkowymi.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="śniadaniowe" scheme="https://ertrzyiks.github.io/yummy/sniadaniowe/"/>
+    
+    
+      <category term="mączne" scheme="https://ertrzyiks.github.io/yummy/with/maczne/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Naleśniki</title>
+    <link href="https://ertrzyiks.github.io/yummy/sniadaniowe/nalesniki/"/>
+    <id>https://ertrzyiks.github.io/yummy/sniadaniowe/nalesniki/</id>
+    <published>2018-05-06T07:38:00.000Z</published>
+    <updated>2018-05-06T08:00:13.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Odrobina puszystej słodyczy.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="śniadaniowe" scheme="https://ertrzyiks.github.io/yummy/sniadaniowe/"/>
+    
+    
+      <category term="mączne" scheme="https://ertrzyiks.github.io/yummy/with/maczne/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quesadilla</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/quesadilla/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/quesadilla/</id>
+    <published>2018-05-03T16:38:00.000Z</published>
+    <updated>2018-05-26T12:26:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Jedyna taka z pomidorową salsą.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="meksykańskie" scheme="https://ertrzyiks.github.io/yummy/with/meksykanskie/"/>
+    
+      <category term="tortilla" scheme="https://ertrzyiks.github.io/yummy/with/tortilla/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Owsianka malinowa</title>
+    <link href="https://ertrzyiks.github.io/yummy/sniadaniowe/owsianka-malinowa/"/>
+    <id>https://ertrzyiks.github.io/yummy/sniadaniowe/owsianka-malinowa/</id>
+    <published>2018-05-02T16:38:00.000Z</published>
+    <updated>2018-05-06T07:35:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Zdrowe malinowe rafaello.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="śniadaniowe" scheme="https://ertrzyiks.github.io/yummy/sniadaniowe/"/>
+    
+    
+      <category term="płatki" scheme="https://ertrzyiks.github.io/yummy/with/platki/"/>
+    
+      <category term="maliny" scheme="https://ertrzyiks.github.io/yummy/with/maliny/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lemoniada z limonek z pomarańczą</title>
+    <link href="https://ertrzyiks.github.io/yummy/koktajle/lemoniada/"/>
+    <id>https://ertrzyiks.github.io/yummy/koktajle/lemoniada/</id>
+    <published>2018-05-01T18:57:00.000Z</published>
+    <updated>2018-05-06T07:35:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Pysznie gasi pragnienie.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="koktajle" scheme="https://ertrzyiks.github.io/yummy/koktajle/"/>
+    
+    
+      <category term="kwaśne" scheme="https://ertrzyiks.github.io/yummy/with/kwasne/"/>
+    
+      <category term="limonki" scheme="https://ertrzyiks.github.io/yummy/with/limonki/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tortilla z kurczakiem</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/tortilla-z-kurczakiem/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/tortilla-z-kurczakiem/</id>
+    <published>2018-05-01T16:38:00.000Z</published>
+    <updated>2018-05-06T07:35:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gdy brak czasu na gotowanie.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="meksykańskie" scheme="https://ertrzyiks.github.io/yummy/with/meksykanskie/"/>
+    
+      <category term="tortilla" scheme="https://ertrzyiks.github.io/yummy/with/tortilla/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jabłkowo-ananasowy z jarmużem</title>
+    <link href="https://ertrzyiks.github.io/yummy/koktajle/jab-ans-ban-jar/"/>
+    <id>https://ertrzyiks.github.io/yummy/koktajle/jab-ans-ban-jar/</id>
+    <published>2018-04-23T09:57:00.000Z</published>
+    <updated>2018-05-06T07:35:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Wieczorne orzeźwienie&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="koktajle" scheme="https://ertrzyiks.github.io/yummy/koktajle/"/>
+    
+    
+      <category term="kwaśne" scheme="https://ertrzyiks.github.io/yummy/with/kwasne/"/>
+    
+      <category term="zielone" scheme="https://ertrzyiks.github.io/yummy/with/zielone/"/>
+    
+      <category term="jabłko" scheme="https://ertrzyiks.github.io/yummy/with/jablko/"/>
+    
+      <category term="ananas" scheme="https://ertrzyiks.github.io/yummy/with/ananas/"/>
+    
+      <category term="banan" scheme="https://ertrzyiks.github.io/yummy/with/banan/"/>
+    
+      <category term="jarmuż" scheme="https://ertrzyiks.github.io/yummy/with/jarmuz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pizza a&#39;la Artur</title>
+    <link href="https://ertrzyiks.github.io/yummy/obiady/pizza-a-la-artur/"/>
+    <id>https://ertrzyiks.github.io/yummy/obiady/pizza-a-la-artur/</id>
+    <published>2018-04-22T09:57:00.000Z</published>
+    <updated>2018-05-03T07:52:21.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Epizzkie danie.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
+    
+    
+      <category term="ser" scheme="https://ertrzyiks.github.io/yummy/with/ser/"/>
+    
+      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
+    
+      <category term="warzywa" scheme="https://ertrzyiks.github.io/yummy/with/warzywa/"/>
+    
+  </entry>
   
   <entry>
     <title>Zupa rosół</title>
@@ -32,9 +218,9 @@
       <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
     
     
-      <category term="warzywa" scheme="https://ertrzyiks.github.io/yummy/with/warzywa/"/>
-    
       <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
+      <category term="warzywa" scheme="https://ertrzyiks.github.io/yummy/with/warzywa/"/>
     
   </entry>
   
@@ -43,7 +229,7 @@
     <link href="https://ertrzyiks.github.io/yummy/ciasta/szarlotka/"/>
     <id>https://ertrzyiks.github.io/yummy/ciasta/szarlotka/</id>
     <published>2018-04-21T10:11:00.000Z</published>
-    <updated>2018-04-21T11:31:08.000Z</updated>
+    <updated>2018-05-26T12:07:19.000Z</updated>
     
     <summary type="html">
     
@@ -166,11 +352,11 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
-    
       <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
+    
+      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
     
       <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
     
@@ -192,9 +378,9 @@
       <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
     
     
-      <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
-    
       <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
+    
+      <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
     
   </entry>
   
@@ -260,9 +446,9 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
       <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   
@@ -271,7 +457,7 @@
     <link href="https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/"/>
     <id>https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/</id>
     <published>2018-03-01T22:40:00.000Z</published>
-    <updated>2018-04-14T17:57:39.000Z</updated>
+    <updated>2018-05-06T08:00:13.000Z</updated>
     
     <summary type="html">
     
@@ -286,79 +472,9 @@
     
       <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
     
-      <category term="kluski" scheme="https://ertrzyiks.github.io/yummy/with/kluski/"/>
+      <category term="mączne" scheme="https://ertrzyiks.github.io/yummy/with/maczne/"/>
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wariacja na temat Yaki Udon</title>
-    <link href="https://ertrzyiks.github.io/yummy/obiady/wariacja-na-temat-yaki-udon/"/>
-    <id>https://ertrzyiks.github.io/yummy/obiady/wariacja-na-temat-yaki-udon/</id>
-    <published>2018-02-28T19:56:00.000Z</published>
-    <updated>2018-03-18T18:25:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Smak miso bez dodatku miso (bo cebula mocno).&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
-    
-    
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
-      <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
-    
-      <category term="kuchnia japońska" scheme="https://ertrzyiks.github.io/yummy/with/kuchnia-japonska/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Zupa z kapusty</title>
-    <link href="https://ertrzyiks.github.io/yummy/zupy/zupa-z-kapusty/"/>
-    <id>https://ertrzyiks.github.io/yummy/zupy/zupa-z-kapusty/</id>
-    <published>2018-02-24T19:46:00.000Z</published>
-    <updated>2018-03-18T18:25:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabniamy).&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="zupy" scheme="https://ertrzyiks.github.io/yummy/zupy/"/>
-    
-    
-      <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
-    
-      <category term="kapusta" scheme="https://ertrzyiks.github.io/yummy/with/kapusta/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kurczak z purée</title>
-    <link href="https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/"/>
-    <id>https://ertrzyiks.github.io/yummy/obiady/kurczak-z-puree/</id>
-    <published>2018-02-21T17:38:00.000Z</published>
-    <updated>2018-03-18T18:25:39.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Purée z kalafiora - Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Szybki, pyszny obiad.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
-    
-    
-      <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
-    
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
-      <category term="kalafior" scheme="https://ertrzyiks.github.io/yummy/with/kalafior/"/>
     
   </entry>
   
