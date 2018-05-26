@@ -113,5 +113,7 @@ responsive_images:
   sizes:
     big:
       width: 2000
+      quality: 75
     thumb:
       width: 900
+      quality: 60
