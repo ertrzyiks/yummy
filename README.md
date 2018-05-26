@@ -48,10 +48,10 @@ If you'd like to display not only ready posts but also drafts, run the server wi
 npm start -- --draft
 ```
 
-Build production version
+Update website
 
 ```
-npm run build
+npm run deploy
 ```
 
 ### Content snippets
