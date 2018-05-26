@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-05-26T12:24:59.000Z</updated>
+  <updated>2018-05-26T12:48:04.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bułeczki drożdżowe</title>
+    <link href="https://ertrzyiks.github.io/yummy/ciasta/buleczki-drozdzowe/"/>
+    <id>https://ertrzyiks.github.io/yummy/ciasta/buleczki-drozdzowe/</id>
+    <published>2018-05-26T13:30:00.000Z</published>
+    <updated>2018-05-26T12:48:04.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Puszyste i okrągłe, jeśli dobrze zwiniesz.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ciasta" scheme="https://ertrzyiks.github.io/yummy/ciasta/"/>
+    
+    
+      <category term="drożdżowe" scheme="https://ertrzyiks.github.io/yummy/with/drozdzowe/"/>
+    
+  </entry>
   
   <entry>
     <title>Racuchy</title>
@@ -449,32 +469,6 @@
       <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
     
       <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kopytka w sosie pomidorowym</title>
-    <link href="https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/"/>
-    <id>https://ertrzyiks.github.io/yummy/obiady/kopytka-w-sosie-pomidorowym/</id>
-    <published>2018-03-01T22:40:00.000Z</published>
-    <updated>2018-05-06T08:00:13.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Smak dzieciństwa.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
-    
-    
-      <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
-    
-      <category term="pomidory" scheme="https://ertrzyiks.github.io/yummy/with/pomidory/"/>
-    
-      <category term="mączne" scheme="https://ertrzyiks.github.io/yummy/with/maczne/"/>
-    
-      <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
     
   </entry>
   
