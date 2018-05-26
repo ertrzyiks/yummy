@@ -32,7 +32,7 @@ Jedyna taka z pomidorową salsą.
 
 ### Salsa
 
-{% kpz %}
+{% kpo true %}
 
 Pomidory pokroić na ósemki, zalać wodą, dodać sól i wstawić do gotowania.
 Wsypać kukurydzę i fasolkę. Pokroić paprykę i cebule i dorzucić do garnka.
