@@ -280,11 +280,11 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
+    
       <category term="ser" scheme="https://ertrzyiks.github.io/yummy/with/ser/"/>
     
       <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
-    
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   
@@ -376,9 +376,9 @@
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
     
-      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
-    
       <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
+    
+      <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
     
   </entry>
   
