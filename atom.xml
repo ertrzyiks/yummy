@@ -6,7 +6,7 @@
   <link href="/yummy/atom.xml" rel="self"/>
   
   <link href="https://ertrzyiks.github.io/yummy/"/>
-  <updated>2018-05-26T12:48:04.000Z</updated>
+  <updated>2018-06-03T17:27:59.000Z</updated>
   <id>https://ertrzyiks.github.io/yummy/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Placek drożdżowy z truskawkami</title>
+    <link href="https://ertrzyiks.github.io/yummy/ciasta/placek-drozdzowy-z-truskawkami/"/>
+    <id>https://ertrzyiks.github.io/yummy/ciasta/placek-drozdzowy-z-truskawkami/</id>
+    <published>2018-06-03T17:10:00.000Z</published>
+    <updated>2018-06-03T17:27:59.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Rośnie jak na drożdżach.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ciasta" scheme="https://ertrzyiks.github.io/yummy/ciasta/"/>
+    
+    
+      <category term="drożdżowe" scheme="https://ertrzyiks.github.io/yummy/with/drozdzowe/"/>
+    
+  </entry>
   
   <entry>
     <title>Bułeczki drożdżowe</title>
@@ -280,11 +300,11 @@
       <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
     
     
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
-    
       <category term="ser" scheme="https://ertrzyiks.github.io/yummy/with/ser/"/>
     
       <category term="brokuł" scheme="https://ertrzyiks.github.io/yummy/with/brokul/"/>
+    
+      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   
@@ -376,9 +396,9 @@
     
       <category term="wegetariańskie" scheme="https://ertrzyiks.github.io/yummy/with/wegetarianskie/"/>
     
-      <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
-    
       <category term="włoskie" scheme="https://ertrzyiks.github.io/yummy/with/wloskie/"/>
+    
+      <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
     
   </entry>
   
@@ -447,28 +467,6 @@
       <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
       <category term="makaron" scheme="https://ertrzyiks.github.io/yummy/with/makaron/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pieczone ziemniaki z kurczakiem</title>
-    <link href="https://ertrzyiks.github.io/yummy/obiady/pieczone-ziemniaki-z-kurczakiem/"/>
-    <id>https://ertrzyiks.github.io/yummy/obiady/pieczone-ziemniaki-z-kurczakiem/</id>
-    <published>2018-03-07T18:38:00.000Z</published>
-    <updated>2018-04-01T15:44:08.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Originalny przepis: &lt;a href=&quot;https://www.kwestiasmaku.com/przepis/ziemniaki-hasselback&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ziemniaki Hasselback - Kwestia Smaku&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Proste i pyszne.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="obiady" scheme="https://ertrzyiks.github.io/yummy/obiady/"/>
-    
-    
-      <category term="ziemniaki" scheme="https://ertrzyiks.github.io/yummy/with/ziemniaki/"/>
-    
-      <category term="kurczak" scheme="https://ertrzyiks.github.io/yummy/with/kurczak/"/>
     
   </entry>
   
