@@ -1,3 +1,5 @@
+![logotype green](https://user-images.githubusercontent.com/40405175/42126266-4acf4cc4-7c7d-11e8-9c13-8880608247f8.png)
+
 # yummy
 Searchable repository of recipes we frequently use and are yummy.
 
