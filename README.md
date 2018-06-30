@@ -65,6 +65,10 @@ There are a few custom snippets available for reusable content - currently all a
 
 All snippets can be found in the `scripts/snippets.js` file.
 
+## Logo
+
+Huge thanks to @zuuritaly for the logo.
+
 ## License
 
 [MIT](./LICENSE)
