@@ -97,8 +97,15 @@ asset_pipeline:
     enable: true
     exclude:
      - '**/content/**/*'
+     - 'android-chrome*'
+     - 'apple-touch-icon*'
+     - 'favicon*'
+     - 'mstile*'
+     - 'safari-pinned-tab*'
+     - 'site.webmanifest'
+     - 'browserconfig.xml'
      - '**/fontawesome-webfont.*'
-     - '**/atom.xml'
+     - 'atom.xml'
   clean_css:
     enable: true
   uglify_js:
