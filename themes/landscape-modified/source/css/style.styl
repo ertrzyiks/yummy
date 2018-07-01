@@ -13,13 +13,12 @@ input, button
     padding: 0
 
 html, body, #container
-  height: 100%
+  min-height: 100%
 
 html, body
-  background: color-orange
+  background: #eee
 
 body
-  background: color-background
   font: font-size font-sans
   -webkit-text-size-adjust: 100%
 
@@ -48,16 +47,12 @@ body
   overflow: hidden
 
 #wrap
-  min-height: 100%
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
-  transition: 0.2s ease-out
+  transition: transform 0.2s ease-out
+  position: relative
   z-index: 1
   background: color-background
   .mobile-nav-on &
-    left: mobile-nav-width
+    transform: translateX(mobile-nav-width)
 
 if sidebar and sidebar isnt bottom
   #main
