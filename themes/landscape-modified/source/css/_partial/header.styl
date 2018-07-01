@@ -5,7 +5,7 @@
 
   &.has-bg
     height: banner-height
-    border-bottom: 10px solid rgba(230, 129, 20, 0.8)
+    border-bottom: 4px solid rgba(230, 129, 20, 0.8)
 
 
     &:before, &:after
@@ -54,10 +54,19 @@ $logo-text
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
 #logo
-  @extend $logo-text
-  font-size: logo-size
-  line-height: logo-size
-  letter-spacing: 2px
+  float: left
+  width: 36px
+  height: 49px
+  padding-top: 6px
+  margin-right: 7px
+
+  @media mq-mobile
+    position: absolute
+    left: 50%
+    margin-left: -14px
+    width: 28px
+    height: 36px
+    padding-top: 10px
 
 #subtitle
   @extend $logo-text
@@ -70,7 +79,6 @@ $logo-text
 
 #main-nav
   float: left
-  margin-left: -15px
 
 $nav-link
   float: left
@@ -99,6 +107,12 @@ $nav-link
   @extend $nav-link
   font-weight: 400
   letter-spacing: 1px
+
+  @media mq-tablet
+    font-size: 12px
+    line-height: 16px
+    padding: 20px 10px
+
   @media mq-mobile
     display: none
 
