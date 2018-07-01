@@ -159,9 +159,8 @@
   line-height: 1em
   padding: 6px 15px
   border-radius: 15px
-  background: color-background
-  color: color-grey
-  text-shadow: 0 1px #fff
+  background: color-title
+  color: color-white
   text-decoration: none
   &:hover
     background: color-link
@@ -180,7 +179,7 @@
     color: color-grey
     text-decoration: none
     &:hover
-      color: color-default
+      color: color-link
 
 .article-tag-list-item
   float: left
@@ -211,19 +210,21 @@
       absolute-center(8px)
       content: ""
       border-radius: 50%
-      background: color-border
+      background: color-title
       box-shadow: 0 1px 2px #fff
 
 .article-nav-link-wrap
   text-decoration: none
   text-shadow: 0 1px #fff
-  color: color-grey
+  color: color-link
   box-sizing: border-box
   margin-top: block-margin
   text-align: center
   display: block
   &:hover
-    color: color-default
+    .article-nav-title
+      text-decoration: underline
+
   @media mq-normal
     width: 50%
     margin-top: 0
@@ -243,7 +244,7 @@
 .article-nav-caption
   text-transform: uppercase
   letter-spacing: 2px
-  color: color-border
+  color: color-title
   line-height: 1em
   font-weight: bold
   #article-nav-newer &
