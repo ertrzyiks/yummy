@@ -3,7 +3,7 @@ hexo.extend.filter.register('after_post_render', function(data) {
     return c.name
   })
 
-  if (categoryNames.indexOf('zupy') !== -1) {
+  if (categoryNames.indexOf('obiady') === -1) {
     return
   }
 
