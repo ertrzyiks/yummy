@@ -5,8 +5,7 @@ required_time: 60min
 category:
  - zupy
 tags:
- - kurczak
- - warzywa
+ - polskie
 featured_image: /content/zupy/zupa-rosol.jpg
 ---
 

@@ -6,7 +6,7 @@ category:
  - obiady
 tags:
  - włoskie
- - warzywa
+ - drożdżowe
  - ser
 featured_image: /content/obiady/pizza-a-la-artur.jpg
 ---
