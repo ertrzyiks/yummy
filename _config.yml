@@ -98,6 +98,7 @@ asset_pipeline:
     exclude:
      - '**/content/**/*'
      - 'android-chrome*'
+     - 'default-og-image.png'
      - 'apple-touch-icon*'
      - 'favicon*'
      - 'mstile*'
