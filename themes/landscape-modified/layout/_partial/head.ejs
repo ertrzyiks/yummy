@@ -35,7 +35,7 @@
       google_plus: theme.google_plus,
       fb_admins: theme.fb_admins,
       fb_app_id: theme.fb_app_id,
-      image: page.featured_image && url_for(image_version(page.featured_image, {prefix: 'big'})) || url_for('default_og_image.png')
+      image: page.featured_image && url_for(image_version(page.featured_image, {prefix: 'big'})) || url_for('/default-og-image.png')
     })
   %>
   <% if (theme.rss){ %>
