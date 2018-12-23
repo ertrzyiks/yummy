@@ -1,0 +1,5 @@
+.tag {
+  composes: tag from '../tag/tag.module.css';
+  display: inline-block;
+  margin-right: 12px;
+}
