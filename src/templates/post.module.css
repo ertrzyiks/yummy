@@ -1,0 +1,11 @@
+.post {
+  background-color: #fff;
+  border-left: 4px dotted #ddd;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
