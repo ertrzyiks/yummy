@@ -5,51 +5,26 @@ Searchable repository of recipes we frequently use and are yummy.
 
 ## Development
 
-### ImageMagick
-
-On Ubuntu
-
-```
-$ apt-get install imagemagick
-```
-
-On Mac OS X
-
-```
-$ brew install imagemagick
-```
-
-On CentOS
-
-```
-$ yum install imagemagick
-```
-
 ### NodeJS dependencies
 
 ```
 npm i
 ```
 
-If you run into issues with `mozjpeg` not building properly, please follow the solution described here:
+### Working with gatsby
 
-https://github.com/imagemin/imagemin-mozjpeg/issues/1
-
-And then run `npm rebuild mozjpeg`
-
-
-### Working with hexo
-
-Start hexo server
+Start development server
 ```
-npm start
+gatsby developer
 ```
 
-If you'd like to display not only ready posts but also drafts, run the server with an additional flag:
-```
-npm start -- --draft
-```
 
+Preview website in production mode
+
+```
+gatsby build
+gatsby server
+```
 Update website
 
 ```
