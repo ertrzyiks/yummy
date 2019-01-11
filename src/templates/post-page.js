@@ -23,7 +23,8 @@ export default function Template({data}) {
     <Layout>
       <header className={postStyles.header}>
         <img
-          src={frontmatter.featured_image.childImageSharp.resize.src}
+          src={frontmatter.featured_image.childImageSharp.big.src}
+          srcSet={`${frontmatter.featured_image.childImageSharp.small.src} 1000w, ${frontmatter.featured_image.childImageSharp.big.src} 2000w`}
           alt={'Photography of the food from the recipe.'}
           className={postStyles.coverImage}
         />
@@ -65,7 +66,10 @@ export const pageQuery = graphql`
         date(formatString: "D MMM YYYY", locale: "pl")
         featured_image {
           childImageSharp {
-            resize(width: 2000) {
+            big: resize(width: 2000) {
+              src
+            }
+            small: resize(width: 1000) {
               src
             }
           }
