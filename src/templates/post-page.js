@@ -21,24 +21,32 @@ export default function Template({data}) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-    <div className="blog-post-container">
-      <div className={pageStyles.layout}>
-        <section className={pageStyles.main}>
-          <article className={postStyles.post}>
-            <h1>{frontmatter.title}</h1>
-            <p>Dodano: {frontmatter.date}</p>
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+      <header className={postStyles.header}>
+        <img
+          src={frontmatter.featured_image.childImageSharp.resize.src}
+          alt={'Photography of the food from the recipe.'}
+          className={postStyles.coverImage}
+        />
+      </header>
 
-            <PostCardFooter post={markdownRemark}/>
-          </article>
-        </section>
+      <div className={postStyles.wrapper}>
+        <div className={pageStyles.layout}>
+          <section className={pageStyles.main}>
+            <article className={postStyles.post}>
+              <h1>{frontmatter.title}</h1>
+              <p>Dodano: {frontmatter.date}</p>
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
 
-        <Sidebar className={pageStyles.sidebar} />
+              <PostCardFooter post={markdownRemark}/>
+            </article>
+          </section>
+
+          <Sidebar className={pageStyles.sidebar} />
+        </div>
       </div>
-    </div>
     </Layout>
   )
 }
@@ -57,7 +65,7 @@ export const pageQuery = graphql`
         date(formatString: "D MMM YYYY", locale: "pl")
         featured_image {
           childImageSharp {
-            resize(width: 500) {
+            resize(width: 2000) {
               src
             }
           }
