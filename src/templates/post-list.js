@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import PostLink from '../components/post-card'
+import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
 import Sidebar from '../components/sidebar'
 import styles from './page.module.css'
 
 export default function PostListPage({data, pageContext}) {
   const Posts = data.allMarkdownRemark.edges
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => <PostCard key={edge.node.id} post={edge.node} />)
 
   return <Layout>
     <div className={styles.layout}>
@@ -37,8 +37,8 @@ fragment postForList on MarkdownRemark {
     date(formatString: "D MMM YYYY", locale: "pl")
     featured_image {
       childImageSharp {
-        resize(width: 500) {
-          src
+        fluid(maxWidth: 1000, traceSVG: { color: "#e98500" }) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

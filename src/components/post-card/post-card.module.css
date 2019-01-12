@@ -15,12 +15,15 @@
 }
 
 .cover {
+  flex: 0 0 50%;
+  height: 200px;
+}
+
+.cover_link {
   display: block;
   flex: 0 0 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .content_inner {
@@ -68,9 +71,5 @@
 @media screen and (min-width: 480px) {
   .content {
     flex-direction: row-reverse;
-  }
-
-  .cover {
-    height: auto;
   }
 }

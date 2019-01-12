@@ -5,12 +5,12 @@ import Footer from '../footer'
 
 import './layout.css'
 
-export default function Layout({children}) {
+export default function Layout({children, footerProps}) {
   return <div>
     <DefaultMeta />
 
     <Navbar />
     {children}
-    <Footer />
+    <Footer {...footerProps} />
   </div>
 }
