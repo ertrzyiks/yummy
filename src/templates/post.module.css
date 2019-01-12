@@ -13,12 +13,17 @@
 .header {
   position: sticky;
   top: 0;
+  height: 300px;
+}
+
+.page_block {
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper {
+  composes: page_block;
   background: #e0e0e0;
-  position: relative;
-  z-index: 1;
 }
 
 @supports((object-fit: cover) and (object-position: center)) {
