@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import Tag from '../stackable_tag'
 import styles from './post-card.module.css'
 
@@ -23,11 +24,12 @@ function PostCardFooter({post}) {
 }
 
 export default function PostCard({post}) {
-  const coverImage = `url("${post.frontmatter.featured_image.childImageSharp.resize.src}")`
   return <article className={styles.card}>
     <div className={styles.inner}>
       <div className={styles.content}>
-        <Link to={post.fields.slug} className={styles.cover} style={ {backgroundImage: coverImage} } aria-label='A photo of the food'></Link>
+        <Link to={post.fields.slug}  className={styles.cover_link} aria-label='A photo of the food'>
+          <Img fluid={post.frontmatter.featured_image.childImageSharp.fluid} style={ {position: 'initial'} } className={styles.cover}/>
+        </Link>
 
         <div className={styles.content_inner}>
          <PostCardHeader post={post}/>

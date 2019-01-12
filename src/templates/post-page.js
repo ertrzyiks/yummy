@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import Tag from '../components/stackable_tag'
@@ -20,11 +21,10 @@ export default function Template({data}) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <Layout footerProps={ {className: postStyles.page_block} }>
       <header className={postStyles.header}>
-        <img
-          src={frontmatter.featured_image.childImageSharp.big.src}
-          srcSet={`${frontmatter.featured_image.childImageSharp.small.src} 1000w, ${frontmatter.featured_image.childImageSharp.big.src} 2000w`}
+        <Img
+          fluid={frontmatter.featured_image.childImageSharp.fluid}
           alt={'Photography of the food from the recipe.'}
           className={postStyles.coverImage}
         />
@@ -66,11 +66,8 @@ export const pageQuery = graphql`
         date(formatString: "D MMM YYYY", locale: "pl")
         featured_image {
           childImageSharp {
-            big: resize(width: 2000) {
-              src
-            }
-            small: resize(width: 1000) {
-              src
+            fluid(maxWidth: 2000, traceSVG: { color: "#e98500" }) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
