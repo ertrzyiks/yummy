@@ -22,12 +22,12 @@ Proste i pyszne.
  - 3 łyżki oliwy
  - 2 ząbki czosnku
  - 1 łyżeczka soli gruboziarnistej
- - {% ki %}
+ - filet z kurczaka (~400g)
  - przyprawa ziołowa
  
 ## Przygotowanie
 
-{% kpo %}
+Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawach na 15 min. Po tym czasie obsmażyć na oliwie do miękkości.
 
 Ziemniaki umyć i ponacinać. Piekarnik nagrzać do 250 stopni. Do naczynia żaroodpornego wlać oliwy,
 wrzucić czosnek, położyć ziemniaki, posypać solą i polać resztą oliwy.

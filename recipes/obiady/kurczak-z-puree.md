@@ -22,14 +22,14 @@ Originalny przepis: [Purée z kalafiora - Kwestia Smaku](https://www.kwestiasmak
  - kalafior lub brokuł (ok. 1kg)
  - śmietana (30% lub 18%)
  - ryż
- - {% ki %}
+ - filet z kurczaka (~400g)
  - 2 łyżki masła
  
 ## Przygotowanie
 
 Kalafior lub brokuł pokroić i ugotować w posolonej wodzie. 
 Następnie zblendować w garnku z dodatkiem pieprzu.
-{% kpo %}
+Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawach na 15 min. Po tym czasie obsmażyć na oliwie do miękkości.
 
 ## Pyszna zielona papka
 

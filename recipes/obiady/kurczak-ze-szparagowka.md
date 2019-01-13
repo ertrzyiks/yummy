@@ -16,7 +16,7 @@ Curry z sezonowym polskim akcentem.
 
 ## Lista zakupów
 
- - {% ki %}
+ - filet z kurczaka (~400g)
  - 0.5kg żółtej fasolki szparagowej
  - 3 marchewki
  - zielona pietruszka

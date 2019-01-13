@@ -17,7 +17,7 @@ Klasyk w nowej odsłonie
 
 ## Lista zakupów
 
-- {% ki %}
+- filet z kurczaka (~400g)
 - 1 duża czerwona papryka
 - puszka czerwonej fasoli
 - puszka kukurydzy
@@ -26,7 +26,7 @@ Klasyk w nowej odsłonie
 
 ## Przygotowanie
 
-{% kpo true %}
+Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawie złocistej na 15 min. Po tym czasie obsmażyć na oliwie do miękkości.
 
 Puszki odsączyć z zalewy i wsypać do dużego garnka.
 Paprykę pokroić w nieduże paski i dodać do garnka.

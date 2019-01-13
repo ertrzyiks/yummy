@@ -23,7 +23,7 @@ Najpyszniejsza zupa rosół tylko z kulką i liściem!
  - kawałek selera
  - 1 cebula
  - ząbek czosnku
- - {% ki %}
+ - filet z kurczaka (~400g)
  - makaron krajanka
 
  ### Przyprawy
@@ -38,7 +38,7 @@ Najpyszniejsza zupa rosół tylko z kulką i liściem!
 ## Przygotowanie
 Warzywa pokroić w talarki, kapustę poszatkować na drobno. Wrzucić do garnka, dodać przyprawy.
 
-{% kpz %}
+Kurczaka umyć, pokroić i dorzucić do gotującej się zupy.
 
 Gotować ok. godzinę, dolewając wody do pożądanego limitu.
 

@@ -16,7 +16,7 @@ Nie byle jaki kurczak teriyaki.
 
 ## Lista zakupów
 
- - {% ki %}
+ - filet z kurczaka (~400g)
  - mały brokuł
  - 2 małe czerwone papryki
  - 2 małe cebule

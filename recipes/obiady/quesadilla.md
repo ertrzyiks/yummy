@@ -17,7 +17,7 @@ Jedyna taka z pomidorową salsą.
 
 ## Lista zakupów
 
-- {% ki %}
+- filet z kurczaka (~400g)
 - 1,5kg pomidorów
 - 400ml przecieru pomidorowego
 - 1 papryka czerwona
@@ -32,7 +32,7 @@ Jedyna taka z pomidorową salsą.
 
 ### Salsa
 
-{% kpo true %}
+Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawie złocistej na 15 min. Po tym czasie obsmażyć na oliwie do miękkości.
 
 Pomidory pokroić na ósemki, zalać wodą, dodać sól i wstawić do gotowania.
 Wsypać kukurydzę i fasolkę. Pokroić paprykę i cebule i dorzucić do garnka.

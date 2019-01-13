@@ -17,7 +17,7 @@ Gdy brak czasu na gotowanie.
 
 ## Lista zakupów
 
-- {% ki %}
+- filet z kurczaka (~400g)
 - 2 pomidory
 - 1 papryka czerwona
 - sałata
@@ -28,7 +28,7 @@ Gdy brak czasu na gotowanie.
 
 ## Przygotowanie
 
-{% kpz %}
+Kurczaka umyć, pokroić i dorzucić do gotującej się zupy.
 
 Na tortillę wyłożyć potarty ser i 5 ździebełek kurczaka. Podgrzać ok. 1 min w mikrofali lub na patelni.
 Posmarować łyżeczką majonezu.

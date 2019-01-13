@@ -17,7 +17,7 @@ Smak miso bez dodatku miso (bo cebula mocno).
 
 ## Lista zakupów
 
- - {% ki %}
+ - filet z kurczaka (~400g)
  - pęczek marchewki (ok. 8 sztuk)
  - duży por, najlepiej zielona część
  - cebula
