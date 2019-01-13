@@ -6,7 +6,7 @@ category:
  - ciasta
 tags:
  - drożdżowe
-featured_image: ../../content/ciasta/placek-drozdzowy-z-truskawkami.jpg
+featured_image: ./placek-drozdzowy-z-truskawkami.jpg
 ---
 
 Rośnie jak na drożdżach.

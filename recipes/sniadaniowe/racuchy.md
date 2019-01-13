@@ -6,7 +6,7 @@ category:
  - śniadaniowe
 tags:
  - mączne
-featured_image: ../../content/sniadaniowe/racuchy.jpg
+featured_image: ./racuchy.jpg
 ---
 
 Najlepsze z kwaśnym jabłkiem i powidłami śliwkowymi.

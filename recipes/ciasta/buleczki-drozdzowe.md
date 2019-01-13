@@ -6,7 +6,7 @@ category:
  - ciasta
 tags:
  - drożdżowe
-featured_image: ../../content/ciasta/buleczki-drozdzowe.jpg
+featured_image: ./buleczki-drozdzowe.jpg
 ---
 
 Puszyste i okrągłe, jeśli dobrze zwiniesz.

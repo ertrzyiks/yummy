@@ -8,7 +8,7 @@ tags:
  - włoskie
  - drożdżowe
  - ser
-featured_image: ../../content/obiady/pizza-a-la-artur.jpg
+featured_image: ./pizza-a-la-artur.jpg
 ---
 
 Epizzkie danie.

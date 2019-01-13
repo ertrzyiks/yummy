@@ -9,7 +9,7 @@ tags:
  - pomidory
  - mączne
  - wegetariańskie
-featured_image: ../../content/obiady/penne_z_fasola.jpg
+featured_image: ./penne_z_fasola.jpg
 ---
 
 Pomidorowe i pożywne.

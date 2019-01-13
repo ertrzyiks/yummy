@@ -8,7 +8,7 @@ tags:
  - kurczak
  - kuchnia japońska
  - makaron
-featured_image: ../../content/obiady/miso.jpg
+featured_image: ./miso.jpg
 ---
 
 Smak miso bez dodatku miso (bo cebula mocno).

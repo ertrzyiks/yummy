@@ -9,7 +9,7 @@ tags:
  - pomidory
  - wegetariańskie
  - włoskie
-featured_image: ../../content/obiady/spaghetti-pomidorowe.jpg
+featured_image: ./spaghetti-pomidorowe.jpg
 ---
 
 Smak dojrzewających w południowym słońcu pomidorów.

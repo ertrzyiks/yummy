@@ -7,7 +7,7 @@ category:
 tags:
  - drożdżowe
  - kurczak
-featured_image: ../../content/obiady/pierogi-z-pieca.jpg
+featured_image: ./pierogi-z-pieca.jpg
 ---
 
 Porcja na około 20 pierogów.

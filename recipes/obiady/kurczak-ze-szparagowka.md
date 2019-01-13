@@ -7,7 +7,7 @@ category:
 tags:
  - kurczak
  - indyjskie
-featured_image: ../../content/obiady/fasolka-szparagowa-curry.jpg
+featured_image: ./fasolka-szparagowa-curry.jpg
 ---
 
 Curry z sezonowym polskim akcentem.

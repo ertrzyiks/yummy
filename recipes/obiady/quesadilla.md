@@ -8,7 +8,7 @@ tags:
  - kurczak
  - tortilla
  - meksykańskie
-featured_image: ../../content/obiady/quesadilla.jpg
+featured_image: ./quesadilla.jpg
 ---
 
 Jedyna taka z pomidorową salsą.

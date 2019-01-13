@@ -7,7 +7,7 @@ category:
 tags:
  - płatki
  - maliny
-featured_image: ../../content/sniadaniowe/owsianka-malinowa.jpg
+featured_image: ./owsianka-malinowa.jpg
 ---
 
 Zdrowe malinowe rafaello.

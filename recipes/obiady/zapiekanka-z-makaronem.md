@@ -7,7 +7,7 @@ category:
 tags:
  - makaron
  - kurczak
-featured_image: ../../content/obiady/zapiekanka.jpg
+featured_image: ./zapiekanka.jpg
 ---
 
 Może i robi się długo, ale warto!

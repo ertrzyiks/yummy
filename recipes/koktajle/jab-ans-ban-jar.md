@@ -11,7 +11,7 @@ tags:
  - ananas
  - banan
  - jarmuż
-featured_image: ../../content/koktajle/jab-ans-ban-jar.jpg
+featured_image: ./jab-ans-ban-jar.jpg
 ---
 
 Wieczorne orzeźwienie

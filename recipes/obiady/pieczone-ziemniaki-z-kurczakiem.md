@@ -7,7 +7,7 @@ category:
 tags:
  - ziemniaki
  - kurczak
-featured_image: ../../content/obiady/pieczone-ziemniaki.jpg
+featured_image: ./pieczone-ziemniaki.jpg
 ---
 
 Originalny przepis: [Ziemniaki Hasselback - Kwestia Smaku](https://www.kwestiasmaku.com/przepis/ziemniaki-hasselback)

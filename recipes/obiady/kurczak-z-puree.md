@@ -8,7 +8,7 @@ tags:
  - kalafior
  - brokuł
  - kurczak
-featured_image: ../../content/obiady/puree.jpg
+featured_image: ./puree.jpg
 ---
 
 Szybki, pyszny obiad.

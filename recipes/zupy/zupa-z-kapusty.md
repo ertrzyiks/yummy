@@ -7,7 +7,7 @@ category:
 tags:
  - kapusta
  - ziemniaki
-featured_image: ../../content/zupy/zupa-z-kapusty.jpg
+featured_image: ./zupa-z-kapusty.jpg
 ---
 
 Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabniamy).

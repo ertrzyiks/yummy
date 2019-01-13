@@ -9,7 +9,7 @@ tags:
  - pomidory
  - mączne
  - wegetariańskie
-featured_image: ../../content/obiady/kopytka.jpg
+featured_image: ./kopytka.jpg
 ---
 
 Smak dzieciństwa.

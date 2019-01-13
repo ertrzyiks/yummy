@@ -7,7 +7,7 @@ category:
 tags:
  - kwaśne
  - limonki
-featured_image: ../../content/koktajle/lemoniada.jpg
+featured_image: ./lemoniada.jpg
 ---
 
 Pysznie gasi pragnienie.

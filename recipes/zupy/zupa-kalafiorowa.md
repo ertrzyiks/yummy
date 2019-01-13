@@ -7,7 +7,7 @@ category:
 tags:
  - kalafior
  - ziemniaki
-featured_image: ../../content/zupy/zupa-kalafiorowa.jpg
+featured_image: ./zupa-kalafiorowa.jpg
 ---
 
 Jak grochówka z kalafiora bez laktozy

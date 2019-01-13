@@ -7,7 +7,7 @@ category:
 tags:
  - cukinia
  - włoskie
-featured_image: ../../content/obiady/makaron-z-cukinia.jpg
+featured_image: ./makaron-z-cukinia.jpg
 ---
 
 Bez kurczaka, a dobre.

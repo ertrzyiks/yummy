@@ -7,7 +7,7 @@ category:
 tags:
  - pomidory
  - wegetariańskie
-featured_image: ../../content/zupy/klasyczna-zupa-pomidorowa.jpg
+featured_image: ./klasyczna-zupa-pomidorowa.jpg
 ---
 
 Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie

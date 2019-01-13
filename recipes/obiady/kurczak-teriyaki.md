@@ -7,7 +7,7 @@ category:
 tags:
  - japońskie
  - kurczak
-featured_image: ../../content/obiady/kurczak-teriyaki.jpg
+featured_image: ./kurczak-teriyaki.jpg
 ---
 
 Nie byle jaki kurczak teriyaki.

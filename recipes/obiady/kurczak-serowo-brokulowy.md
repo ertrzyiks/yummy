@@ -8,7 +8,7 @@ tags:
  - ser
  - brokuł
  - kurczak
-featured_image: ../../content/obiady/kurczak-serowo-brokulowy.jpg
+featured_image: ./kurczak-serowo-brokulowy.jpg
 ---
 
 To jaki w końcu ten sos - śmietanowy czy serowy?

@@ -8,7 +8,7 @@ tags:
  - kurczak
  - tortilla
  - meksykańskie
-featured_image: ../../content/obiady/tortilla.jpg
+featured_image: ./tortilla.jpg
 ---
 
 Gdy brak czasu na gotowanie.

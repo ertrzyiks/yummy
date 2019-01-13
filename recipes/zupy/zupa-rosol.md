@@ -6,7 +6,7 @@ category:
  - zupy
 tags:
  - polskie
-featured_image: ../../content/zupy/zupa-rosol.jpg
+featured_image: ./zupa-rosol.jpg
 ---
 
 Najpyszniejsza zupa rosół tylko z kulką i liściem!

@@ -8,7 +8,7 @@ tags:
  - pomidory
  - jajka
  - wegetariańskie
-featured_image: ../../content/zupy/zupa-pomidorowa-alentejo.jpg
+featured_image: ./zupa-pomidorowa-alentejo.jpg
 ---
 
 Prawdziwie portugalska zupa pomidorowa rodem z Bergen przygotowana w Polsce.

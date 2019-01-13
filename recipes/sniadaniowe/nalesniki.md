@@ -6,7 +6,7 @@ category:
  - śniadaniowe
 tags:
  - mączne
-featured_image: ../../content/sniadaniowe/nalesniki.jpg
+featured_image: ./nalesniki.jpg
 ---
 
 Odrobina puszystej słodyczy.
