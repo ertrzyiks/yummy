@@ -37,7 +37,7 @@ fragment postForList on MarkdownRemark {
     date(formatString: "D MMM YYYY", locale: "pl")
     featured_image {
       childImageSharp {
-        fluid(maxWidth: 1000, traceSVG: { color: "#e98500" }) {
+        fluid(maxWidth: 1000, traceSVG: { color: "#ec973b" }) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
