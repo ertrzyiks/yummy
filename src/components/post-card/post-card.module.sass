@@ -1,0 +1,63 @@
+.card
+  margin: 50px 0
+
+.inner
+  background: #fff
+  border-radius: 3px
+  border-left: 4px dotted #ddd
+  box-shadow: 1px 2px 3px #ddd
+
+.content
+  display: flex
+  flex-direction: column
+
+.cover
+  flex: 0 0 50%
+  height: 120px
+
+.cover_link
+  display: block
+  flex: 0 0 50%
+  position: relative
+  overflow: hidden
+
+.content_inner
+  flex-grow: 1
+  border-bottom: 1px solid #ddd
+
+.content_header
+  margin: 20px 20px 0
+
+.content_header h2
+  margin: 0
+
+.content_title
+  color: #555
+  text-decoration: none
+
+.content_date
+  color: #444
+
+.content_summary
+  margin: 20px 0
+  padding: 0 20px
+
+.show_more
+  background: #7c7287
+  color: #fff
+  display: inline-block
+  padding: 6px 15px
+  border-radius: 15px
+  text-decoration: none
+  line-height: 1em
+  font-size: 16px
+
+.footer
+  padding: 15px 20px
+
+@media screen and (min-width: 480px)
+  .content
+    flex-direction: row-reverse
+
+  .cover
+    height: 200px

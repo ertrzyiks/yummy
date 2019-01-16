@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './paginator.module.css'
+import styles from './paginator.module.sass'
 
 export default function Paginator ({currentPage, totalPages}) {
   const nextPagePath = `/page/${currentPage + 1}`
