@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
 import Sidebar from '../components/sidebar'
-import styles from './page.module.css'
+import styles from './page.module.sass'
 
 export default function PostListPage({data, pageContext}) {
   const Posts = data.allMarkdownRemark.edges

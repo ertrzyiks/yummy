@@ -4,8 +4,8 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import Sidebar from '../components/sidebar'
 import Tag from '../components/stackable_tag'
-import pageStyles from './page.module.css'
-import postStyles from './post.module.css'
+import pageStyles from './page.module.sass'
+import postStyles from './post.module.sass'
 
 function PostCardFooter({post}) {
   const Tags = post.frontmatter.tags.map(tag => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
 import Logo from '../logo'
-import styles from './navbar.module.css'
+import styles from './navbar.module.sass'
 
 function titleize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Tag from '../stackable_tag'
-import styles from './post-card.module.css'
+import styles from './post-card.module.sass'
 
 function PostCardHeader({post}) {
   return <header className={styles.content_header}>
