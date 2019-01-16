@@ -7,7 +7,7 @@ category:
 tags:
  - orzechowe
  - wielkanoc
-featured_image: ../..//content/ciasta/mazurek-orzechowy.jpg
+featured_image: ./mazurek-orzechowy.jpg
 ---
 
 Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.

@@ -6,7 +6,7 @@ category:
  - ciasta
 tags:
  - jabłecznik
-featured_image: ../..//content/ciasta/szarlotka.jpg
+featured_image: ./szarlotka.jpg
 ---
 
 Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!
