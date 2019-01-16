@@ -16,7 +16,7 @@
 
 .cover {
   flex: 0 0 50%;
-  height: 200px;
+  height: 120px;
 }
 
 .cover_link {
@@ -71,5 +71,9 @@
 @media screen and (min-width: 480px) {
   .content {
     flex-direction: row-reverse;
+  }
+
+  .cover {
+    height: 200px;
   }
 }
