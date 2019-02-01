@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
 import Sidebar from '../components/sidebar'
+import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListPage({data, pageContext}) {
@@ -14,6 +15,8 @@ export default function PostListPage({data, pageContext}) {
   return <Layout>
     <div className={styles.layout}>
       <section className={styles.main}>
+        <SearchBar className={styles.main_searchbar}/>
+
         {Posts}
         <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages}/>
       </section>
