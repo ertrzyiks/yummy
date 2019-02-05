@@ -5,13 +5,14 @@
   margin: 0 auto
   padding: 0 20px
 
-@media screen and (min-width: 768px)
-  .layout
+  @media screen and (min-width: 768px)
     flex-direction: row
 
 .main
   flex: 0 0 75%
-  padding: 0 12px
+
+  @media screen and (min-width: 768px)
+    padding: 0 12px
 
 .sidebar
   flex: 0 0 25%
