@@ -1,4 +1,5 @@
 const crypto = require('crypto')
+const fs = require('fs')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { createTagPages } = require('./gatsby-node/tags')
 const { createCategoryPages } = require('./gatsby-node/categories')
@@ -50,8 +51,41 @@ exports.sourceNodes = async ({ actions }) => {
   createCategory({ createNode, name: 'koktajle', slug: 'koktajle'})
 }
 
+const createSearchDataJson = ({ graphql }) => {
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+
+    const pages = result.data.allMarkdownRemark.edges.map(({node}) => {
+      return {
+        path: node.fields.slug,
+        title: node.frontmatter.title
+      }
+    })
+
+    fs.writeFileSync('./data.json', JSON.stringify({ pages }))
+  })
+}
+
 exports.createPages = ({ actions, graphql }) => {
   return Promise.resolve()
+    .then(() => createSearchDataJson({ graphql }))
     .then(() => createIndexPage({ actions, graphql }))
     .then(() => createPostPages({ actions, graphql }))
     .then(() => createTagPages({ actions, graphql }))
