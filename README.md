@@ -15,7 +15,7 @@ npm i
 
 Start development server
 ```
-gatsby developer
+gatsby develop
 ```
 
 
