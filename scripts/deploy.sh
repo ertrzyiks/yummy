@@ -5,6 +5,7 @@ npm run build
 mkdir .git-deploy
 cp -r public/* ./.git-deploy
 touch ./.git-deploy/.static
+cp ./app-nginx.conf.sigil ./.git-deploy
 cd .git-deploy
 git init
 git remote add dokku dokku@ertrzyiks.me:yummy
