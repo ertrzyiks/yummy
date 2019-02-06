@@ -1,0 +1,39 @@
+worker_processes 1;
+error_log stderr;
+pid nginx.pid;
+daemon off;
+
+events {
+  worker_connections 768;
+}
+
+http {
+  types_hash_max_size 2048;
+  include mime.types;
+
+  server {
+    listen {{ $.PORT }};
+    error_page 404 /404.html;
+    server_name  _;
+    port_in_redirect off;
+
+    {{ if ne $.NGINX_ROOT "" }}
+      root /app/www/{{ $.NGINX_ROOT }};
+    {{ else }}
+      root /app/www;
+    {{ end }}
+    index index.html;
+
+    location / {
+      try_files $uri $uri/ =404;
+    }
+
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+        expires max;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # opt-in to the future
+    add_header "X-UA-Compatible" "IE=Edge,chrome=1";
+  }
+}
