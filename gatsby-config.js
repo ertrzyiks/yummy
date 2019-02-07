@@ -99,6 +99,6 @@ module.exports = {
         icon: "src/components/layout/assets/android-chrome-192x192.png",
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 }

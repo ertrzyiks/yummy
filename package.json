@@ -10,6 +10,8 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "emotion": "^10.0.7",
+    "emotion-server": "^10.0.7",
     "fuse.js": "^3.3.0",
     "gatsby": "^2.0.33",
     "gatsby-image": "^2.0.25",
