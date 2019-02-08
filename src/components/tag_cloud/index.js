@@ -17,7 +17,13 @@ export default function TagCloud() {
     `}
      render={data => (
        data.allMarkdownRemark.group
-         .sort((groupA, groupB) => groupB.totalCount - groupA.totalCount)
+         .sort((groupA, groupB) => {
+           if (groupB.totalCount == groupA.totalCount) {
+             return groupA.fieldValue.localeCompare(groupB.fieldValue)
+           }
+
+           return groupB.totalCount - groupA.totalCount
+         })
          .map(({fieldValue}) => (
           <Tag name={fieldValue} key={fieldValue} />
        ))

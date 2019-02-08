@@ -24,6 +24,8 @@ function PostCardFooter({post}) {
 }
 
 export default function PostCard({post}) {
+  console.log(post.frontmatter.title, typeof post.frontmatter.featured_image)
+
   return <article className={styles.card}>
     <div className={styles.inner}>
       <div className={styles.content}>
