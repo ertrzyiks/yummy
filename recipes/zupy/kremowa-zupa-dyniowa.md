@@ -6,7 +6,7 @@ category:
  - obiady
 tags:
  - dynia
-featured_image: ./zupa-dyniowa.jpg
+featured_image: ./dynie.jpg
 ---
 
 Tak jak curry, a jednak inaczej.

@@ -8,7 +8,7 @@ tags:
  - curry
  - dynia
  - kurczak
-featured_image: ./dyniowe-curry.jpg
+featured_image: ./dynie.jpg
 ---
 
 Tak jak zupa, a jednak inaczej.
