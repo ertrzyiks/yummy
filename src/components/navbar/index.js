@@ -25,7 +25,7 @@ export default function Navbar() {
     `}
      render={data => (
        data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
-         <Link to={`/${slug}/`} key={slug} className={styles.navbar_text_link}>{titleize(name)}</Link>
+         <Link to={`/${slug}`} key={slug} className={styles.navbar_text_link}>{titleize(name)}</Link>
        ))
      )} />
   </nav>
