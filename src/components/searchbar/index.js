@@ -15,7 +15,7 @@ const DropdownIndicator = (props) => {
   );
 };
 
-export default class SearchBar extends React.Component {
+export default class Searchbar extends React.Component {
   state = {
     stateClass: null,
     selectedOption: null

@@ -1,10 +1,32 @@
 .footer
-  background: #ec973b
+  background: #e98500
   border-top: 1px solid #ddd
   color: #333
+  margin-top: 120px
   padding: 50px 0
+  position: relative
 
 .inner
   max-width: 1220px
   margin: 0 auto
   padding: 0 20px
+
+
+@supports (border-left: 100vw solid transparent)
+  $triangle-height: 50px
+  $triangle-height-desktop: 130px
+
+  .footer::before
+    content: ""
+    height: 0
+    display: block
+    width: 0
+    pointer-events: none
+    position: absolute
+    border-bottom: $triangle-height solid #e98500
+    border-right: 100vw solid transparent
+    top: -$triangle-height
+
+    @media screen and (min-width: 768px)
+      border-bottom-width: $triangle-height-desktop
+      top: -$triangle-height-desktop

@@ -42,7 +42,7 @@ function createTagPage({ tag, actions, graphql }) {
     }
 
     const posts = result.data.allRecipe.edges
-    const postsPerPage = 10
+    const postsPerPage = 9
     const totalPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: totalPages }).forEach((_, i) => {
