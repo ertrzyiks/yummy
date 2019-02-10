@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
-import Logo from '../logo'
 import styles from './navbar.module.sass'
 
 function titleize(string) {
@@ -9,8 +8,6 @@ function titleize(string) {
 
 export default function Navbar() {
   return <nav className={styles.navbar}>
-    <Link to='/' className={styles.navbar_logo_link}><Logo className={styles.navbar_logo}/></Link>
-
     <StaticQuery query={graphql`
       query LoadCategories {
         allRecipeCategory {
@@ -25,7 +22,7 @@ export default function Navbar() {
     `}
      render={data => (
        data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
-         <Link to={`/${slug}`} key={slug} className={styles.navbar_text_link}>{titleize(name)}</Link>
+         <Link to={`/${slug}`} key={slug} className={styles.navbar_link}>{titleize(name)}</Link>
        ))
      )} />
   </nav>

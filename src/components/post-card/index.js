@@ -1,51 +1,33 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import Tag from '../stackable_tag'
+import TimeToPrepare from '../time_to_prepare'
 import styles from './post-card.module.sass'
+import ChevronRight from '../chevron-right'
 
-function PostCardHeader({post}) {
-  return <header className={styles.content_header}>
-    <h2>
-      <Link to={post.slug} className={styles.content_title}>{post.name}</Link>
-    </h2>
-    <span className={styles.content_date}>Dodano: {post.published_at}</span>
-  </header>
-}
-
-function PostCardFooter({post}) {
-  const Tags = (post.tags || []).map(tag => {
-    return <Tag name={tag} key={tag} />
-  })
-
-  return <footer className={styles.footer}>
-    {Tags}
-  </footer>
-}
-
-export default function PostCard({post}) {
-  return <article className={styles.card}>
-    <div className={styles.inner}>
-      <div className={styles.content}>
-        <Link to={post.slug}  className={styles.cover_link} aria-label='A photo of the food'>
-          <Img fluid={post.featured_image.childImageSharp.fluid} style={ {position: 'initial'} } className={styles.cover}/>
-        </Link>
-
-        <div className={styles.content_inner}>
-         <PostCardHeader post={post}/>
-
-          <div className={styles.content_summary}>
-            <p dangerouslySetInnerHTML={ {__html: post.headline.childMarkdownRemark.html} } />
-            <p>
-              <Link to={post.slug} className={styles.show_more}>
-                Pokaż przepis
-              </Link>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <PostCardFooter post={post}/>
+export default function PostCard({post, className}) {
+  return <Link to={post.slug} className={[styles.card, className].join(' ')}>
+    <div className={styles.cover_link}>
+      <Img fluid={post.featured_image.childImageSharp.fluid} className={styles.cover}/>
     </div>
-  </article>
+
+    <div className={styles.content_header}>
+      <span className={styles.content_category}>{post.category}</span>
+      <h2 className={styles.content_title}>
+        {post.name}
+      </h2>
+      <div className={styles.content_summary} dangerouslySetInnerHTML={ {__html: post.headline.childMarkdownRemark.html} }></div>
+    </div>
+
+    <hr className={styles.separator} />
+
+    <div className={styles.attributes}>
+      <TimeToPrepare>{post.required_time}</TimeToPrepare>
+    </div>
+
+    <span className={styles.show_more}>
+      Pokaż przepis
+      <ChevronRight className={styles.show_more_icon}/>
+    </span>
+  </Link>
 }

@@ -1,0 +1,86 @@
+.header
+  background-color: #e98500
+  position: relative
+
+.navbar
+  display: flex
+  justify-content: flex-end
+
+.searchbar
+  max-width: 500px
+  margin: 0 auto
+  padding-bottom: 32px
+
+.logo
+  max-height: 140px
+  opacity: 0.8
+  margin-top: 12px
+  margin-bottom: 22px
+
+
+@function clip-stairs($step-height, $step-width, $starting-x, $steps)
+  $x: $starting-x
+  $y: 0px
+
+  $vertices: ($x $y)
+
+  @for $i from 0 to $steps
+    $y: $y + $step-height
+    $vertices: $vertices, $x $y
+
+    $x: $x + $step-width
+    $vertices: $vertices, $x $y
+  $vertices: $vertices, 100% $y
+  $vertices: $vertices, 100% 0
+  @return $vertices
+
+@supports (clip-path: polygon(0% 0%, 100% 100%))
+  .header::after
+    $step-height: 26px
+    $step-width: 26px * 4
+    $starting-x: 0
+
+    $steps: 7
+
+    background-image: radial-gradient(currentColor 20%, transparent 0), radial-gradient(currentColor 20%, transparent 0)
+    background-size: 26px 26px
+    background-position: left top
+    background-repeat: repeat
+    pointer-events: none
+    color: rgba(255, 255, 255, 0.2)
+    clip-path: polygon(clip-stairs($step-height, $step-width, $starting-x, $steps))
+    content: ""
+    display: block
+    height: $step-height * $steps
+    position: absolute
+    width: 100%
+    top: 0
+
+    @media screen and (min-width: 768px)
+      $step-height: 32px
+      $step-width: 32px * 8
+      $starting-x: 32px * 5
+      $steps: 8
+      clip-path: polygon(clip-stairs($step-height, $step-width, $starting-x, $steps))
+      background-size: 32px 32px
+      height: $step-height * $steps
+
+
+@supports (border-left: 100vw solid transparent)
+  $triangle-height: 50px
+  $triangle-height-desktop: 130px
+
+  .header::before
+    content: ""
+    height: 0
+    display: block
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-top: $triangle-height solid #e98500
+    border-left: 100vw solid transparent
+    bottom: -$triangle-height
+
+    @media screen and (min-width: 768px)
+      border-top-width: $triangle-height-desktop
+      bottom: -$triangle-height-desktop
