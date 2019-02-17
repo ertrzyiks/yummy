@@ -26,8 +26,8 @@ function createTagPage({ tag, actions, graphql }) {
 
   return graphql(`
     query ($tag: String!) {
-      allMarkdownRemark(
-        filter: { frontmatter: { tags: { in: [$tag] } } }
+      allRecipe(
+        filter: { tags: { in: [$tag] } }
       ) {
         edges {
           node {
@@ -41,7 +41,7 @@ function createTagPage({ tag, actions, graphql }) {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allRecipe.edges
     const postsPerPage = 10
     const totalPages = Math.ceil(posts.length / postsPerPage)
 

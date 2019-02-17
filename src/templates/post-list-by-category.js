@@ -10,7 +10,7 @@ import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListByCategoryPage({data, pageContext}) {
-  const Posts = data.allMarkdownRemark.edges
+  const Posts = data.allRecipe.edges
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return <Layout>
@@ -33,9 +33,9 @@ export default function PostListByCategoryPage({data, pageContext}) {
 
 export const pageQuery = graphql`
   query blogListByCategoryQuery($category: String!, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark (
-      filter: { frontmatter: { category: { in: [$category] } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
+    allRecipe (
+      filter: { category: { in: [$category] } }
+      sort: { order: DESC, fields: [published_at] }
       limit: $limit
       skip: $skip
     ) {

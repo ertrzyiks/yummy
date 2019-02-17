@@ -32,8 +32,8 @@ function createCategoryPage({ category, slug, actions, graphql }) {
 
   return graphql(`
     query ($category: String!) {
-      allMarkdownRemark(
-        filter: { frontmatter: { category: { in: [$category] } } }
+      allRecipe(
+        filter: { category: { in: [$category] } }
       ) {
         edges {
           node {
@@ -47,7 +47,7 @@ function createCategoryPage({ category, slug, actions, graphql }) {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allRecipe.edges
     const postsPerPage = 10
     const totalPages = Math.ceil(posts.length / postsPerPage)
 
