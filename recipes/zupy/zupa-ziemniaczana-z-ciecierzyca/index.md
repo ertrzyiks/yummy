@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Najlepsza na drugi dzień.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -29,6 +29,8 @@ Najlepsza na drugi dzień.
 - 2-3 łyżki masła
 - 2 liście laurowe, 4 kulki ziela angielskiego
 - sól, pieprz, papryka ostra, majeranek, natka pietruszki
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

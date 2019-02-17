@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabniamy).
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -32,7 +32,9 @@ Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabnia
  - 2 liście laurowe
  - lubczyk
  - 2 łyżki sosu sojowego
- 
+
+<!---- splitter ---->
+
 ## Przygotowanie
 
 Warzywa obrać (chyba że są pomidorem i nie masz czasu/ochoty albo bolą nogi) i pokroić powiedzmy 

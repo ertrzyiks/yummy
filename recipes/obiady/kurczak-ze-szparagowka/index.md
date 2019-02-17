@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Curry z sezonowym polskim akcentem.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -31,6 +31,8 @@ Curry z sezonowym polskim akcentem.
  - 1 łyżeczka papryki słodkiej
  - 1 łyżeczka papryki ostrej
  - szczypta cynamonu
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

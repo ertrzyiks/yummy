@@ -8,7 +8,7 @@ import pageStyles from './page.module.sass'
 import postStyles from './post.module.sass'
 
 function PostCardFooter({post}) {
-  const Tags = post.frontmatter.tags.map(tag => {
+  const Tags = (post.tags || []).map(tag => {
     return <Tag name={tag} key={tag} />
   })
 
@@ -18,13 +18,16 @@ function PostCardFooter({post}) {
 }
 
 export default function Template({data}) {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { recipe } = data
+  const html = recipe.headline.childMarkdownRemark.html +
+               recipe.ingredients.childMarkdownRemark.html +
+               recipe.directions.childMarkdownRemark.html
+
   return (
     <Layout footerProps={ {className: postStyles.page_block} }>
       <header className={postStyles.header}>
         <Img
-          fluid={frontmatter.featured_image.childImageSharp.fluid}
+          fluid={recipe.featured_image.childImageSharp.fluid}
           alt={'Photography of the food from the recipe.'}
           className={postStyles.coverImage}
         />
@@ -34,14 +37,14 @@ export default function Template({data}) {
         <div className={pageStyles.layout}>
           <section className={pageStyles.main}>
             <article className={postStyles.post}>
-              <h1>{frontmatter.title}</h1>
-              <p>Dodano: {frontmatter.date}</p>
+              <h1>{recipe.name}</h1>
+              <p>Dodano: {recipe.published_at}</p>
               <div
                 className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
+                dangerouslySetInnerHTML={{ __html: html}}
               />
 
-              <PostCardFooter post={markdownRemark}/>
+              <PostCardFooter post={recipe}/>
             </article>
           </section>
 
@@ -54,21 +57,31 @@ export default function Template({data}) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
+    recipe(slug: { eq: $slug }) {
+      headline {
+        childMarkdownRemark {
+          html
+        }
       }
-      frontmatter {
-        title
-        tags
-        category
-        date(formatString: "D MMM YYYY", locale: "pl")
-        featured_image {
-          childImageSharp {
-            fluid(maxWidth: 2000, traceSVG: { color: "#e98500" }) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+      directions {
+        childMarkdownRemark {
+          html
+        }
+      }
+      ingredients {
+        childMarkdownRemark {
+          html
+        }
+      }
+      slug
+      name
+      tags
+      category
+      published_at(formatString: "D MMM YYYY", locale: "pl")
+      featured_image {
+        childImageSharp {
+          fluid(maxWidth: 2000, traceSVG: { color: "#e98500" }) {
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }

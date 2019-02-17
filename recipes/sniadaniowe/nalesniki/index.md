@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Odrobina puszystej słodyczy.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -25,6 +25,8 @@ Odrobina puszystej słodyczy.
 - biały ser w kawałku
 - śmietana 18%
 - cukier biały i wanilinowy do smaku
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

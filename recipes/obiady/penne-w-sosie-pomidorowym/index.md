@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Pomidorowe i pożywne.
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -25,6 +25,8 @@ Pomidorowe i pożywne.
  - 2 ząbki czosnku
  - 2 kulki sera mozarella
  - bazylia i oregano
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

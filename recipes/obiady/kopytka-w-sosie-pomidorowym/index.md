@@ -14,7 +14,7 @@ featured_image: ./cover.jpg
 
 Smak dzieciństwa.
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -33,6 +33,7 @@ Smak dzieciństwa.
  - 100g koncentratu pomidorowego
  - bazylia i oregano
 
+<!---- splitter ---->
 
 ## Przygotowanie
 

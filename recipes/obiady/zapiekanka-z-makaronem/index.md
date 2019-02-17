@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Może i robi się długo, ale warto!
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -23,6 +23,8 @@ Może i robi się długo, ale warto!
 - 1 cebula
 - 2 kulki mozarelli
 - sól, pieprz, papryka ostra, oregano
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

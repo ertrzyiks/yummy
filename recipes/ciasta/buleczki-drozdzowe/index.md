@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Puszyste i okrągłe, jeśli dobrze zwiniesz.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -30,6 +30,7 @@ Puszyste i okrągłe, jeśli dobrze zwiniesz.
  - marmolada
  - winogrono, banan lub inny owoc
 
+<!---- splitter ---->
 
 ## Przygotowanie
 

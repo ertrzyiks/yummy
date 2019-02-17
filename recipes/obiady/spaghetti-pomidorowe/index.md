@@ -14,7 +14,7 @@ featured_image: ./cover.jpg
 
 Smak dojrzewających w południowym słońcu pomidorów.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -27,6 +27,8 @@ Smak dojrzewających w południowym słońcu pomidorów.
  - natka pietruszki, bazylia, oregano
  - łyżka masła, 2 łyżki oliwy
  - makaron spaghetti
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

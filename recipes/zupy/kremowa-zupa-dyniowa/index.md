@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Tak jak curry, a jednak inaczej.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -24,6 +24,8 @@ Tak jak curry, a jednak inaczej.
 - 37,5g masła
 - 1 łyżeczka kurkumy
 - sól, pieprz
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

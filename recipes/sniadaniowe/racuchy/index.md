@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Najlepsze z kwaśnym jabłkiem i powidłami śliwkowymi.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -21,6 +21,8 @@ Najlepsze z kwaśnym jabłkiem i powidłami śliwkowymi.
  - szklanka mąki
  - łyżeczka cukru wanilinowego
  - 1/2 łyżeczki sody oczyszczonej
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

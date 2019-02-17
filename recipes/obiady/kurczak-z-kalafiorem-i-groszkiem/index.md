@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Smakuje inaczej niż reszta.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -25,6 +25,8 @@ Smakuje inaczej niż reszta.
 - 2 łyżki masła
 - sól, pieprz, papryka, natka pietruszki
 - kasza jęczmienna
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

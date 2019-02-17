@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Pysznie gasi pragnienie.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -21,5 +21,9 @@ Pysznie gasi pragnienie.
 - kilka listków świeżej mięty
 - 1l wody
 - plasterki owoców do ozdoby
+
+<!---- splitter ---->
+
+## Przygotowanie
 
 Lemoniadę można dowolnie rozwadniać do uzyskania akceptowalnej kwasoty.

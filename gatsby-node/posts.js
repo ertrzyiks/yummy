@@ -6,17 +6,12 @@ function createPostPages({ actions, graphql }) {
 
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+      allRecipe(
+        sort: { order: DESC, fields: [published_at] }
       ) {
         edges {
           node {
-            fields {
-              slug
-            }
-            frontmatter {
-              date
-            }
+            slug
           }
         }
       }
@@ -26,14 +21,14 @@ function createPostPages({ actions, graphql }) {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allRecipe.edges
 
     posts.forEach(({ node }) => {
       createPage({
-        path: node.fields.slug,
+        path: node.slug,
         component: blogPostTemplate,
         context: {
-          slug: node.fields.slug
+          slug: node.slug
         }
       })
     })

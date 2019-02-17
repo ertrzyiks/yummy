@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -26,6 +26,8 @@ Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!
 ### Owoce
 - 1.5kg jabłek, najlepiej kwaśnych
 - opcjonalnie cynamon
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

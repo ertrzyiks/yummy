@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 To jaki w końcu ten sos - śmietanowy czy serowy?
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -23,6 +23,8 @@ To jaki w końcu ten sos - śmietanowy czy serowy?
  - mała śmietana (18%)
  - 400g sera mozarella
  - makaron kokardki
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

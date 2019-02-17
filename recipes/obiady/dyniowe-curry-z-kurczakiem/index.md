@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Tak jak zupa, a jednak inaczej.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -28,6 +28,8 @@ Tak jak zupa, a jednak inaczej.
 - śmietana 18% 160 ml
 - sól, pieprz
 - ryż
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

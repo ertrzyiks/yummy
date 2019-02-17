@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Porcja na około 20 pierogów.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -31,6 +31,8 @@ Porcja na około 20 pierogów.
  - 40g masła
  - szklanka mleka
  - 1 jajko (+ drugie do posmarowania)
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

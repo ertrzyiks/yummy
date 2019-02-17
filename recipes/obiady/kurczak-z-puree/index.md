@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Szybki, pyszny obiad.
 
-<!-- more -->
+<!---- splitter ---->
 
 Originalny przepis: [Purée z kalafiora - Kwestia Smaku](https://www.kwestiasmaku.com/zielony_srodek/kalafior/puree_z_kalafiora/przepis.html)
 
@@ -24,7 +24,9 @@ Originalny przepis: [Purée z kalafiora - Kwestia Smaku](https://www.kwestiasmak
  - ryż
  - filet z kurczaka (~400g)
  - 2 łyżki masła
- 
+
+<!---- splitter ---->
+
 ## Przygotowanie
 
 Kalafior lub brokuł pokroić i ugotować w posolonej wodzie. 

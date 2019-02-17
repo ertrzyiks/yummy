@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Jak grochówka z kalafiora bez laktozy
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -31,6 +31,8 @@ Jak grochówka z kalafiora bez laktozy
 - 2 liście laurowe
 - 2 łyżki sosu sojowego
 - sól, pieprz
+
+<!---- splitter ---->
 
 ## Przygotowanie
 
