@@ -7,8 +7,8 @@ export default function TagCloud() {
   return <SidebarSection title="TAGI">
     <StaticQuery query={graphql`
       {
-        allMarkdownRemark {
-          group(field: frontmatter___tags) {
+        allRecipe {
+          group(field: tags) {
             fieldValue
             totalCount
           }
@@ -16,9 +16,9 @@ export default function TagCloud() {
       }
     `}
      render={data => (
-       data.allMarkdownRemark.group
+       data.allRecipe.group
          .sort((groupA, groupB) => {
-           if (groupB.totalCount == groupA.totalCount) {
+           if (groupB.totalCount === groupA.totalCount) {
              return groupA.fieldValue.localeCompare(groupB.fieldValue)
            }
 

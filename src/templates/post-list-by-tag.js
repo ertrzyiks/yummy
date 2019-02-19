@@ -8,7 +8,7 @@ import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListByTagPage({data, pageContext}) {
-  const Posts = data.allMarkdownRemark.edges
+  const Posts = data.allRecipe.edges
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
   return <Layout>
@@ -27,9 +27,9 @@ export default function PostListByTagPage({data, pageContext}) {
 
 export const pageQuery = graphql`
   query blogListByTagQuery($tag: String!, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark (
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
+    allRecipe (
+      filter: { tags: { in: [$tag] } }
+      sort: { order: DESC, fields: [published_at] }
       limit: $limit
       skip: $skip
     ) {

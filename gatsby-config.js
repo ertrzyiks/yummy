@@ -14,13 +14,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/recipes`,
-        name: 'images',
-      },
-    },
-    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`,
@@ -51,31 +44,33 @@ module.exports = {
       `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug
-                })
+            serialize: ({ query: { site, allRecipe } }) => {
+              return allRecipe.edges.map(edge => {
+                return {
+                  title: edge.node.name,
+                  description: edge.node.headline.childMarkdownRemark.html,
+                  date: edge.node.published_at,
+                  url: site.siteMetadata.siteUrl + edge.node.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.slug
+                }
               })
             },
             query: `
             {
-              allMarkdownRemark(
+              allRecipe(
                 limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] }
+                sort: { order: DESC, fields: [published_at] }
               ) {
                 edges {
                   node {
-                    excerpt
-                    html
-                    fields { slug }
-                    frontmatter {
-                      title
-                      date
+                    headline { 
+                      childMarkdownRemark {
+                        html
+                      }
                     }
+                    slug
+                    name
+                    published_at
                   }
                 }
               }

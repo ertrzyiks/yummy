@@ -5,7 +5,7 @@ function createIndexPage({ actions, graphql }) {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allRecipe {
         edges {
           node {
             id
@@ -18,7 +18,7 @@ function createIndexPage({ actions, graphql }) {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allRecipe.edges
     const postsPerPage = 10
     const totalPages = Math.ceil(posts.length / postsPerPage)
 
