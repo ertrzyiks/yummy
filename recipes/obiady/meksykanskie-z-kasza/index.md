@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Klasyk w nowej odsłonie
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -23,6 +23,8 @@ Klasyk w nowej odsłonie
 - puszka kukurydzy
 - sól, pieprz, papryka ostra, chili con carne
 - 3 torebki kaszy jęczmiennej wiejskiej
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

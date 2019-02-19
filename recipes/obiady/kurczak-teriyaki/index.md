@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Nie byle jaki kurczak teriyaki.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -25,13 +25,15 @@ Nie byle jaki kurczak teriyaki.
  - 2 łyżki mąki
  - makaron spaetzle z Lidla
 
- ### Sos teriyaki
+### Sos teriyaki
  - 8 łyżek sosu sojowego
  - 4 łyżki soku z limonki
  - 4 łyżki wody
  - 2 łyżki startego imbiru
  - 2 starte ząbki czosnku
  - 2 łyżki oliwy
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

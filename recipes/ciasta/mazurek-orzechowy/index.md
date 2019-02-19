@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -29,6 +29,8 @@ Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.
 - 410g orzechów włoskich
 - półszklanki cukru (albo nawet jeszcze mniej)
 - duża śmietana 18%
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

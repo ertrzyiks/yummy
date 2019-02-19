@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Smak miso bez dodatku miso (bo cebula mocno).
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -30,6 +30,8 @@ Smak miso bez dodatku miso (bo cebula mocno).
 ### Marynata
  - 4 łyżki sosu sojowego
  - sok z połowy cytryny
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

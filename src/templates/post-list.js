@@ -9,7 +9,7 @@ import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListPage({data, pageContext}) {
-  const Posts = data.allMarkdownRemark.edges
+  const Posts = data.allRecipe.edges
     .map(edge => <PostCard key={edge.node.id} post={edge.node} />)
 
   return <Layout>
@@ -27,22 +27,22 @@ export default function PostListPage({data, pageContext}) {
 }
 
 export const query = graphql`
-fragment postForList on MarkdownRemark {
+fragment postForList on Recipe {
   id
-  excerpt
-  fields {
-    slug
+  name
+  headline { 
+    childMarkdownRemark {
+      html
+    }
   }
-  frontmatter {
-    title
-    tags
-    category
-    date(formatString: "D MMM YYYY", locale: "pl")
-    featured_image {
-      childImageSharp {
-        fluid(maxWidth: 1000, traceSVG: { color: "#ec973b" }) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
+  slug
+  tags
+  category
+  published_at(formatString: "D MMM YYYY", locale: "pl")
+  featured_image {
+    childImageSharp {
+      fluid(maxWidth: 1000, traceSVG: { color: "#ec973b" }) {
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
@@ -51,8 +51,8 @@ fragment postForList on MarkdownRemark {
 
 export const pageQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark (
-      sort: { order: DESC, fields: [frontmatter___date] }
+    allRecipe (
+      sort: { order: DESC, fields: [published_at] }
       limit: $limit
       skip: $skip
     ) {

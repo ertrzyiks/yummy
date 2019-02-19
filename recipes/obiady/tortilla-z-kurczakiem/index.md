@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Gdy brak czasu na gotowanie.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -25,6 +25,8 @@ Gdy brak czasu na gotowanie.
 - 2 plasterki żółtego sera na tortillę
 - majonez
 - tortilla
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

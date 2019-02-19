@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -30,6 +30,8 @@ Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie
 ### Opcjonalne tarte ciasto
 - 2 jajka
 - odpowiednia ilość mąki
+
+<!---- splitter ---->
 
 ## Przygotowanie
 Marchewki i pietruszkę obrać, pokroić w plastry. Wrzucić do garnka z pociętymi na drobne kawałki pomidorami i solą.

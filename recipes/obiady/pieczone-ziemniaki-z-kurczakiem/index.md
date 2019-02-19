@@ -14,7 +14,7 @@ Originalny przepis: [Ziemniaki Hasselback - Kwestia Smaku](https://www.kwestiasm
 
 Proste i pyszne.
 
-<!-- more --> 
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -24,7 +24,9 @@ Proste i pyszne.
  - 1 łyżeczka soli gruboziarnistej
  - filet z kurczaka (~400g)
  - przyprawa ziołowa
- 
+
+<!---- splitter ---->
+
 ## Przygotowanie
 
 Kurczaka umyć, pokroić w kostkę i zamarynować w przyprawach na 15 min. Po tym czasie obsmażyć na oliwie do miękkości.

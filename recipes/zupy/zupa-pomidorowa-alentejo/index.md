@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Prawdziwie portugalska zupa pomidorowa rodem z Bergen przygotowana w Polsce.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 - 2kg pomidorów
@@ -26,6 +26,8 @@ Prawdziwie portugalska zupa pomidorowa rodem z Bergen przygotowana w Polsce.
 - 1 czerwona papryka
 - 4 jajka
 - sól, pieprz
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Jedyna taka z pomidorową salsą.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -27,6 +27,8 @@ Jedyna taka z pomidorową salsą.
 - 0,5kg sera żółtego
 - ok. 12 placków tortilli
 - papryka ostra, sól, szczypta chili
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

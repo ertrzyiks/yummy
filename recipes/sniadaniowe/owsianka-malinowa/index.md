@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Zdrowe malinowe rafaello.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -20,6 +20,8 @@ Zdrowe malinowe rafaello.
 - szklanka wody
 - pół szklanki mleka kokosowego
 - maliny / syrop malinowy
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

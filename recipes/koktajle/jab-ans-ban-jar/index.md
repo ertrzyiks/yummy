@@ -12,7 +12,7 @@ featured_image: ./cover.jpg
 
 Wieczorne orzeźwienie
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -21,3 +21,9 @@ Wieczorne orzeźwienie
 - 2 plastry ananasa
 - 2 garście jarmużu
 - 0,5l wody
+
+<!---- splitter ---->
+
+## Przygotowanie
+
+Zblendować składniki

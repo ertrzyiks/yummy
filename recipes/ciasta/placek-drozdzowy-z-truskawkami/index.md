@@ -11,7 +11,7 @@ featured_image: ./cover.jpg
 
 Rośnie jak na drożdżach.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -28,6 +28,8 @@ Rośnie jak na drożdżach.
  - 100g mąki pszennej
  - 60g masła
  - 4 łyżki cukru
+
+<!---- splitter ---->
 
 ## Przygotowanie
 

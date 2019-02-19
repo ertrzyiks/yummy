@@ -13,7 +13,7 @@ featured_image: ./cover.jpg
 
 Epizzkie danie.
 
-<!-- more -->
+<!---- splitter ---->
 
 ## Lista zakupów
 
@@ -39,6 +39,8 @@ Epizzkie danie.
 - 200g przecieru pomidorowego
 - mała puszka kukurydzy
 - mała puszka groszku
+
+<!---- splitter ---->
 
 ## Przygotowanie
 
