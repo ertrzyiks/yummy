@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "yummy",
+  "description": "Yummy descriptions",
   "license": "MIT",
+  "author": "Dyrksy",
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
