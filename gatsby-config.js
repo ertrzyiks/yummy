@@ -1,3 +1,5 @@
+const {JSDOM} = require('jsdom')
+
 module.exports = {
   siteMetadata: {
     title: 'Yummy',
@@ -48,7 +50,7 @@ module.exports = {
               return allRecipe.edges.map(edge => {
                 return {
                   title: edge.node.name,
-                  description: edge.node.headline.childMarkdownRemark.html,
+                  description: JSDOM.fragment(edge.node.headline.childMarkdownRemark.html).textContent,
                   date: edge.node.published_at,
                   url: site.siteMetadata.siteUrl + edge.node.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.slug
