@@ -1,3 +1,5 @@
+@import '../components/media'
+
 .post
   background-color: #fff
   border-radius: 6px
@@ -10,7 +12,7 @@
   padding: 38px 0
   flex-direction: column
 
-  @media screen and (min-width: 768px)
+  +media('>tablet')
     flex-direction: row
 
 .post_intro
@@ -21,7 +23,7 @@
   flex: 1
   min-width: 250px
 
-  @media screen and (min-width: 768px)
+  +media('>tablet')
     border-right: 1px solid #999
 
 .post_directions
@@ -29,7 +31,7 @@
   flex: 3
   margin-top: 32px
 
-  @media screen and (min-width: 768px)
+  +media('>tablet')
     margin-top: 0
 
 .post_category
@@ -40,7 +42,7 @@
   font-size: 36px
   margin-top: 6px
 
-  @media screen and (min-width: 768px)
+  +media('>tablet')
     font-size: 48px
 
 .post_tags
