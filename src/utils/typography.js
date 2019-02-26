@@ -1,7 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: '14px',
+  baseFontSize: '16px',
   bodyFontFamily: [
     '-apple-system', 'BlinkMacSystemFont',
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
@@ -12,6 +12,12 @@ const typography = new Typography({
     img: {
       marginBottom: 0,
     },
+    ul: {
+      marginBottom: 0,
+    },
+    'li:last-child': {
+      marginBottom: 0,
+    }
   })
 })
 

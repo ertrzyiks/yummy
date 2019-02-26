@@ -1,15 +1,16 @@
 import React from 'react'
 import DefaultMeta from './meta'
-import Navbar from '../navbar'
+import Header from '../header'
 import Footer from '../footer'
 
 import './layout.sass'
 
-export default function Layout({children, footerProps}) {
+export default function Layout({children, footerProps, fullHeaderVersion}) {
   return <div>
     <DefaultMeta />
 
-    <Navbar />
+    <Header fullVersion={fullHeaderVersion}/>
+
     {children}
     <Footer {...footerProps} />
   </div>
