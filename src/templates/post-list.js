@@ -4,24 +4,20 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
-import Sidebar from '../components/sidebar'
-import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListPage({data, pageContext}) {
   const Posts = data.allRecipe.edges
-    .map(edge => <PostCard key={edge.node.id} post={edge.node} />)
+    .map(edge => <PostCard key={edge.node.id} post={edge.node} className={styles.single_post}/>)
 
-  return <Layout>
+  return <Layout fullHeaderVersion={true}>
     <div className={styles.layout}>
       <section className={styles.main}>
-        <SearchBar className={styles.main_searchbar}/>
-
-        {Posts}
+        <div className={styles.posts}>
+          {Posts}
+        </div>
         <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages}/>
       </section>
-
-      <Sidebar className={styles.sidebar} />
     </div>
   </Layout>
 }
@@ -38,6 +34,7 @@ fragment postForList on Recipe {
   slug
   tags
   category
+  required_time
   published_at(formatString: "D MMM YYYY", locale: "pl")
   featured_image {
     childImageSharp {

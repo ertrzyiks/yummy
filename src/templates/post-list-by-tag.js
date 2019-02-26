@@ -3,24 +3,20 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import PostLink from '../components/post-card'
 import Paginator from '../components/paginator'
-import Sidebar from '../components/sidebar'
-import SearchBar from '../components/searchbar'
 import styles from './page.module.sass'
 
 export default function PostListByTagPage({data, pageContext}) {
   const Posts = data.allRecipe.edges
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} className={styles.single_post} />)
 
-  return <Layout>
+  return <Layout fullHeaderVersion={true}>
     <div className={styles.layout}>
       <section className={styles.main}>
-        <SearchBar className={styles.main_searchbar} />
-
-        {Posts}
+        <div className={styles.posts}>
+          {Posts}
+        </div>
         <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages}/>
       </section>
-
-      <Sidebar className={styles.sidebar} />
     </div>
   </Layout>
 }
