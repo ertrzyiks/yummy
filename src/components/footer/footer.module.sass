@@ -1,3 +1,5 @@
+@import '../media'
+
 .footer
   background: #e98500
   border-top: 1px solid #ddd
@@ -27,6 +29,6 @@
     border-right: 100vw solid transparent
     top: -$triangle-height
 
-    @media screen and (min-width: 768px)
+    +media('>tablet')
       border-bottom-width: $triangle-height-desktop
       top: -$triangle-height-desktop
