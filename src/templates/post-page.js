@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import TimeToPrepare from '../components/time_to_prepare'
 import pageStyles from './page.module.sass'
 import postStyles from './post.module.sass'
 import {button as buttonClass} from '../components/button/button.transparent.module.sass'
@@ -19,7 +20,11 @@ export default function Template({data}) {
         <section className={pageStyles.main}>
           <article className={postStyles.post}>
             <div className={postStyles.post_intro}>
-              <span className={postStyles.post_category}>{recipe.category}</span>
+              <div className={postStyles.post_preamble}>
+                <span className={postStyles.post_category}>{recipe.category}</span>
+                <TimeToPrepare>{recipe.required_time}</TimeToPrepare>
+              </div>
+
               <h1 className={postStyles.post_title}>{recipe.name}</h1>
 
               <p className={postStyles.post_headline} dangerouslySetInnerHTML={{ __html: recipe.headline.childMarkdownRemark.html }}></p>
@@ -73,6 +78,7 @@ export const pageQuery = graphql`
       slug
       name
       tags
+      required_time
       category
       published_at(formatString: "D MMM YYYY", locale: "pl")
       featured_image {
