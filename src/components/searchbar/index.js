@@ -15,6 +15,18 @@ const DropdownIndicator = (props) => {
   );
 };
 
+const customStyles = {
+  menu: (provided, state) => ({
+    ...provided,
+    marginTop: 0,
+    borderRadius: 0
+  }),
+  menuList: (provided, state) => ({
+    ...provided,
+    padding: 0
+  })
+}
+
 export default class Searchbar extends React.Component {
   state = {
     stateClass: null,
@@ -50,8 +62,8 @@ export default class Searchbar extends React.Component {
     return (
       <div className={[className, stateClass, styles.searchbar].join(' ')}>
         <Select
+          styles={customStyles}
           noOptionsMessage={this.noOptionMessage}
-          className={[className, stateClass, styles.searchbar].join(' ')}
           value={selectedOption}
           onChange={this.handleChange}
           components={{DropdownIndicator}}
