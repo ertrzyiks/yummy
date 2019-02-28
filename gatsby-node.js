@@ -79,12 +79,13 @@ function createRecipePart(parent, kind, content, {createNodeId, createNode}) {
   return id
 }
 
-function createCategory({ createNode, name, slug }) {
-  const fieldData = {name, slug}
+function createCategory({ createNode, name, slug, position }) {
+  const fieldData = {name, slug, position}
 
   createNode({
     name,
     slug,
+    position,
 
     // Required fields.
     id: slug,
@@ -105,11 +106,11 @@ function createCategory({ createNode, name, slug }) {
 exports.sourceNodes = async ({ actions }) => {
   const { createNode } = actions
 
-  createCategory({ createNode, name: 'obiady', slug: 'obiady'})
-  createCategory({ createNode, name: 'śniadaniowe', slug: 'sniadaniowe'})
-  createCategory({ createNode, name: 'ciasta', slug: 'ciasta'})
-  createCategory({ createNode, name: 'zupy', slug: 'zupy'})
-  createCategory({ createNode, name: 'koktajle', slug: 'koktajle'})
+  createCategory({ createNode, name: 'obiady', slug: 'obiady', position: 3 })
+  createCategory({ createNode, name: 'śniadaniowe', slug: 'sniadaniowe', position: 1 })
+  createCategory({ createNode, name: 'ciasta', slug: 'ciasta', position: 4 })
+  createCategory({ createNode, name: 'zupy', slug: 'zupy', position: 2 })
+  createCategory({ createNode, name: 'koktajle', slug: 'koktajle', position: 5 })
 }
 
 const createSearchDataJson = ({ graphql }) => {
