@@ -10,7 +10,7 @@ export default function Navbar() {
   return <nav className={styles.navbar}>
     <StaticQuery query={graphql`
       query LoadCategories {
-        allRecipeCategory {
+        allRecipeCategory (sort: { fields: [position] }) {
           edges {
             node {
               name
@@ -21,8 +21,14 @@ export default function Navbar() {
       }
     `}
      render={data => (
-       data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
-         <Link to={`/${slug}`} key={slug} className={styles.navbar_link}>{titleize(name)}</Link>
+       data.allRecipeCategory.edges
+         .map(({node: {slug, name}}) => (
+          <Link
+            to={`/${slug}`}
+            key={slug}
+            className={styles.navbar_link}>
+            {titleize(name)}
+          </Link>
        ))
      )} />
   </nav>
