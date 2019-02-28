@@ -7,6 +7,7 @@ category:
 tags:
  - cukinia
  - włoskie
+ - wegetariańskie
 featured_image: ./cover.jpg
 ---
 
