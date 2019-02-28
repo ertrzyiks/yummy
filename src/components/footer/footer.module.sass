@@ -4,15 +4,17 @@
   background: #e98500
   border-top: 1px solid #ddd
   color: #333
-  margin-top: 120px
+  margin-top: 50px
   padding: 50px 0
   position: relative
+
+  +media('>tablet')
+    margin-top: 120px
 
 .inner
   max-width: 1220px
   margin: 0 auto
   padding: 0 20px
-
 
 @supports (border-left: 100vw solid transparent)
   $triangle-height: 50px
