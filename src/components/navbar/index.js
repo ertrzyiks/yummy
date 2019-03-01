@@ -17,24 +17,23 @@ class Navbar extends React.Component {
     }
   }
 
-  handleMenuOpenClick = (event) => {
-    event.preventDefault()
+  handleMenuOpenClick = () => {
     this.setState({
       menuOpen: true
     })
   }
 
-  handleMenuCloseClick = (event) => {
-    event.preventDefault()
+  handleMenuCloseClick = () => {
     this.setState({
       menuOpen: false
     })
   }
 
   render() {
-    const linkStyle = this.state.menuOpen
-      ? [styles.navbar_link, styles.navbar_link_expanded].join(' ')
-      : styles.navbar_link
+    console.log('render', this.state)
+    const categoryMenuClass = this.state.menuOpen
+      ? [styles.navbar_categories, styles.expanded].join(' ')
+      : styles.navbar_categories
 
     const overlay = this.state.menuOpen ? (
         <div className={styles.navbar_menu_overlay} onClick={this.handleMenuCloseClick} />)
@@ -42,40 +41,47 @@ class Navbar extends React.Component {
 
     return (
       <nav className={styles.navbar}>
-        {overlay}
-        <a className={[styles.navbar_menu_icon, this.state.menuOpen ? styles.hidden : ''].join(' ')}
+        <a href='#' className={[styles.navbar_menu_icon, this.state.menuOpen ? styles.hidden : ''].join(' ')}
            aria-label="Open category menu"
            onClick={this.handleMenuOpenClick}>
           <span aria-hidden="true">
             <MenuBarsIcon className={styles.icon_menu} />
           </span>
         </a>
-        <a className={[styles.navbar_menu_icon, this.state.menuOpen ? '' : styles.hidden].join(' ')}
+        <a href='#' className={[styles.navbar_menu_icon, this.state.menuOpen ? '' : styles.hidden].join(' ')}
            aria-label="Close category menu"
            onClick={this.handleMenuCloseClick}>
           <span aria-hidden="true">
             <MenuCloseIcon className={styles.icon_menu} />
           </span>
         </a>
-        <StaticQuery query={graphql`
-        query LoadCategories {
-          allRecipeCategory {
-            edges {
-              node {
-                name
-                slug
+        <div className={categoryMenuClass}>
+          {overlay}
+          <StaticQuery query={graphql`
+          query LoadCategories {
+            allRecipeCategory {
+              edges {
+                node {
+                  name
+                  slug
+                }
               }
             }
           }
-        }
-      `}
-       render={data => (
-         data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
-           <Link to={`/${slug}`} key={slug} className={linkStyle}>
-             {titleize(name)}
-           </Link>
-         ))
-       )} />
+        `}
+         render={data => (
+           data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
+             <Link
+               to={`/${slug}`}
+               key={slug}
+               className={styles.navbar_link}
+               onClick={this.handleMenuCloseClick}
+             >
+               {titleize(name)}
+             </Link>
+           ))
+         )} />
+        </div>
     </nav>
     )
   }

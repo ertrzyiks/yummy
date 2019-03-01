@@ -5,14 +5,23 @@
   position: relative
   display: flex
 
+.navbar_categories
+  display: flex
+
   +media('<tablet')
+    display: none
     flex-direction: column
     position: absolute
+    top: 56px
+    right: 0px
     z-index: 1
-    width: 45%
+    width: 45vw
+
+    &.expanded
+      display: flex
 
   +media('<phone_l')
-    width: 100%
+    width: 100vw
 
 .navbar_link
   color: #0f0f0f
@@ -25,36 +34,33 @@
   text-transform: uppercase
   text-shadow: 0 1px 0 #fab823
 
+  &:hover
+    text-decoration: underline
+
+  &:active
+    color: #555
+
   +media('<tablet')
-    display: none
+    display: inline-block
+    background-color: #ffc16e
+    border-bottom: 2px solid #ffdeb3
+    padding: 14px 0
+    text-align: center
+    text-shadow: none
 
-.navbar_link:hover
-  text-decoration: underline
+    &:last-child
+      border-bottom: none
 
-.navbar_link:active
-  color: #555
-
-.navbar_link_expanded
-  display: inline-block
-  background-color: #ffc16e
-  border-bottom: 2px solid #ffdeb3
-  padding: 14px 0
-  text-align: center
-  text-shadow: none
-
-.navbar_link_expanded:last-child
-    border-bottom: none
-
-.navbar_link_expanded:hover, .navbar_link_expanded:active
-  background-color: #ffdeb3
-  text-decoration: none
+    &:hover,
+    &:active
+      background-color: #ffdeb3
+      text-decoration: none
 
 .navbar_menu_icon
   display: none
 
   +media('<tablet')
-    display: flex
-    justify-content: flex-end
+    display: inline-block
     margin: 0 6px
     padding: 14px 8px 0 8px
 
