@@ -1,6 +1,9 @@
+@import '../media'
+
 .paginator
-  display: flex
   margin-bottom: 35px
+  position: relative
+  text-align: center
 
 .icon
   height: 15px
@@ -10,8 +13,30 @@
   transform: scale(1.3)
   margin: 0 4px
 
+.current_page
+  font-size: 14px
+  display: inline-block
+  padding: 13px 20px
+  width: 100%
+
+  +media('>tablet')
+    width: auto
+
+.nav
+  margin-bottom: 12px
+
+  +media('>tablet')
+    position: absolute
+    margin-bottom: 0
+
 .prev
-  margin-right: auto
+  composes: nav
+  left: 0
+  float: left
+  margin-right: 12px
 
 .next
-  margin-left: auto
+  composes: nav
+  right: 0
+  float: right
+  margin-left: 12px
