@@ -59,7 +59,7 @@ class Navbar extends React.Component {
           {overlay}
           <StaticQuery query={graphql`
           query LoadCategories {
-            allRecipeCategory {
+            allRecipeCategory (sort: { fields: [position] }) {
               edges {
                 node {
                   name
@@ -70,13 +70,14 @@ class Navbar extends React.Component {
           }
         `}
          render={data => (
-           data.allRecipeCategory.edges.map(({node: {slug, name}}) => (
-             <Link
-               to={`/${slug}`}
-               key={slug}
-               className={styles.navbar_link}
-               onClick={this.handleMenuCloseClick}
-             >
+           data.allRecipeCategory.edges
+             .map(({node: {slug, name}}) => (
+               <Link
+                 to={`/${slug}`}
+                 key={slug}
+                 className={styles.navbar_link}
+                 onClick={this.handleMenuCloseClick}
+               >
                {titleize(name)}
              </Link>
            ))
