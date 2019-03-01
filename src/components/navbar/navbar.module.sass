@@ -1,6 +1,27 @@
+@import '../media'
+
 .navbar
   padding: 3px 6px
   position: relative
+  display: flex
+
+.navbar_categories
+  display: flex
+
+  +media('<tablet')
+    display: none
+    flex-direction: column
+    position: absolute
+    top: 56px
+    right: 0px
+    z-index: 1
+    width: 45vw
+
+    &.expanded
+      display: flex
+
+  +media('<phone_l')
+    width: 100vw
 
 .navbar_link
   color: #0f0f0f
@@ -13,9 +34,52 @@
   text-transform: uppercase
   text-shadow: 0 1px 0 #fab823
 
+  &:hover
+    text-decoration: underline
 
-.navbar_link:hover
-  text-decoration: underline
+  &:active
+    color: #555
 
-.navbar_link:active
-  color: #555
+  +media('<tablet')
+    display: inline-block
+    background-color: #ffc16e
+    border-bottom: 2px solid #ffdeb3
+    padding: 14px 0
+    text-align: center
+    text-shadow: none
+
+    &:last-child
+      border-bottom: none
+
+    &:hover,
+    &:active
+      background-color: #ffdeb3
+      text-decoration: none
+
+.navbar_menu_icon
+  display: none
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+  background: transparent
+
+  +media('<tablet')
+    display: inline-block
+    margin: 0 6px
+    padding: 14px 8px 0 8px
+
+.icon_menu
+  vertical-align: baseline
+
+.hidden
+  display: none
+
+.navbar_menu_overlay
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  z-index: -1
