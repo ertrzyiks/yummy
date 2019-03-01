@@ -10,7 +10,8 @@ export default function Paginator ({currentPage, totalPages}) {
   const prevPagePath = currentPage === 2 ? `/` : `/page/${currentPage - 1}`
 
   return <nav className={styles.paginator}>
-    {(currentPage > 1) ? <Link to={prevPagePath} className={[buttonStyles.button, styles.prev].join(' ')}><ChevronLeft className={styles.icon} /> Poprzednia strona</Link> : null}
-    {(currentPage < totalPages) ? <Link to={nextPagePath} className={[buttonStyles.button, styles.next].join(' ')}>Następna strona <ChevronRight className={styles.icon}/> </Link> : null}
+    {(currentPage > 1) ? <Link to={prevPagePath} className={[buttonStyles.button, styles.prev].join(' ')}><ChevronLeft className={styles.icon} /> Poprzednia</Link> : null}
+    {(currentPage < totalPages) ? <Link to={nextPagePath} className={[buttonStyles.button, styles.next].join(' ')}>Następna <ChevronRight className={styles.icon}/> </Link> : null}
+    <span class={styles.current_page}>Strona {currentPage} z {totalPages}</span>
   </nav>
 }
