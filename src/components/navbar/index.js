@@ -41,20 +41,20 @@ class Navbar extends React.Component {
 
     return (
       <nav className={styles.navbar}>
-        <a href='#' className={[styles.navbar_menu_icon, this.state.menuOpen ? styles.hidden : ''].join(' ')}
+        <button className={[styles.navbar_menu_icon, this.state.menuOpen ? styles.hidden : ''].join(' ')}
            aria-label="Open category menu"
            onClick={this.handleMenuOpenClick}>
           <span aria-hidden="true">
             <MenuBarsIcon className={styles.icon_menu} />
           </span>
-        </a>
-        <a href='#' className={[styles.navbar_menu_icon, this.state.menuOpen ? '' : styles.hidden].join(' ')}
+        </button>
+        <button className={[styles.navbar_menu_icon, this.state.menuOpen ? '' : styles.hidden].join(' ')}
            aria-label="Close category menu"
            onClick={this.handleMenuCloseClick}>
           <span aria-hidden="true">
             <MenuCloseIcon className={styles.icon_menu} />
           </span>
-        </a>
+        </button>
         <div className={categoryMenuClass}>
           {overlay}
           <StaticQuery query={graphql`
