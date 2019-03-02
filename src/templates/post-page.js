@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
+import slugify from 'underscore.string/slugify'
 import Layout from '../components/layout'
 import TimeToPrepare from '../components/time_to_prepare'
 import pageStyles from './page.module.sass'
@@ -11,7 +12,8 @@ export default function Template({data}) {
   const { recipe } = data
 
   const Tags = (recipe.tags || []).map(tag => {
-    return <Link to={'/tag/' + tag} key={tag} className={[buttonClass, postStyles.post_tag].join(' ')}>{tag}</Link>
+    const slug = slugify(tag)
+    return <Link to={'/tag/' + slug} key={tag} className={[buttonClass, postStyles.post_tag].join(' ')}>{tag}</Link>
   })
 
   return (
