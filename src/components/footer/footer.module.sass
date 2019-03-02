@@ -1,4 +1,5 @@
 @import '../media'
+@import '../polka-dot'
 
 .footer
   background: #e98500
@@ -15,6 +16,14 @@
   max-width: 1220px
   margin: 0 auto
   padding: 0 20px
+
+@supports (clip-path: polygon(0% 0%, 100% 100%))
+  .footer:after
+    +polka-dot
+    bottom: 0
+    color: rgba(255, 255, 255, 0.2)
+    content: ""
+    transform: scale(-1, -1)
 
 @supports (border-left: 100vw solid transparent)
   $triangle-height: 50px
