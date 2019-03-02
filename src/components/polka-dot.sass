@@ -1,0 +1,42 @@
+@function clip-stairs($step-height, $step-width, $starting-x, $steps)
+  $x: $starting-x
+  $y: 0px
+
+  $vertices: ($x $y)
+
+  @for $i from 0 to $steps
+    $y: $y + $step-height
+    $vertices: $vertices, $x $y
+
+    $x: $x + $step-width
+    $vertices: $vertices, $x $y
+  $vertices: $vertices, 100% $y
+  $vertices: $vertices, 100% 0
+  @return $vertices
+
+=polka-dot
+  $step-height: 26px
+  $step-width: 26px * 4
+  $starting-x: 0
+  $steps: 7
+
+  background-image: radial-gradient(currentColor 20%, transparent 0), radial-gradient(currentColor 20%, transparent 0)
+  background-size: 26px 26px
+  background-position: left top
+  background-repeat: repeat
+  pointer-events: none
+  clip-path: polygon(clip-stairs($step-height, $step-width, $starting-x, $steps))
+  display: block
+  height: $step-height * $steps
+  position: absolute
+  width: 100%
+
+  +media('>tablet')
+    $step-height: 32px
+    $step-width: 32px * 8
+    $starting-x: 32px * 5
+    $steps: 8
+
+    clip-path: polygon(clip-stairs($step-height, $step-width, $starting-x, $steps))
+    background-size: 32px 32px
+    height: $step-height * $steps
