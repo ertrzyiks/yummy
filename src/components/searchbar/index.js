@@ -1,31 +1,9 @@
 import React from 'react'
-import MagnifierIcon from '../magnifier'
 import { navigate } from 'gatsby'
-import Select from 'react-select/lib/Async'
-import { components } from 'react-select'
+import Select from '../select'
 import styles from './searchbar.module.sass'
 
 const loadLocalSearch = () => import('./local_search')
-
-const DropdownIndicator = (props) => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <MagnifierIcon />
-    </components.DropdownIndicator>
-  );
-};
-
-const customStyles = {
-  menu: (provided, state) => ({
-    ...provided,
-    marginTop: 0,
-    borderRadius: 0
-  }),
-  menuList: (provided, state) => ({
-    ...provided,
-    padding: 0
-  })
-}
 
 export default class Searchbar extends React.Component {
   constructor(props) {
@@ -72,11 +50,9 @@ export default class Searchbar extends React.Component {
     return (
       <div className={wrapperClasses.join(' ')}>
         <Select
-          styles={customStyles}
           noOptionsMessage={this.noOptionMessage}
           value={selectedOption}
           onChange={this.handleChange}
-          components={{DropdownIndicator}}
           placeholder='Wyszukaj przepis'
           loadOptions={this.promiseOptions}
         />
