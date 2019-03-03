@@ -5,13 +5,13 @@ import Footer from '../footer'
 
 import './layout.sass'
 
-export default function Layout({children, footerProps, fullHeaderVersion}) {
+export default function Layout({children, fullHeaderVersion}) {
   return <div>
     <DefaultMeta />
 
     <Header fullVersion={fullHeaderVersion}/>
 
     {children}
-    <Footer {...footerProps} />
+    <Footer />
   </div>
 }
