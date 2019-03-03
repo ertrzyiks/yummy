@@ -28,13 +28,17 @@ const customStyles = {
 }
 
 export default class Searchbar extends React.Component {
-  state = {
-    stateClass: null,
-    selectedOption: null
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      visible: !!props.forceVisibility,
+      selectedOption: null
+    }
   }
 
   componentDidMount() {
-    this.setState({ stateClass: styles.active })
+    this.setState({ visible: true })
   }
 
   handleChange = (selectedOption) => {
@@ -56,11 +60,17 @@ export default class Searchbar extends React.Component {
   }
 
   render() {
-    const {className} = this.props
-    const {stateClass, selectedOption} = this.state
+    const { className } = this.props
+    const { visible, selectedOption } = this.state
+
+    const wrapperClasses = [className, styles.searchbar]
+
+    if (visible) {
+      wrapperClasses.push(styles.active)
+    }
 
     return (
-      <div className={[className, stateClass, styles.searchbar].join(' ')}>
+      <div className={wrapperClasses.join(' ')}>
         <Select
           styles={customStyles}
           noOptionsMessage={this.noOptionMessage}

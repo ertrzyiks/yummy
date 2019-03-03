@@ -5,21 +5,34 @@ import Logo from '../logo'
 import { Link } from 'gatsby'
 import styles from './header.module.sass'
 
-export default function Header({fullVersion}) {
-  return (
-    <header className={styles.header}>
-      <div className={styles.navbar}>
-        <Navbar />
-      </div>
+export default class Header extends React.Component {
+  state = {
+    alreadyMounted: false
+  }
 
-      {
-        fullVersion !== false ? [
+  componentDidMount() {
+    this.setState({ alreadyMounted: true })
+  }
+
+  render () {
+    const { fullVersion } = this.props
+    const { alreadyMounted } = this.state
+
+    return (
+      <header className={styles.header}>
+        <div className={styles.navbar}>
+          <Navbar/>
+        </div>
+
+        {
+          fullVersion !== false ? [
             <Link to='/' className={styles.logo_link} key={'logo'}>
-              <Logo className={styles.logo} />
+              <Logo className={styles.logo}/>
             </Link>,
-          <Searchbar className={styles.searchbar} key={'searchbar'} />
-        ] : null
-      }
-  </header>
-  )
+            <Searchbar forceVisibility={alreadyMounted} className={styles.searchbar} key={'searchbar'}/>
+          ] : null
+        }
+      </header>
+    )
+  }
 }
