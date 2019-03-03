@@ -36,7 +36,7 @@ export default function Template({data}) {
         <Img
           fluid={recipe.featured_image.childImageSharp.fluid}
           alt={'Photography of the food from the recipe.'}
-          className={postStyles.coverImage}
+          className={postStyles.cover_image}
         />
 
         <div className={postStyles.post_body}>
