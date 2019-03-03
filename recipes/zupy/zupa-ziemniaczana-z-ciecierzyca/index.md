@@ -3,7 +3,7 @@ title: Zupa ziemniaczana z ciecierzycą
 date: '2019-01-30T23:40:00Z'
 required_time: 60min
 category:
- - obiady
+ - zupy
 tags:
  - ziemniaki
  - ciecierzyca
