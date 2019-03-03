@@ -28,7 +28,8 @@ function createPostPages({ actions, graphql }) {
         path: node.slug,
         component: blogPostTemplate,
         context: {
-          slug: node.slug
+          slug: node.slug,
+          fullHeaderVersion: false
         }
       })
     })

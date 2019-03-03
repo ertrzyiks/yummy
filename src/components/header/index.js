@@ -13,9 +13,9 @@ export default function Header({fullVersion}) {
       </div>
 
       {
-        fullVersion ? [
-            <Link to='/' className={styles.logo_link}>
-              <Logo className={styles.logo} key={'logo'}/>
+        fullVersion !== false ? [
+            <Link to='/' className={styles.logo_link} key={'logo'}>
+              <Logo className={styles.logo} />
             </Link>,
           <Searchbar className={styles.searchbar} key={'searchbar'} />
         ] : null

@@ -30,7 +30,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    console.log('render', this.state)
     const categoryMenuClass = this.state.menuOpen
       ? [styles.navbar_categories, styles.expanded].join(' ')
       : styles.navbar_categories

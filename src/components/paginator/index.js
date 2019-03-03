@@ -12,6 +12,6 @@ export default function Paginator ({currentPage, totalPages}) {
   return <nav className={styles.paginator}>
     {(currentPage > 1) ? <Link to={prevPagePath} className={[buttonStyles.button, styles.prev].join(' ')}><ChevronLeft className={styles.icon} /> Poprzednia</Link> : null}
     {(currentPage < totalPages) ? <Link to={nextPagePath} className={[buttonStyles.button, styles.next].join(' ')}>Następna <ChevronRight className={styles.icon}/> </Link> : null}
-    <span class={styles.current_page}>Strona {currentPage} z {totalPages}</span>
+    <span className={styles.current_page}>Strona {currentPage} z {totalPages}</span>
   </nav>
 }
