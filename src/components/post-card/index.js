@@ -5,10 +5,14 @@ import TimeToPrepare from '../time_to_prepare'
 import styles from './post-card.module.sass'
 import ChevronRight from '../chevron-right'
 
-export default function PostCard({post, className}) {
+export default function PostCard({post, className, criticalImage}) {
   return <Link to={post.slug} className={[styles.card, className].join(' ')}>
     <div className={styles.cover_link}>
-      <Img fluid={post.featured_image.childImageSharp.fluid} className={styles.cover}/>
+      <Img
+        fluid={post.featured_image.childImageSharp.fluid}
+        className={styles.cover}
+        critical={criticalImage}
+      />
     </div>
 
     <div className={styles.content_header}>
