@@ -13,7 +13,7 @@ export default function PostListByTagPage({data, pageContext}) {
       <div className={styles.posts}>
         {Posts}
       </div>
-      <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages} subsection={pageContext.slug}/>
+      <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages} subsection={`tag/${pageContext.slug}`}/>
     </section>
   </div>
 }
