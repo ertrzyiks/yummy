@@ -6,7 +6,3 @@ cache:
   npm: true
   directories:
   - .cache
-
-script:
- - npm test
- - gatsby build
