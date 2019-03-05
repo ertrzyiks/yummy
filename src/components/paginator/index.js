@@ -5,8 +5,7 @@ import buttonStyles from '../button/button.transparent-noborder.module.sass'
 import ChevronLeft from '../chevron-left'
 import ChevronRight from '../chevron-right'
 
-export default function Paginator ({currentPage, totalPages, subsection}) {
-  const subsectionPath = subsection ? `/${subsection}` : ''
+export default function Paginator ({currentPage, totalPages, subsectionPath = ''}) {
   const nextPagePath = `${subsectionPath}/page/${currentPage + 1}`
   const prevPagePath = currentPage === 2 ? `${subsectionPath}/` : `${subsectionPath}/page/${currentPage - 1}`
 
