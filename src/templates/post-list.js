@@ -30,7 +30,10 @@ fragment postForList on Recipe {
   }
   slug
   tags
-  category
+  category {
+    name
+    slug
+  }
   required_time
   published_at(formatString: "D MMM YYYY", locale: "pl")
   featured_image {
