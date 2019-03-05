@@ -5,7 +5,6 @@ required_time: 90min
 category: 
  - obiady
 tags:
- - makaron
  - pomidory
  - wegetariańskie
 featured_image: ./cover.jpg

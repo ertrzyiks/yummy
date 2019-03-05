@@ -6,6 +6,7 @@ category:
  - zupy
 tags:
  - polskie
+ - kurczak
 featured_image: ./cover.jpg
 ---
 

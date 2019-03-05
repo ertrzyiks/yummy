@@ -7,6 +7,7 @@ category:
 tags:
  - kapusta
  - ziemniaki
+ - kurczak
 featured_image: ./cover.jpg
 ---
 

@@ -6,7 +6,7 @@ category:
  - zupy
 tags:
  - pomidory
- - jajka
+ - portugalskie
  - wegetariańskie
 featured_image: ./cover.jpg
 ---

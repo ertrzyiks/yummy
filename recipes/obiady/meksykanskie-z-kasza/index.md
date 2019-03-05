@@ -5,7 +5,6 @@ required_time: 60min
 category:
  - obiady
 tags:
- - kasza
  - kurczak
  - meksykańskie
 featured_image: ./cover.jpg
