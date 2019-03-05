@@ -1,0 +1,25 @@
+.breadcrumbs
+  list-style: none
+  margin: 0
+
+.breadcrumb_item
+  color: #606060
+  text-transform: uppercase
+  display: inline-block
+  margin: 0
+  white-space: nowrap
+
+  &:not(:first-child):before
+    content: "/"
+    font-size: 19px
+    padding: 0 10px
+
+.breadcrumb_link
+  color: #606060
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+  &:active
+    color: #555

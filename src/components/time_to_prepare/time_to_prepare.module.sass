@@ -1,6 +1,19 @@
+@import '../media'
+
+.time_box
+  display: flex
+  align-items: baseline
+  margin-left: 20px
+
+  +media('<phone_l')
+    font-size: 14px
+
 .icon
   height: 20px
   vertical-align: baseline
   position: relative
   bottom: -4px
   margin-right: 6px
+
+  +media('<phone_l')
+    height: 18px
