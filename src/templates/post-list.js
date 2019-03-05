@@ -7,7 +7,16 @@ import styles from './page.module.sass'
 
 export default function PostListPage({data, pageContext}) {
   const Posts = data.allRecipe.edges
-    .map(edge => <PostCard key={edge.node.id} post={edge.node} className={styles.single_post}/>)
+    .map((edge, index) => {
+      return (
+        <PostCard
+          key={edge.node.id}
+          post={edge.node}
+          className={styles.single_post}
+          criticalImage={index < 3}
+        />
+      )
+    })
 
   return <div className={styles.layout}>
     <section className={styles.main}>
