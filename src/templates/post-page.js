@@ -16,14 +16,12 @@ export default function Template({data}) {
     return <Link to={'/tag/' + slug} key={tag} className={[buttonClass, postStyles.post_tag].join(' ')}>{tag}</Link>
   })
 
-  const categorySlug = recipe.slug.substring(1).split('/')[0]
-
   return <div className={pageStyles.layout}>
     <section className={pageStyles.main}>
       <article className={postStyles.post}>
         <div className={postStyles.post_intro}>
           <div className={postStyles.post_preamble}>
-            <Breadcrumbs subsectionName={recipe.category} subsectionSlug={categorySlug}/>
+            <Breadcrumbs subsectionName={recipe.category.name} subsectionSlug={recipe.category.slug}/>
             <TimeToPrepare>{recipe.required_time}</TimeToPrepare>
           </div>
 
@@ -80,7 +78,10 @@ export const pageQuery = graphql`
       name
       tags
       required_time
-      category
+      category {
+        name
+        slug
+      }
       published_at(formatString: "D MMM YYYY", locale: "pl")
       featured_image {
         childImageSharp {
