@@ -5,7 +5,6 @@ required_time: 60min
 category:
  - obiady
 tags:
- - ser
  - brokuł
  - kurczak
 featured_image: ./cover.jpg

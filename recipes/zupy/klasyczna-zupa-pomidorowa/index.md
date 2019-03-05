@@ -6,6 +6,7 @@ category:
  - zupy
 tags:
  - pomidory
+ - włoskie
  - wegetariańskie
 featured_image: ./cover.jpg
 ---

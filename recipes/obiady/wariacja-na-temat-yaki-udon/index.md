@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - japońskie
- - makaron
 featured_image: ./cover.jpg
 ---
 

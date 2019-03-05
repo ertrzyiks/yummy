@@ -7,6 +7,7 @@ category:
 tags:
  - kalafior
  - ziemniaki
+ - kurczak
 featured_image: ./cover.jpg
 ---
 

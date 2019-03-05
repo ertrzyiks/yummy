@@ -7,6 +7,7 @@ category:
 tags:
  - drożdżowe
  - kurczak
+ - polskie
 featured_image: ./cover.jpg
 ---
 

@@ -5,7 +5,7 @@ required_time: 180min
 category: 
  - obiady
 tags:
- - makaron
+ - pieczarki
  - kurczak
 featured_image: ./cover.jpg
 ---
