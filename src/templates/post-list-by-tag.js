@@ -1,12 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import PostLink from '../components/post-card'
+import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
 import styles from './page.module.sass'
 
 export default function PostListByTagPage({data, pageContext}) {
   const Posts = data.allRecipe.edges
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} className={styles.single_post} />)
+    .map((edge, index) => {
+      return (
+        <PostCard
+          key={edge.node.id}
+          post={edge.node}
+          className={styles.single_post}
+          criticalImage={index < 3}
+        />
+      )
+    })
 
   return <div className={styles.layout}>
     <section className={styles.main}>
