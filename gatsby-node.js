@@ -1,5 +1,6 @@
 const crypto = require('crypto')
 const fs = require('fs')
+const slugify = require('underscore.string/slugify')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { createTagPages } = require('./gatsby-node/tags')
 const { createCategoryPages } = require('./gatsby-node/categories')
@@ -28,12 +29,12 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
       name: node.frontmatter.title,
       published_at: node.frontmatter.date,
       required_time: node.frontmatter.required_time,
-      category: node.frontmatter.category,
       tags: node.frontmatter.tags,
       featured_image: node.frontmatter.featured_image,
       headline___NODE: headlineId,
       ingredients___NODE: ingredientsId,
-      directions___NODE: directionsId
+      directions___NODE: directionsId,
+      category___NODE: slugify(node.frontmatter.category[0])
     }
 
     const recipeNode = {

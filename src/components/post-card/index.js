@@ -12,7 +12,7 @@ export default function PostCard({post, className}) {
     </div>
 
     <div className={styles.content_header}>
-      <span className={styles.content_category}>{post.category}</span>
+      <span className={styles.content_category}>{post.category.name}</span>
       <h2 className={styles.content_title}>
         {post.name}
       </h2>

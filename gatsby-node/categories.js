@@ -33,7 +33,7 @@ function createCategoryPage({ category, slug, actions, graphql }) {
   return graphql(`
     query ($category: String!) {
       allRecipe(
-        filter: { category: { in: [$category] } }
+        filter: { category: { name: { eq: $category } } }
       ) {
         edges {
           node {
