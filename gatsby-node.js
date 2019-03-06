@@ -29,7 +29,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
       name: node.frontmatter.title,
       published_at: node.frontmatter.date,
       required_time: node.frontmatter.required_time,
-      tags: node.frontmatter.tags,
+      tags: sortTagsAlphabetically(node.frontmatter.tags),
       featured_image: node.frontmatter.featured_image,
       headline___NODE: headlineId,
       ingredients___NODE: ingredientsId,
@@ -56,6 +56,11 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
 
     createNode(recipeNode)
   }
+}
+
+function sortTagsAlphabetically(tags) {
+  tags.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+  return tags
 }
 
 function createRecipePart(parent, kind, content, {createNodeId, createNode}) {
