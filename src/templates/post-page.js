@@ -27,7 +27,7 @@ export default function Template({data}) {
 
           <h1 className={postStyles.post_title}>{recipe.name}</h1>
 
-          <p className={postStyles.post_headline} dangerouslySetInnerHTML={{ __html: recipe.headline.childMarkdownRemark.html }}></p>
+          <div className={postStyles.post_headline} dangerouslySetInnerHTML={{ __html: recipe.headline.childMarkdownRemark.html }}></div>
 
           <div className={postStyles.post_tags}>
             {Tags}
