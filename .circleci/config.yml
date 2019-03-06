@@ -22,4 +22,16 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - restore_cache:
+          keys:
+            - v1-artifacts-
+
+      - run: npm run build
+
+      - save_cache:
+          paths:
+            - .cache
+            - public
+          key: v1-artifacts-{{ epoch }}
+
       - run: npm test
