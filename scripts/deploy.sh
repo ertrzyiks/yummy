@@ -1,7 +1,7 @@
 #!/bin/sh
 
-rm -fr ./.git-deploy
 npm run build
+rm -fr ./.git-deploy
 mkdir .git-deploy
 cp -r public/* ./.git-deploy
 touch ./.git-deploy/.static
