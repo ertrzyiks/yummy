@@ -4,9 +4,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8
-
     working_directory: ~/repo
-
     steps:
       - checkout
 
@@ -25,7 +23,9 @@ jobs:
       - restore_cache:
           keys:
             - v1-artifacts-
+      - run: npm test
 
+      # Build webpage
       - run: npm run build
 
       - save_cache:
@@ -34,4 +34,45 @@ jobs:
             - public
           key: v1-artifacts-{{ epoch }}
 
-      - run: npm test
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public/*
+            - app-nginx.conf.sigil
+
+  deploy:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "51:78:3e:67:09:2d:dc:d3:5a:78:0b:3b:a1:1c:6b:44"
+      - run: echo 'ertrzyiks.me,104.236.224.189 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNfW9tfAr21CQlapt944WeYOaSftTQB3Ly/Tm/1ZeXYEI08w9v9FEXRG2E+Sj/EDHimklHLlCwWCPMqMYFMQsMg=' >> ~/.ssh/known_hosts
+      - run:
+          name: Deployment
+          command: |
+            git config --global user.email "deploy-bot@ertrzyiks.me"
+            git config --global user.name "Deploy Bot"
+            touch ./public/.static
+            mv ./app-nginx.conf.sigil ./public
+            cd public
+            git init
+            git remote add dokku dokku@ertrzyiks.me:yummy
+            git add .
+            git commit -m 'Update'
+            git push dokku master --force
+
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
