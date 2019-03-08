@@ -38,7 +38,6 @@ jobs:
           root: .
           paths:
             - public/*
-            - app-nginx.conf.sigil
 
   deploy:
     docker:
@@ -56,8 +55,6 @@ jobs:
           command: |
             git config --global user.email "deploy-bot@ertrzyiks.me"
             git config --global user.name "Deploy Bot"
-            touch ./public/.static
-            mv ./app-nginx.conf.sigil ./public
             cd public
             git init
             git remote add dokku dokku@ertrzyiks.me:yummy
