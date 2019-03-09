@@ -1,14 +1,15 @@
 @import '../media'
 @import '../polka-dot'
+@import '../colors'
 
 .footer
-  background: #e98500
-  border-top: 1px solid #ddd
-  color: #333
+  background: $brand-orange
+  border-top: 1px solid $grey1
+  color: $grey5
   margin-top: 50px
   padding: 50px 0
   position: relative
-  text-shadow: 0 1px 0 #fab823
+  text-shadow: 0 1px 0 $orange3
   font-weight: bold
 
   +media('>tablet')
@@ -38,7 +39,7 @@
     width: 0
     pointer-events: none
     position: absolute
-    border-bottom: $triangle-height solid #e98500
+    border-bottom: $triangle-height solid $brand-orange
     border-right: 100vw solid transparent
     top: -$triangle-height
 
