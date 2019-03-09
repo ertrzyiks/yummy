@@ -1,16 +1,18 @@
+@import '../colors'
+
 .card
-  background: #fff
+  background: $white
   border-radius: 6px
-  box-shadow: 1px 2px 3px #b6a99b
+  box-shadow: 1px 2px 3px $grey2
   margin-bottom: 50px
   display: flex
   flex-direction: column
   overflow: hidden
   text-decoration: none
-  color: #111
+  color: $grey6
 
   &:active
-    box-shadow: 2px 3px 5px #b6a99b
+    box-shadow: 2px 3px 5px $grey2
 
 .content
   display: flex
@@ -36,11 +38,11 @@
 
 .content_category
   font-size: 16px
-  color: #606060
+  color: $grey4
   text-transform: uppercase
 
 .content_title
-  color: #111
+  color: $grey6
   font-size: 28px
   text-decoration: none
   margin: 12px 0
@@ -55,8 +57,8 @@
   padding: 12px 20px
 
 .show_more
-  background: #3880ca
-  color: #fff
+  background: $blue
+  color: $white
   display: inline-block
   padding: 6px 15px
   text-decoration: none
