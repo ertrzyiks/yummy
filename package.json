@@ -1,6 +1,6 @@
 {
   "name": "yummy",
-  "description": "Yummy descriptions",
+  "description": "Yummy recipes",
   "license": "MIT",
   "author": "Dyrksy",
   "scripts": {
@@ -10,7 +10,11 @@
     "test:watch": "jest --watch",
     "build": "gatsby build",
     "deploy": "bash -x ./scripts/deploy.sh",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "GATSBY_SOURCE=test start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e:ci": "GATSBY_SOURCE=test start-server-and-test develop http://localhost:8000 cy:run"
   },
   "dependencies": {
     "emotion": "^10.0.7",
@@ -41,9 +45,13 @@
   "devDependencies": {
     "babel-jest": "^24.1.0",
     "babel-preset-gatsby": "^0.1.7",
+    "cypress": "^3.1.5",
+    "cypress-testing-library": "^2.3.6",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
-    "react-test-renderer": "^16.8.2"
+    "mkdirp": "^0.5.1",
+    "react-test-renderer": "^16.8.2",
+    "start-server-and-test": "^1.7.11"
   },
   "optionalDependencies": {
     "fsevents": "^1.2.7"

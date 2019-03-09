@@ -1,5 +1,24 @@
 const {JSDOM} = require('jsdom')
 
+const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
+  `gatsby-source-fixtures`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/cypress/fixtures`,
+      name: 'recipes',
+    },
+  }
+] : [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/recipes`,
+      name: 'recipes',
+    },
+  }
+]
+
 module.exports = {
   siteMetadata: {
     title: 'Yummy',
@@ -7,20 +26,7 @@ module.exports = {
     siteUrl: 'https://yummy.ertrzyiks.me',
     author: 'Author Name'
   },
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/recipes`,
-        name: 'recipes',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
+  plugins: sourcePlugins.concat([
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -98,4 +104,5 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
   ],
+  )
 }
