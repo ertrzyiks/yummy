@@ -1,6 +1,6 @@
 import React from 'react'
 import {render, cleanup} from 'react-testing-library'
-import Paginator from '../'
+import Paginator from './'
 
 describe('<Paginator>', () => {
   afterEach(cleanup)
