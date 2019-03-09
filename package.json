@@ -7,6 +7,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "gatsby build",
     "deploy": "bash -x ./scripts/deploy.sh",
     "serve": "gatsby serve"
@@ -32,6 +33,7 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "react-select": "^2.3.0",
+    "react-testing-library": "^6.0.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
     "underscore.string": "^3.3.5"
@@ -42,5 +44,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
     "react-test-renderer": "^16.8.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.2.7"
   }
 }

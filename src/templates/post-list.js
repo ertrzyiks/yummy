@@ -5,7 +5,7 @@ import PostCard from '../components/post-card'
 import Paginator from '../components/paginator'
 import styles from './page.module.sass'
 
-export default function PostListPage({data, pageContext}) {
+export default function PostListPage({data, pageContext, location}) {
   const Posts = data.allRecipe.edges
     .map((edge, index) => {
       return (
@@ -23,7 +23,7 @@ export default function PostListPage({data, pageContext}) {
       <div className={styles.posts}>
         {Posts}
       </div>
-      <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages}/>
+      <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages} currentPath={location.pathname} />
     </section>
   </div>
 }
