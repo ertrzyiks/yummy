@@ -5,16 +5,18 @@
   "author": "Dyrksy",
   "scripts": {
     "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "gatsby build",
+    "test:build": "GATSBY_SOURCE=test gatsby build",
+    "test:serve": "gatsby serve --port 8000",
     "deploy": "bash -x ./scripts/deploy.sh",
-    "serve": "gatsby serve",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "GATSBY_SOURCE=test start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "GATSBY_SOURCE=test start-server-and-test develop http://localhost:8000 cy:run"
+    "test:e2e:ci": "npm run test:build && start-server-and-test test:serve http://localhost:8000 cy:run"
   },
   "dependencies": {
     "emotion": "^10.0.7",
