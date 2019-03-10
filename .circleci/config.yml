@@ -1,7 +1,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 version: 2
 jobs:
-  build:
+  test_and_build:
     docker:
       - image: circleci/node:8
     working_directory: ~/repo
@@ -74,13 +74,13 @@ workflows:
   version: 2
   build_deploy:
     jobs:
-      - build
+      - test_and_build
       - e2e:
           requires:
-            - build
+            - test_and_build
       - deploy:
           requires:
-            - build
+            - test_and_build
             - e2e
           filters:
             branches:
