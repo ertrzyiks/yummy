@@ -5,14 +5,23 @@
   padding: 3px 6px
   position: relative
   display: flex
+  width: 100%
+
+  +media('<tablet')
+    width: auto
 
 .navbar_categories
   display: flex
+  align-items: center
+  justify-content: flex-end
+  width: 100%
 
   +media('<tablet')
     display: none
     flex-direction: column
     position: absolute
+    align-items: initial
+    justify-content: initial
     top: 56px
     right: 0px
     z-index: 1
@@ -56,6 +65,20 @@
     &:active
       background-color: $orange1
       text-decoration: none
+
+.navbar_logo_link
+  composes: navbar_link
+  margin: -3px 9px 0 9px
+  padding: 0
+  vertical-align: baseline
+
+  +media('<tablet')
+    margin: 0 6px
+    padding: 4px 0
+
+  svg
+    height: 42px
+    vertical-align: middle
 
 .navbar_menu_icon
   display: none

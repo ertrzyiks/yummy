@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
+import Logo from '../logo_simple'
 import MenuBarsIcon from '../menu_bars'
 import MenuCloseIcon from '../menu_close'
 import styles from './navbar.module.sass'
@@ -38,6 +39,8 @@ class Navbar extends React.Component {
         <div className={styles.navbar_menu_overlay} onClick={this.handleMenuCloseClick} />)
       : null;
 
+    const {hasHomepageLink} = this.props
+
     return (
       <nav className={styles.navbar}>
         <button className={[styles.navbar_menu_icon, this.state.menuOpen ? styles.hidden : ''].join(' ')}
@@ -56,6 +59,17 @@ class Navbar extends React.Component {
         </button>
         <div className={categoryMenuClass}>
           {overlay}
+
+          {hasHomepageLink &&
+            <Link
+              to={`/`}
+              key={`homepage`}
+              className={styles.navbar_logo_link}
+              onClick={this.handleMenuCloseClick}
+            >
+              <Logo/>
+            </Link>
+          }
           <StaticQuery query={graphql`
           query LoadCategories {
             allRecipeCategory (sort: { fields: [position] }) {
