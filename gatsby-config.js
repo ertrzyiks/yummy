@@ -1,5 +1,10 @@
 const {JSDOM} = require('jsdom')
 
+const localPlugins = [
+  `gatsby-yummy-categories`,
+  `gatsby-yummy-search-data`,
+]
+
 const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   `gatsby-source-fixtures`,
   {
@@ -26,7 +31,7 @@ module.exports = {
     siteUrl: 'https://yummy.ertrzyiks.me',
     author: 'Author Name'
   },
-  plugins: sourcePlugins.concat([
+  plugins: localPlugins.concat(sourcePlugins).concat([
     {
       resolve: `gatsby-plugin-typography`,
       options: {

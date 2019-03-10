@@ -12,7 +12,7 @@ const toSubsectionPath = (path) => {
   const newPath = removeTrailingSlash(path)
   const subsectionPath = removePageNumberSegment(newPath)
 
-  return subsectionPath == '' ? '/' : subsectionPath
+  return subsectionPath === '' ? '/' : subsectionPath
 }
 
 const generatePagePath = (subsectionPath, page) => {
