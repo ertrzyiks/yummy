@@ -27,6 +27,12 @@ module.exports = {
     author: 'Author Name'
   },
   plugins: sourcePlugins.concat([
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
