@@ -21,7 +21,7 @@ export default class Header extends React.Component {
     return (
       <header className={styles.header}>
         <div className={styles.navbar}>
-          <Navbar/>
+          <Navbar hasHomepageLink={fullVersion === false}/>
         </div>
 
         {
