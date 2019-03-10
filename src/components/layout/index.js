@@ -5,11 +5,11 @@ import Footer from '../footer'
 
 import './layout.sass'
 
-export default function Layout({children, fullHeaderVersion}) {
+export default function Layout({children, fullHeaderVersion, subsection}) {
   return <div>
     <DefaultMeta />
 
-    <Header fullVersion={fullHeaderVersion}/>
+    <Header fullVersion={fullHeaderVersion} subsection={subsection}/>
 
     {children}
     <Footer />

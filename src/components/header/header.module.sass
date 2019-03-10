@@ -66,3 +66,30 @@
     +media('>tablet')
       border-top-width: $triangle-height-desktop
       bottom: -$triangle-height-desktop
+
+.subsection_heading_wrapper
+  padding-bottom: 30px
+
+  +media('>tablet')
+    padding-bottom: 50px
+
+.subsection_heading
+  font-size: 40px
+  text-transform: uppercase
+  color: $grey6
+  padding: 50px 20px 16px 20px
+  letter-spacing: 0.15em
+  font-weight: 400
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+  hyphens: auto
+
+  &:after
+    content: ''
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+    width: 100%
+    position: absolute
+    bottom: 48px
+    left: 0
+
+    +media('>tablet')
+      bottom: 68px
