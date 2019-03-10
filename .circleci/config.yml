@@ -22,7 +22,9 @@ jobs:
           key: v2-dependencies-{{ checksum "package.json" }}
 
       - run: npm test
-      - run: npm run build
+      - run:
+          name: npm run build
+          command: for i in {1..5}; do npm run build && break || sleep 5; done
 
       - persist_to_workspace:
           root: .
