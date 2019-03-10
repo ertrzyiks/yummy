@@ -61,7 +61,8 @@ function createCategoryPage({ category, slug, actions, graphql }) {
           limit: postsPerPage,
           skip: i * postsPerPage,
           totalPages: totalPages,
-          currentPage: i + 1
+          currentPage: i + 1,
+          fullHeaderVersion: false
         },
       })
     })

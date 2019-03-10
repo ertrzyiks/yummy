@@ -15,7 +15,7 @@ export default class Header extends React.Component {
   }
 
   render () {
-    const { fullVersion } = this.props
+    const { fullVersion, subsection } = this.props
     const { alreadyMounted } = this.state
 
     return (
@@ -31,6 +31,16 @@ export default class Header extends React.Component {
             </Link>,
             <Searchbar forceVisibility={alreadyMounted} className={styles.searchbar} key={'searchbar'}/>
           ] : null
+        }
+
+        {
+          subsection
+            ? (
+              <div className={styles.subsection_heading_wrapper}>
+                <h2 className={styles.subsection_heading}>{subsection}</h2>
+              </div>
+            )
+            : null
         }
       </header>
     )
