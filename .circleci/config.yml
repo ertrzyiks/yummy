@@ -1,7 +1,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 version: 2
 jobs:
-  test_and_build:
+  install:
     docker:
       - image: circleci/node:8
     working_directory: ~/repo
@@ -20,8 +20,48 @@ jobs:
             - ~/.npm
             - ~/.cache
           key: v2-dependencies-{{ checksum "package.json" }}
+  lint:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/repo
+    steps:
+      - checkout
 
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+
+      - run: npm ci
+      - run: npm run lint
+  test:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/repo
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+
+      - run: npm ci
       - run: npm test
+
+  build:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/repo
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-
+
+      - run: npm ci
       - run:
           name: npm run build
           command: for i in {1..5}; do npm run build && break || sleep 5; done
@@ -74,14 +114,25 @@ workflows:
   version: 2
   build_deploy:
     jobs:
-      - test_and_build
+      - install
+      - lint:
+          requires:
+            - install
+      - test:
+          requires:
+            - install
+
+      - build:
+          requires:
+            - test
       - e2e:
           requires:
-            - test_and_build
+            - test
+
       - deploy:
           requires:
-            - test_and_build
             - e2e
+            - build
           filters:
             branches:
               only: master
