@@ -11,5 +11,5 @@ exports.replaceRenderer = function ({ bodyComponent, replaceBodyHTMLString}) {
 exports.wrapPageElement = function ({ element, props }) {
   const {pageContext} = props
 
-  return <Layout fullHeaderVersion={pageContext.fullHeaderVersion} subsection={pageContext.category || pageContext.tag}>{element}</Layout>
+  return <Layout fullHeaderVersion={pageContext.fullHeaderVersion} subsection={pageContext.subsection}>{element}</Layout>
 }
