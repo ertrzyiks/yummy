@@ -56,7 +56,8 @@ function createTagPage({ tag, actions, graphql }) {
           skip: i * postsPerPage,
           totalPages: totalPages,
           currentPage: i + 1,
-          fullHeaderVersion: false
+          fullHeaderVersion: false,
+          subsection: tag
         },
       })
     })
