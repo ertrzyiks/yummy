@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ertrzyiks/yummy.svg?style=svg)](https://circleci.com/gh/ertrzyiks/yummy)
+
 ![logotype green](https://user-images.githubusercontent.com/40405175/42126266-4acf4cc4-7c7d-11e8-9c13-8880608247f8.png)
 
 # yummy
