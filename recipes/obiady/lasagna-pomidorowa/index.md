@@ -19,8 +19,8 @@ Pomidorowa uczta z beszamelowym twistem.
 
 - opakowanie makaronu lasagna
 - 150g parmezanu
-- sos prawie boloński z kurczakiem
-- kontrowersyjny sos beszamelowy
+- sos prawie boloński z kurczakiem *(przepis poniżej)*
+- kontrowersyjny sos beszamelowy *(przepis poniżej)*
 
 ### Sos prawie boloński z kurczakiem
 - 400g filetu z kurczaka
