@@ -17,7 +17,6 @@ Doskonały z ziemniaczkiem, ryżem lub makaronem.
 
 ## Lista zakupów
 
-
 - 400g pieczarek
 - 1 średnia cebula
 - 6 ziemniaków

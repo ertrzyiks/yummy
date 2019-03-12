@@ -5,7 +5,8 @@ required_time: 150min
 category:
  - ciasta
 tags:
- - jabłecznik
+ - półkruche
+ - owocowe
 featured_image: ./cover.jpg
 ---
 
