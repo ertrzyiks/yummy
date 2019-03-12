@@ -1,14 +1,14 @@
 const {JSDOM} = require('jsdom')
 
 const localPlugins = [
-  `gatsby-yummy-categories`,
-  `gatsby-yummy-search-data`,
+  'gatsby-yummy-categories',
+  'gatsby-yummy-search-data',
 ]
 
 const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
-  `gatsby-source-fixtures`,
+  'gatsby-source-fixtures',
   {
-    resolve: `gatsby-source-filesystem`,
+    resolve: 'gatsby-source-filesystem',
     options: {
       path: `${__dirname}/cypress/fixtures`,
       name: 'recipes',
@@ -16,7 +16,7 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   }
 ] : [
   {
-    resolve: `gatsby-source-filesystem`,
+    resolve: 'gatsby-source-filesystem',
     options: {
       path: `${__dirname}/recipes`,
       name: 'recipes',
@@ -33,22 +33,22 @@ module.exports = {
   },
   plugins: localPlugins.concat(sourcePlugins).concat([
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: 'src/utils/typography.js',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      "resolve": `gatsby-transformer-remark`,
-      "options": {
-        "excerpt_separator": `<!-- more -->`
+      'resolve': 'gatsby-transformer-remark',
+      'options': {
+        'excerpt_separator': '<!-- more -->'
       }
     },
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
         {
@@ -95,25 +95,25 @@ module.exports = {
               }
             }
           `,
-            output: "/rss.xml",
-            title: "Yummy RSS Feed",
+            output: '/rss.xml',
+            title: 'Yummy RSS Feed',
           },
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Yummy",
-        short_name: "Yummy",
-        start_url: "/",
-        background_color: "#ec973b",
-        theme_color: "#ec973b",
-        display: "standalone",
-        icon: "src/components/layout/assets/android-chrome-192x192.png",
+        name: 'Yummy',
+        short_name: 'Yummy',
+        start_url: '/',
+        background_color: '#ec973b',
+        theme_color: '#ec973b',
+        display: 'standalone',
+        icon: 'src/components/layout/assets/android-chrome-192x192.png',
       },
     },
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-sass',
     'gatsby-plugin-eslint'
   ],
   )
