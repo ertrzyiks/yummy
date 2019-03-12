@@ -10,6 +10,8 @@
   overflow: hidden
   text-decoration: none
   color: $grey6
+  // Fixes border radius overflow: hidden glitch in Safari
+  transform: translateZ(0)
 
   &:active
     box-shadow: 2px 3px 5px $grey2
