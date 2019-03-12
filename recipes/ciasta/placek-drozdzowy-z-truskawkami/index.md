@@ -6,6 +6,7 @@ category:
  - ciasta
 tags:
  - drożdżowe
+ - owocowe
 featured_image: ./cover.jpg
 ---
 
