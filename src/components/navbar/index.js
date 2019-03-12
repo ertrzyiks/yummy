@@ -62,8 +62,8 @@ class Navbar extends React.Component {
 
           {hasHomepageLink &&
             <Link
-              to={`/`}
-              key={`homepage`}
+              to={'/'}
+              key={'homepage'}
               className={styles.navbar_logo_link}
               onClick={this.handleMenuCloseClick}
             >
