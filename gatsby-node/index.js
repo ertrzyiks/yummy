@@ -24,7 +24,7 @@ function createIndexPage({ actions, graphql }) {
 
     Array.from({ length: totalPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/` : `/page/${i + 1}`,
+        path: i === 0 ? '/' : `/page/${i + 1}`,
         component: path.resolve('./src/templates/post-list.js'),
         context: {
           limit: postsPerPage,

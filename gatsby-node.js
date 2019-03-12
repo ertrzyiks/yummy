@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const slugify = require('underscore.string/slugify')
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require('gatsby-source-filesystem')
 const { createTagPages } = require('./gatsby-node/tags')
 const { createCategoryPages } = require('./gatsby-node/categories')
 const { createPostPages } = require('./gatsby-node/posts')
@@ -10,7 +10,7 @@ const { split } = require('./gatsby-node/content')
 exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, actions }) => {
   const { createNode } = actions
 
-  if (node.internal.type === `MarkdownRemark` && getNode(node.parent).internal.type === 'File') {
+  if (node.internal.type === 'MarkdownRemark' && getNode(node.parent).internal.type === 'File') {
     const slug = createFilePath({ node, getNode, trailingSlash: false })
 
     const content = await loadNodeContent(node)
@@ -44,14 +44,14 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
       parent: node.id,
       internal: {
         content: JSON.stringify(recipeContent),
-        type: `Recipe`,
+        type: 'Recipe',
       },
     }
 
     recipeNode.internal.contentDigest = crypto
-      .createHash(`md5`)
+      .createHash('md5')
       .update(JSON.stringify(recipeNode))
-      .digest(`hex`)
+      .digest('hex')
 
     createNode(recipeNode)
   }
@@ -70,15 +70,15 @@ function createRecipePart(parent, kind, content, {createNodeId, createNode}) {
     parent: parent.id,
     internal: {
       content: content,
-      type: `RecipePart`,
+      type: 'RecipePart',
       mediaType: 'text/markdown'
     }
   }
 
   node.internal.contentDigest = crypto
-    .createHash(`md5`)
+    .createHash('md5')
     .update(content)
-    .digest(`hex`)
+    .digest('hex')
 
   createNode(node)
   return id

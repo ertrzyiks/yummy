@@ -13,11 +13,11 @@ function createCategory({ createNode, name, slug, position }) {
     parent: null,
     children: [],
     internal: {
-      type: `RecipeCategory`,
+      type: 'RecipeCategory',
       contentDigest: crypto
-        .createHash(`md5`)
+        .createHash('md5')
         .update(JSON.stringify(fieldData))
-        .digest(`hex`),
+        .digest('hex'),
       content: JSON.stringify(fieldData)
     },
 
