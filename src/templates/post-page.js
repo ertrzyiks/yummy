@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { Helmet } from 'react-helmet'
 import slugify from 'underscore.string/slugify'
 import TimeToPrepare from '../components/time_to_prepare'
 import Breadcrumbs from '../components/breadcrumbs'
@@ -17,6 +18,12 @@ export default function Template({data}) {
   })
 
   return <div className={pageStyles.layout}>
+    <Helmet>
+      <title>{recipe.html_title}</title>
+      <meta name="description" content={recipe.html_description}/>
+      <meta property="og:image" content={recipe.featured_image.childImageSharp.fluid.src} />
+    </Helmet>
+
     <section className={pageStyles.main}>
       <article className={postStyles.post}>
         <div className={postStyles.post_intro}>
@@ -76,6 +83,8 @@ export const pageQuery = graphql`
       }
       slug
       name
+      html_title
+      html_description
       tags
       required_time
       category {

@@ -1,5 +1,6 @@
 ---
 title: Pieczone ziemniaki z kurczakiem
+html_description: Proste i pyszne.
 date: '2018-03-07T19:38:00Z'
 required_time: 80min
 category: 

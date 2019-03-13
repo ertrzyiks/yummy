@@ -22,6 +22,8 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
 
     const recipeContent = {
       name: node.frontmatter.title,
+      html_title: node.frontmatter.html_title || node.frontmatter.title,
+      html_description: node.frontmatter.html_description || sections[0].replace(/^<p>(.*)<\/p>$/, '$1'),
       published_at: node.frontmatter.date,
       required_time: node.frontmatter.required_time,
       tags: sortTagsAlphabetically(node.frontmatter.tags),
