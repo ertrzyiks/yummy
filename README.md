@@ -25,7 +25,7 @@ Preview website in production mode
 
 ```
 gatsby build
-gatsby server
+gatsby serve
 ```
 Update website
 
@@ -33,14 +33,6 @@ Update website
 npm run deploy
 ```
 
-### Content snippets
-
-There are a few custom snippets available for reusable content - currently all around the chicken ingredient:
-- `ki` (with an optional `weight` arg) for the ingredient line
-- `kpz` for the soup preparation line
-- `kpo` for the dinner prep line.
-
-All snippets can be found in the `scripts/snippets.js` file.
 
 ## Logo
 
