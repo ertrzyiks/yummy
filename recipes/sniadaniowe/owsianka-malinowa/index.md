@@ -7,6 +7,7 @@ category:
 tags:
  - płatki
  - maliny
+ - wegetariańskie
 featured_image: ./cover.jpg
 ---
 

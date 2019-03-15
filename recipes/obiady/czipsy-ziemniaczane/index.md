@@ -6,6 +6,7 @@ category:
  - obiady
 tags:
  - ziemniaki
+ - wegetariańskie
 featured_image: ./cover.jpg
 ---
 
