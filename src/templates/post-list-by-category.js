@@ -21,7 +21,7 @@ export default function PostListByCategoryPage({data, pageContext, location}) {
 
   return <div className={styles.layout}>
     <Helmet>
-      <meta name="description" content={`Kolekcja naszych ulubionych przepisów kulinarnych w kategorii: ${pageContext.category.name}`}></meta>
+      <meta name="description" content={`Kolekcja naszych ulubionych przepisów kulinarnych w kategorii: ${pageContext.category}`}></meta>
     </Helmet>
 
     <section className={styles.main}>
