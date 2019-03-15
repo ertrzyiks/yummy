@@ -6,6 +6,7 @@ category:
  - śniadaniowe
 tags:
  - mączne
+ - wegetariańskie
 featured_image: ./cover.jpg
 ---
 
