@@ -29,7 +29,8 @@ function createPostPages({ actions, graphql }) {
         component: blogPostTemplate,
         context: {
           slug: node.slug,
-          fullHeaderVersion: false
+          fullHeaderVersion: false,
+          isSingleRecipe: true
         }
       })
     })

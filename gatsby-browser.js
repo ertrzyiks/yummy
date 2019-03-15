@@ -2,7 +2,15 @@ import React from 'react'
 import Layout from './src/components/layout'
 
 export const wrapPageElement = ({ element, props }) => {
-  const {pageContext} = props
+  const {pageContext: {fullHeaderVersion, subsection, isSingleRecipe}} = props
 
-  return <Layout fullHeaderVersion={pageContext.fullHeaderVersion} subsection={pageContext.category || pageContext.tag}>{element}</Layout>
+  return (
+    <Layout
+      fullHeaderVersion={fullHeaderVersion}
+      subsection={subsection}
+      isSingleRecipe={isSingleRecipe}
+    >
+      {element}
+    </Layout>
+  )
 }
