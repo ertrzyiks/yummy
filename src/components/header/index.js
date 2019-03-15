@@ -15,11 +15,15 @@ export default class Header extends React.Component {
   }
 
   render () {
-    const { fullVersion, subsection } = this.props
+    const { fullVersion, subsection, isSingleRecipe } = this.props
     const { alreadyMounted } = this.state
 
+    const headerStyles = isSingleRecipe
+      ? [styles.header, styles.single_post].join(' ')
+      : styles.header
+
     return (
-      <header className={styles.header}>
+      <header className={headerStyles}>
         <div className={styles.navbar}>
           <Navbar hasHomepageLink={fullVersion === false}/>
         </div>

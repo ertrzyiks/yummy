@@ -9,7 +9,15 @@ exports.replaceRenderer = function ({ bodyComponent, replaceBodyHTMLString}) {
 }
 
 exports.wrapPageElement = function ({ element, props }) {
-  const {pageContext} = props
+  const {pageContext: {fullHeaderVersion, subsection, isSingleRecipe}} = props
 
-  return <Layout fullHeaderVersion={pageContext.fullHeaderVersion} subsection={pageContext.subsection}>{element}</Layout>
+  return (
+    <Layout
+      fullHeaderVersion={fullHeaderVersion}
+      subsection={subsection}
+      isSingleRecipe={isSingleRecipe}
+    >
+      {element}
+    </Layout>
+  )
 }
