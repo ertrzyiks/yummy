@@ -18,13 +18,27 @@ class Navbar extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleEscapeKey)
+  }
+
+  handleEscapeKey = (event) => {
+    if (event.keyCode === 27) {
+      this.handleMenuCloseClick()
+    }
+  }
+
   handleMenuOpenClick = () => {
+    document.addEventListener('keydown', this.handleEscapeKey)
+
     this.setState({
       menuOpen: true
     })
   }
 
   handleMenuCloseClick = () => {
+    document.removeEventListener('keydown', this.handleEscapeKey)
+
     this.setState({
       menuOpen: false
     })
