@@ -15,6 +15,9 @@ const typography = new Typography({
     ul: {
       marginBottom: 0,
     },
+    'p:last-child': {
+      marginBottom: 0,
+    },
     'li:last-child': {
       marginBottom: 0,
     }
