@@ -40,14 +40,15 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-
       - restore_cache:
           keys:
             - v2-dependencies-{{ checksum "package.json" }}
             - v2-dependencies-
 
       - run: npm ci
-      - run: npm test
+      - run: CI=true npm test
+      - store_test_results:
+          path: test-results
 
   build:
     docker:
@@ -88,6 +89,8 @@ jobs:
             - v2-dependencies-
       - run: npm ci
       - run: npm run test:e2e:ci
+      - store_test_results:
+          path: test-results
       - store_artifacts:
           path: ~/repo/cypress/snapshots
           destination: snapshots
