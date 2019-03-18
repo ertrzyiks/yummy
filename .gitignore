@@ -78,3 +78,5 @@ cypress/fixtures/zupy
 cypress/fixtures/ciasta
 cypress/fixtures/sniadaniowe
 cypress/fixtures/koktajle
+
+test-results

@@ -15,11 +15,4 @@ context('Homepage', () => {
     cy.wait(500)
     cy.matchImageSnapshot('homepage-desktop')
   })
-
-  it('looks good on mobile', () => {
-    cy.viewport('iphone-6+')
-    cy.scrollTo('bottom', { duration: 2000 })
-    cy.wait(500)
-    cy.matchImageSnapshot('homepage-mobile')
-  })
 })
