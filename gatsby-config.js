@@ -25,6 +25,26 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   }
 ]
 
+const typographyPlugins = process.env.GATSBY_SOURCE === 'test' ? [
+  {
+    resolve: 'gatsby-plugin-typography',
+    options: {
+      pathToConfigModule: 'src/utils/typography.fixed_face.js',
+    },
+  }
+] : [
+  {
+    resolve: 'gatsby-plugin-typography',
+    options: {
+      pathToConfigModule: 'src/utils/typography.js',
+    },
+  }
+]
+
+const dynamicPlugins = localPlugins
+  .concat(sourcePlugins)
+  .concat(typographyPlugins)
+
 module.exports = {
   siteMetadata: {
     title: 'Yummy',
@@ -32,13 +52,7 @@ module.exports = {
     siteUrl: 'https://yummy.ertrzyiks.me',
     author: 'Author Name'
   },
-  plugins: localPlugins.concat(sourcePlugins).concat([
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography.js',
-      },
-    },
+  plugins: dynamicPlugins.concat([
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

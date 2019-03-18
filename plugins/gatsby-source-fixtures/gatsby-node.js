@@ -42,12 +42,18 @@ function createRecipe({content, relativePath}) {
   fs.writeFileSync(finalPath, content)
 }
 
+function createDateWithOffset(offset) {
+  const date = new Date('2019-01-01T00:00:00Z')
+  date.setMinutes(offset)
+  return date.toISOString()
+}
+
 exports.sourceNodes = () => {
   createRecipe({
     relativePath: 'obiady/obiad-a/index.md',
     content: getContent({
       title: 'Obiad A',
-      date: '2019-01-01T00:00:00Z',
+      date: createDateWithOffset(0),
       category: 'obiady',
       tags: ['kurczak']
     })
@@ -57,7 +63,7 @@ exports.sourceNodes = () => {
     relativePath: 'zupy/zupa-a/index.md',
     content: getContent({
       title: 'Zupa A',
-      date: '2019-01-01T00:00:00Z',
+      date: createDateWithOffset(1),
       category: 'zupy',
       tags: ['woda']
     })
@@ -67,7 +73,7 @@ exports.sourceNodes = () => {
     relativePath: 'koktajle/zupa-a/index.md',
     content: getContent({
       title: 'Koktajl A',
-      date: '2019-01-01T00:00:00Z',
+      date: createDateWithOffset(2),
       category: 'koktajle',
       tags: ['woda']
     })
@@ -77,7 +83,7 @@ exports.sourceNodes = () => {
     relativePath: 'sniadaniowe/sniadaniowe-a/index.md',
     content: getContent({
       title: 'Sniadaniowe A',
-      date: '2019-01-01T00:00:00Z',
+      date: createDateWithOffset(3),
       category: 'sniadaniowe',
       tags: ['woda']
     })
@@ -87,7 +93,7 @@ exports.sourceNodes = () => {
     relativePath: 'ciasta/ciasto-a/index.md',
     content: getContent({
       title: 'Ciasta A',
-      date: '2019-01-01T00:00:00Z',
+      date: createDateWithOffset(4),
       category: 'ciasta',
       tags: ['woda']
     })

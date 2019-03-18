@@ -12,12 +12,15 @@
     "test:watch": "jest --watch",
     "build": "gatsby build",
     "test:build": "GATSBY_SOURCE=test gatsby build",
-    "test:serve": "gatsby serve --port 8000",
+    "test:serve": "gatsby serve --port 8001",
+    "test:develop": "gatsby develop --port 8001",
     "deploy": "bash -x ./scripts/deploy.sh",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:e2e": "GATSBY_SOURCE=test start-server-and-test develop http://localhost:8000 cy:open",
-    "test:e2e:ci": "npm run test:build && start-server-and-test test:serve http://localhost:8000 cy:run"
+    "cy:run:update": "cypress run --env updateSnapshots=true",
+    "test:e2e": "GATSBY_SOURCE=test start-server-and-test test:develop http://localhost:8001 cy:open",
+    "test:e2e:ci": "npm run test:build && start-server-and-test test:serve http://localhost:8001 cy:run",
+    "test:e2e:ci:update": "npm run test:build && start-server-and-test test:serve http://localhost:8001 cy:run:update"
   },
   "dependencies": {
     "emotion": "^10.0.7",
@@ -49,6 +52,7 @@
     "babel-jest": "^24.1.0",
     "babel-preset-gatsby": "^0.1.7",
     "cypress": "^3.1.5",
+    "cypress-image-snapshot": "^3.0.1",
     "cypress-testing-library": "^2.3.6",
     "eslint": "^5.15.1",
     "eslint-loader": "^2.1.2",
