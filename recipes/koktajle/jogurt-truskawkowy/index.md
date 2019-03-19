@@ -6,6 +6,7 @@ category:
  - koktajle
 tags:
  - słodkie
+ - truskawki
 featured_image: ./cover.jpg
 ---
 

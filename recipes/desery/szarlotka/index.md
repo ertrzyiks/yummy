@@ -3,10 +3,11 @@ title: Szarlotka
 date: '2018-04-21T12:11:00Z'
 required_time: 150min
 category:
- - ciasta
+ - desery
 tags:
  - półkruche
  - owocowe
+ - ciasta
 featured_image: ./cover.jpg
 ---
 
