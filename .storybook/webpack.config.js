@@ -5,6 +5,22 @@ module.exports = ({ config }) => {
   // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
   config.module.rules[0].use[0].loader = require.resolve("babel-loader")
 
+  config.module.rules.push({
+      test: /\.sass$/,
+      use: [
+        "style-loader", // creates style nodes from JS strings
+        { // css modules support
+          loader: require.resolve('css-loader'),
+          options: {
+            importLoaders: 1,
+            modules: true,
+            localIdentName: '[name]__[local]___[hash:base64:5]',
+          },
+        },
+        "sass-loader" // compiles Sass to CSS, using Node Sass by default
+      ]
+    })
+
   // use @babel/preset-react for JSX and env (instead of staged presets)
   config.module.rules[0].use[0].options.presets = [
     require.resolve("@babel/preset-react"),

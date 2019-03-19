@@ -51,8 +51,16 @@
     "underscore.string": "^3.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
     "babel-preset-gatsby": "^0.1.7",
+    "css-loader": "^2.1.1",
     "cypress": "^3.2.0",
     "cypress-image-snapshot": "^3.0.1",
     "cypress-testing-library": "^2.3.6",
@@ -67,12 +75,8 @@
     "mocha-junit-reporter": "^1.18.0",
     "react-test-renderer": "^16.8.2",
     "start-server-and-test": "^1.7.11",
-    "@storybook/react": "^5.0.3",
-    "@storybook/addon-actions": "^5.0.3",
-    "@storybook/addon-links": "^5.0.3",
-    "@storybook/addons": "^5.0.3",
-    "@babel/core": "^7.3.4",
-    "babel-loader": "^8.0.5"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6"
   },
   "optionalDependencies": {
     "fsevents": "^1.2.7"
