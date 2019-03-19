@@ -2,8 +2,6 @@
 title: Węgierska zupa gulaszowa
 date: '2019-03-18T13:40:00Z'
 required_time: 60min
-category:
- - zupy
 tags:
  - wegetariańskie
  - węgierskie

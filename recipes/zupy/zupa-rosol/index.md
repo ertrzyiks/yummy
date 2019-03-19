@@ -2,8 +2,6 @@
 title: Zupa rosół
 date: '2018-04-21T13:30:00Z'
 required_time: 60min
-category:
- - zupy
 tags:
  - polskie
  - kurczak

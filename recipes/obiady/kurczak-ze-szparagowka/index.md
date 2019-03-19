@@ -2,8 +2,6 @@
 title: Kurczak curry z fasolką szparagową
 date: '2018-07-05T19:38:00Z'
 required_time: 45min
-category:
- - obiady
 tags:
  - kurczak
  - indyjskie

@@ -8,6 +8,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
 
   if (node.internal.type === 'MarkdownRemark' && getNode(node.parent).internal.type === 'File') {
     const slug = createFilePath({ node, getNode, trailingSlash: false })
+    const categorySlug = slug.split('/')[1]
 
     const content = await loadNodeContent(node)
     const sections = split(content)
@@ -31,7 +32,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
       headline___NODE: headlineId,
       ingredients___NODE: ingredientsId,
       directions___NODE: directionsId,
-      category___NODE: slugify(node.frontmatter.category[0])
+      category___NODE: categorySlug
     }
 
     const recipeNode = {

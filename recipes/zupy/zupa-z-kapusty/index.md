@@ -2,8 +2,6 @@
 title: Zupa z kapusty
 required_time: 60min
 date: '2018-02-24T20:46:00Z'
-category: 
- - zupy
 tags:
  - kapusta
  - ziemniaki

@@ -2,8 +2,6 @@
 title: Owsianka malinowa
 date: '2018-05-02T18:38:00Z'
 required_time: 20min
-category:
- - śniadaniowe
 tags:
  - płatki
  - maliny

@@ -3,8 +3,6 @@ title: Kurczak z purée
 html_description: Szybki, pyszny obiad.
 date: '2018-02-21T18:38:00Z'
 required_time: 60min
-category: 
- - obiady
 tags:
  - kalafior
  - brokuł

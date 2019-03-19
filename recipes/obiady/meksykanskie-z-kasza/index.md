@@ -2,8 +2,6 @@
 title: Meksykańskie z kaszą
 date: '2018-03-10T11:57:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - kurczak
  - meksykańskie

@@ -2,8 +2,6 @@
 title: Pierogi z pieca
 date: '2018-07-07T11:30:00Z'
 required_time: 180min
-category:
- - obiady
 tags:
  - drożdżowe
  - kurczak

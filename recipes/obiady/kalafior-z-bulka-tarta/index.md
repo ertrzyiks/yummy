@@ -2,8 +2,6 @@
 title: Kalafior z bułką tartą
 date: '2019-03-12T13:57:00Z'
 required_time: 40min
-category:
- - obiady
 tags:
  - kalafior
  - wegetariańskie

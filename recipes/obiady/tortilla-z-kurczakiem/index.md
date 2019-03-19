@@ -2,8 +2,6 @@
 title: Tortilla z kurczakiem
 date: '2018-05-01T18:38:00Z'
 required_time: 30min
-category:
- - obiady
 tags:
  - kurczak
  - tortilla

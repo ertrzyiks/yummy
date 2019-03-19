@@ -2,8 +2,6 @@
 title: Makaron w sosie serowo-cukiniowym
 date: '2018-07-06T19:38:00Z'
 required_time: 45min
-category:
- - obiady
 tags:
  - cukinia
  - włoskie

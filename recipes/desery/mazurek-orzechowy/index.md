@@ -2,8 +2,6 @@
 title: Mazurek orzechowy
 date: '2018-03-30T11:30:00Z'
 required_time: 150min
-category:
- - desery
 tags:
  - orzechowe
  - wielkanoc

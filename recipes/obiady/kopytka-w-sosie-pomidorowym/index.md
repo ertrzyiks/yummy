@@ -2,8 +2,6 @@
 title: Kopytka w sosie pomidorowym
 date: '2018-03-01T23:40:00Z'
 required_time: 90min
-category: 
- - obiady
 tags:
  - ziemniaki
  - pomidory

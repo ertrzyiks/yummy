@@ -2,8 +2,6 @@
 title: Zupa kalafiorowa
 date: '2018-03-10T12:14:00Z'
 required_time: 90min
-category:
- - zupy
 tags:
  - kalafior
  - ziemniaki

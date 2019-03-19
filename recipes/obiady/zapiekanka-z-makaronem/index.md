@@ -2,8 +2,6 @@
 title: Zapiekanka z makaronem
 date: '2018-03-08T19:38:00Z'
 required_time: 180min
-category: 
- - obiady
 tags:
  - pieczarki
  - kurczak

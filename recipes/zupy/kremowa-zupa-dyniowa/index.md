@@ -2,8 +2,6 @@
 title: Kremowa zupa dyniowa
 date: '2019-01-06T23:40:00Z'
 required_time: 60min
-category:
- - zupy
 tags:
  - wegetariańskie
  - dynia

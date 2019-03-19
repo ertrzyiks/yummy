@@ -2,8 +2,6 @@
 title: Sok pomarańczowo-grejfrutowy
 date: '2019-03-18T20:30:00Z'
 required_time: 10min
-category:
- - koktajle
 tags:
  - słodkie
  - pomarańcze

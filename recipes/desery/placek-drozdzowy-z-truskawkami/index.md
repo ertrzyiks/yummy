@@ -2,8 +2,6 @@
 title: Placek drożdżowy z truskawkami
 date: '2018-06-03T19:10:00Z'
 required_time: 180min
-category:
- - desery
 tags:
  - drożdżowe
  - owocowe

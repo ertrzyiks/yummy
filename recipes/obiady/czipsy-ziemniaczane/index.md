@@ -2,8 +2,6 @@
 title: Czipsy ziemniaczane z piekarnika
 date: '2019-03-09T11:57:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - ziemniaki
  - wegetariańskie

@@ -2,8 +2,6 @@
 title: Grecka zupa Fakes
 date: '2019-03-05T14:38:00Z'
 required_time: 60min
-category:
- - zupy
 tags:
  - soczewica
  - ziemniaki
