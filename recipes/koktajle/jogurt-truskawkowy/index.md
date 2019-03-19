@@ -7,7 +7,6 @@ category:
 tags:
  - słodkie
  - truskawki
-featured_image: ./cover.jpg
 ---
 
 Pachnie i smakuje truskawką

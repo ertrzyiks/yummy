@@ -6,7 +6,6 @@ category:
  - koktajle
 tags:
  - słodkie
-featured_image: ./cover.jpg
 ---
 
 Odrobina różowej słodyczy

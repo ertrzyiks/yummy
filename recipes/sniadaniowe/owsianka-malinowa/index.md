@@ -8,7 +8,6 @@ tags:
  - płatki
  - maliny
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Zdrowe malinowe rafaello.

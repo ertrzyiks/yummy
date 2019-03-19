@@ -7,7 +7,6 @@ category:
 tags:
  - szparagi
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Wiosenna eksplozja (dwóch) kolorów.

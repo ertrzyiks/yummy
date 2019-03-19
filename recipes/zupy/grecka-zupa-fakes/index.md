@@ -8,7 +8,6 @@ tags:
  - soczewica
  - ziemniaki
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Wystarczy jedna mała miska.

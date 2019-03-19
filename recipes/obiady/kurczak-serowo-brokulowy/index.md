@@ -7,7 +7,6 @@ category:
 tags:
  - brokuł
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 To jaki w końcu ten sos - śmietanowy czy serowy?

@@ -8,7 +8,6 @@ tags:
  - półkruche
  - owocowe
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Jak pyszna widać po minach ludzi jedzących - i zawsze wychodzi!

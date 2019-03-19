@@ -7,7 +7,6 @@ category:
 tags:
  - polskie
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Najpyszniejsza zupa rosół tylko z kulką i liściem!

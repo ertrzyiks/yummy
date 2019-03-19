@@ -8,7 +8,6 @@ tags:
  - ziemniaki
  - pieczarki
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Doskonały z ziemniaczkiem, ryżem lub makaronem.

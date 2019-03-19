@@ -8,7 +8,6 @@ tags:
  - drożdżowe
  - kurczak
  - polskie
-featured_image: ./cover.jpg
 ---
 
 Porcja na około 20 pierogów.

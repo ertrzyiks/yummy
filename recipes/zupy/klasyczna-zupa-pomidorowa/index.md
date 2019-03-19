@@ -8,7 +8,6 @@ tags:
  - pomidory
  - włoskie
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie

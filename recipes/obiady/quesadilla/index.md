@@ -8,7 +8,6 @@ tags:
  - kurczak
  - tortilla
  - meksykańskie
-featured_image: ./cover.jpg
 ---
 
 Jedyna taka z pomidorową salsą.

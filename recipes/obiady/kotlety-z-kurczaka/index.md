@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - polskie
-featured_image: ./cover.jpg
 ---
 
 Schabowe z kurczaka

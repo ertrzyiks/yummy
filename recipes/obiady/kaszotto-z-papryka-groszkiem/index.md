@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - groszek
-featured_image: ./cover.jpg
 ---
 
 Bajecznie kolorowe danie

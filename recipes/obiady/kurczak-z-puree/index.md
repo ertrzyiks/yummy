@@ -9,7 +9,6 @@ tags:
  - kalafior
  - brokuł
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Szybki, pyszny obiad.

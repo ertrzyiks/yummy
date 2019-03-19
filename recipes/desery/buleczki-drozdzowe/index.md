@@ -7,7 +7,6 @@ category:
 tags:
  - drożdżowe
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Puszyste i okrągłe, jeśli dobrze zwiniesz.

@@ -9,7 +9,6 @@ tags:
  - pomidory
  - mączne
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Smak dzieciństwa.

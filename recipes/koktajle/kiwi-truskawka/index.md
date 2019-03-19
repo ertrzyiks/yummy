@@ -6,7 +6,6 @@ category:
  - koktajle
 tags:
  - kwaśne
-featured_image: ./cover.jpg
 ---
 
 Letni powiew

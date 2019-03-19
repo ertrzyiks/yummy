@@ -7,7 +7,6 @@ category:
 tags:
  - kwaśne
  - limonki
-featured_image: ./cover.jpg
 ---
 
 Pysznie gasi pragnienie.

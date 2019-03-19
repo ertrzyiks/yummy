@@ -7,7 +7,6 @@ category:
 tags:
  - słodkie
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Słodka odmiana na letnie upały

@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - meksykańskie
-featured_image: ./cover.jpg
 ---
 
 Klasyk w nowej odsłonie

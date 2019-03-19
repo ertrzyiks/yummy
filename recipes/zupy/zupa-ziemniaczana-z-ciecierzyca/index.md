@@ -8,7 +8,6 @@ tags:
  - ziemniaki
  - ciecierzyca
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Najlepsza na drugi dzień.

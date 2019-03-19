@@ -8,7 +8,6 @@ tags:
  - kalafior
  - ziemniaki
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Jak grochówka z kalafiora bez laktozy

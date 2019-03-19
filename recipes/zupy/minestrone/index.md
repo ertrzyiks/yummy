@@ -7,7 +7,6 @@ category:
 tags:
  - wegetariańskie
  - włoskie
-featured_image: ./cover.jpg
 ---
 
 Nie krem, bez kurczaka, a jednak pełna pysznego smaku.

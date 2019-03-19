@@ -6,7 +6,6 @@ category:
  - koktajle
 tags:
  - słodkie
-featured_image: ./cover.jpg
 ---
 
 W końcu jogurt bez sztucznego cukru!

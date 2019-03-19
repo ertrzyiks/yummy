@@ -7,7 +7,6 @@ category:
 tags:
  - kwaśne
  - zielone
-featured_image: ./cover.jpg
 ---
 
 Wieczorne orzeźwienie

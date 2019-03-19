@@ -7,7 +7,6 @@ category:
 tags:
  - pomidory
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Pomidorowe i pożywne.

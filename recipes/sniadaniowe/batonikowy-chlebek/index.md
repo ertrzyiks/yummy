@@ -8,7 +8,6 @@ tags:
  - orzechy
  - płatki
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Kanapki, ale inne.

@@ -8,7 +8,6 @@ tags:
  - pomidory
  - wegetariańskie
  - włoskie
-featured_image: ./cover.jpg
 ---
 
 Smak dojrzewających w południowym słońcu pomidorów.

@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - indyjskie
-featured_image: ./cover.jpg
 ---
 
 Curry z sezonowym polskim akcentem.

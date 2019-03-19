@@ -8,7 +8,6 @@ tags:
  - curry
  - dynia
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Tak jak zupa, a jednak inaczej.

@@ -8,7 +8,6 @@ tags:
  - kapusta
  - ziemniaki
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Najpyszniejsza z młodą kapustą i kwaśnym pomidorkiem (pyszne rzeczy zdrabniamy).

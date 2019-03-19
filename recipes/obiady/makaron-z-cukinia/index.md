@@ -8,7 +8,6 @@ tags:
  - cukinia
  - włoskie
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Bez kurczaka, a dobre.

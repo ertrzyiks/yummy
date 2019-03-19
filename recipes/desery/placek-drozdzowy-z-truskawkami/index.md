@@ -8,7 +8,6 @@ tags:
  - drożdżowe
  - owocowe
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Rośnie jak na drożdżach.

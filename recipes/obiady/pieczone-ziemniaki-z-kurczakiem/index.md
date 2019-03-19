@@ -8,7 +8,6 @@ category:
 tags:
  - ziemniaki
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Originalny przepis: [Ziemniaki Hasselback - Kwestia Smaku](https://www.kwestiasmaku.com/przepis/ziemniaki-hasselback)
