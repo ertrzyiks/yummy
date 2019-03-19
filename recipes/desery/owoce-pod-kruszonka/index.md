@@ -8,7 +8,6 @@ tags:
  - kruche
  - owocowe
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Szybka alternatywa dla tradycyjnych ciast, która zawsze wychodzi.

@@ -8,7 +8,6 @@ tags:
  - biszkoptowe
  - bezglutenowe
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Miękka i puszysta

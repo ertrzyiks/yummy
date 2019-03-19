@@ -8,7 +8,6 @@ tags:
  - pomidory
  - portugalskie
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Prawdziwie portugalska zupa pomidorowa rodem z Bergen przygotowana w Polsce.

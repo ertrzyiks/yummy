@@ -7,7 +7,6 @@ category:
 tags:
  - wegetariańskie
  - dynia
-featured_image: ./cover.jpg
 ---
 
 Tak jak curry, a jednak inaczej.

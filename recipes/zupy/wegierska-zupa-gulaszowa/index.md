@@ -7,7 +7,6 @@ category:
 tags:
  - wegetariańskie
  - węgierskie
-featured_image: ./cover.jpg
 ---
 
 Mocno warzywna z indyjską nutą

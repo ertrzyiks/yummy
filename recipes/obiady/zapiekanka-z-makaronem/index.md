@@ -7,7 +7,6 @@ category:
 tags:
  - pieczarki
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Może i robi się długo, ale warto!

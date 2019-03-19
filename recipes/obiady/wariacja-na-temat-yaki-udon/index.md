@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - japońskie
-featured_image: ./cover.jpg
 ---
 
 Smak miso bez dodatku miso (bo cebula mocno).

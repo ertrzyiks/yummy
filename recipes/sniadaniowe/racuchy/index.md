@@ -7,7 +7,6 @@ category:
 tags:
  - mączne
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Najlepsze z kwaśnym jabłkiem i powidłami śliwkowymi.

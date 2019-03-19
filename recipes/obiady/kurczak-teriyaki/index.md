@@ -7,7 +7,6 @@ category:
 tags:
  - japońskie
  - kurczak
-featured_image: ./cover.jpg
 ---
 
 Nie byle jaki kurczak teriyaki.

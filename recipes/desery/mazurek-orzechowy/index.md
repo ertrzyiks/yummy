@@ -9,7 +9,6 @@ tags:
  - wielkanoc
  - półkruche
  - ciasta
-featured_image: ./cover.jpg
 ---
 
 Prawdziwy dwuwarstwowy polski mazurek, który smakuje każdemu.

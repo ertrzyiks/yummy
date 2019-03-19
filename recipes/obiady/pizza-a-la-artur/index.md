@@ -7,7 +7,6 @@ category:
 tags:
  - włoskie
  - drożdżowe
-featured_image: ./cover.jpg
 ---
 
 Epizzkie danie.

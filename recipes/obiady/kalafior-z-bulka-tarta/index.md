@@ -7,7 +7,6 @@ category:
 tags:
  - kalafior
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Lekki smaczny obiad

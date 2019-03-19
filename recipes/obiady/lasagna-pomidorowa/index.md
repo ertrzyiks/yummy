@@ -8,7 +8,6 @@ tags:
  - pomidory
  - kurczak
  - włoskie
-featured_image: ./cover.jpg
 ---
 
 Pomidorowa uczta z beszamelowym twistem.

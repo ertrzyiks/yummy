@@ -7,7 +7,6 @@ category:
 tags:
  - kurczak
  - kalafior
-featured_image: ./cover.jpg
 ---
 
 Smakuje inaczej niż reszta.

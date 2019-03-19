@@ -7,7 +7,6 @@ category:
 tags:
  - ziemniaki
  - wegetariańskie
-featured_image: ./cover.jpg
 ---
 
 Bardziej przekąska niż obiad
