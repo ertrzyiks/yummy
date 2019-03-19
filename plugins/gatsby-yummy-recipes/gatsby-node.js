@@ -27,7 +27,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
       published_at: node.frontmatter.date,
       required_time: node.frontmatter.required_time,
       tags: sortTagsAlphabetically(node.frontmatter.tags),
-      featured_image: node.frontmatter.featured_image,
+      featured_image: node.frontmatter.featured_image || './cover.jpg',
       headline___NODE: headlineId,
       ingredients___NODE: ingredientsId,
       directions___NODE: directionsId,
