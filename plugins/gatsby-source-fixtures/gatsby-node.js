@@ -90,11 +90,11 @@ exports.sourceNodes = () => {
   })
 
   createRecipe({
-    relativePath: 'ciasta/ciasto-a/index.md',
+    relativePath: 'desery/ciasto-a/index.md',
     content: getContent({
       title: 'Ciasta A',
       date: createDateWithOffset(4),
-      category: 'ciasta',
+      category: 'desery',
       tags: ['woda']
     })
   })
