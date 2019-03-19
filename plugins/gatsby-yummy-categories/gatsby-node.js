@@ -29,7 +29,7 @@ exports.sourceNodes = async ({ actions }) => {
 
   createCategory({ createNode, name: 'obiady', slug: 'obiady', position: 3 })
   createCategory({ createNode, name: 'śniadaniowe', slug: 'sniadaniowe', position: 1 })
-  createCategory({ createNode, name: 'ciasta', slug: 'ciasta', position: 4 })
+  createCategory({ createNode, name: 'desery', slug: 'desery', position: 4 })
   createCategory({ createNode, name: 'zupy', slug: 'zupy', position: 2 })
   createCategory({ createNode, name: 'koktajle', slug: 'koktajle', position: 5 })
 }

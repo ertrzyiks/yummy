@@ -17,13 +17,15 @@ Pomidorowe i pożywne.
 ## Lista zakupów
 
  - marakon penne
- - 2kg pomidorów
+ - 2kg pomidorów (lub duża puszka krojonych)
+ - passata pomidorowa 400g
  - puszka białej, drobnej fasolki
  - 2 czerwone papryki
  - 2 cebule
  - 2 ząbki czosnku
  - 2 kulki sera mozarella
- - bazylia i oregano
+ - sól, pieprz, papryka ostra, większa szczypta bazylii i oregana
+ - 2 łyżki masła
 
 <!---- splitter ---->
 
@@ -31,9 +33,9 @@ Pomidorowe i pożywne.
 
 Makaron ugotować zgodnie z przepisem na opakowaniu.
 
-Pomidory, paprykę i cebulę pokroić w kostkę. Wrzucić do garnka z przyprawami, dodać fasolę
-i gotować do osiągnięcia odpowiedniej gęstości sosu. Jeśli pomidory nie mają wystarczająco
-dużo smaku i koloru przed końcem dodać koncetrat pomidorowy.
+Cebulę i czosnek drobno posiekać i zeszklić na oliwie.
+
+Pomidory i paprykę pokroić w kostkę, razem z cebulką wrzucić do garnka. Dodać passatę, przyprawy oraz ok. 1 litr wody i rozpocząć gotowanie. Po ok. 10 min dorzucić fasolę
+i gotować  do osiągnięcia odpowiedniej gęstości sosu. Na koniec można dodać 2 łyżki masła.
 
 Makaron i ser mozarella wrzucić do sosu, wymieszać i chwilę podgrzewać razem.
-

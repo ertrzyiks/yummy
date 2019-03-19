@@ -3,9 +3,10 @@ title: Bułeczki drożdżowe
 date: '2018-05-26T15:30:00Z'
 required_time: 120min
 category:
- - ciasta
+ - desery
 tags:
  - drożdżowe
+ - ciasta
 featured_image: ./cover.jpg
 ---
 

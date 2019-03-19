@@ -3,10 +3,11 @@ title: Babka piaskowa
 date: '2019-03-16T12:11:00Z'
 required_time: 90min
 category:
- - ciasta
+ - desery
 tags:
  - biszkoptowe
  - bezglutenowe
+ - ciasta
 featured_image: ./cover.jpg
 ---
 
