@@ -2,8 +2,6 @@
 title: Makaron ze szparagami i kurczakiem
 date: '2019-03-04T20:38:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - szparagi
  - kurczak

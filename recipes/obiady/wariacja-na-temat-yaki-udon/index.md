@@ -2,8 +2,6 @@
 title: Wariacja na temat Yaki Udon 
 date: '2018-02-28T20:56:00Z'
 required_time: 80min
-category: 
- - obiady
 tags:
  - kurczak
  - japońskie

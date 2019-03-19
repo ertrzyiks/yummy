@@ -2,8 +2,6 @@
 title: Szarlotka
 date: '2018-04-21T12:11:00Z'
 required_time: 150min
-category:
- - desery
 tags:
  - półkruche
  - owocowe

@@ -2,8 +2,6 @@
 title: Pizza a'la Artur
 date: '2018-04-22T11:57:00Z'
 required_time: 120min
-category:
- - obiady
 tags:
  - włoskie
  - drożdżowe

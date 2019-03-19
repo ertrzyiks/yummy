@@ -2,8 +2,6 @@
 title: Babka piaskowa
 date: '2019-03-16T12:11:00Z'
 required_time: 90min
-category:
- - desery
 tags:
  - biszkoptowe
  - bezglutenowe

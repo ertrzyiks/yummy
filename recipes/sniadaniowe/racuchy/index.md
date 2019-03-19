@@ -2,8 +2,6 @@
 title: Racuchy
 date: '2018-05-26T12:38:00Z'
 required_time: 40min
-category:
- - śniadaniowe
 tags:
  - mączne
  - wegetariańskie

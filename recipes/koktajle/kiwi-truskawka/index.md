@@ -2,8 +2,6 @@
 title: Truskawkowe kiwi z awokadem
 date: '2019-03-06T09:30:00Z'
 required_time: 10min
-category:
- - koktajle
 tags:
  - kwaśne
 ---

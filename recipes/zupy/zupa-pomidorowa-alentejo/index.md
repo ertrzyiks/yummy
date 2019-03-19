@@ -2,8 +2,6 @@
 title: Zupa pomidorowa Alentejo
 date: '2018-03-15T20:58:00Z'
 required_time: 45min
-category:
- - zupy
 tags:
  - pomidory
  - portugalskie

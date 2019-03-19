@@ -2,8 +2,6 @@
 title: Dyniowe curry z kurczakiem
 date: '2019-01-03T23:40:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - curry
  - dynia

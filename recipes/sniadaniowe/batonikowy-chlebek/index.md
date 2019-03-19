@@ -2,8 +2,6 @@
 title: Batonikowy chlebek owocowo-ziarnisty
 date: '2019-02-26T14:57:00Z'
 required_time: 90min
-category:
- - śniadaniowe
 tags:
  - orzechy
  - płatki

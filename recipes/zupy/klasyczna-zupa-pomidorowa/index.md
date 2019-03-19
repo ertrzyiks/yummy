@@ -2,8 +2,6 @@
 title: Klasyczna zupa pomidorowa
 date: '2018-04-10T20:38:00Z'
 required_time: 60min
-category:
- - zupy
 tags:
  - pomidory
  - włoskie

@@ -2,8 +2,6 @@
 title: Kotlety z kurczaka
 date: '2019-03-08T20:57:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - kurczak
  - polskie

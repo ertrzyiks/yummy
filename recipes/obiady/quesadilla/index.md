@@ -2,8 +2,6 @@
 title: Quesadilla
 date: '2018-05-03T18:38:00Z'
 required_time: 120min
-category:
- - obiady
 tags:
  - kurczak
  - tortilla

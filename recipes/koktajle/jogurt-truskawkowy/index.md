@@ -2,8 +2,6 @@
 title: Jogurt truskawkowy
 date: '2019-03-15T18:30:00Z'
 required_time: 10min
-category:
- - koktajle
 tags:
  - słodkie
  - truskawki

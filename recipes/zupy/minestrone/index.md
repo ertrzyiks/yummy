@@ -2,8 +2,6 @@
 title: Minestrone
 date: '2019-02-24T13:40:00Z'
 required_time: 45min
-category:
- - zupy
 tags:
  - wegetariańskie
  - włoskie

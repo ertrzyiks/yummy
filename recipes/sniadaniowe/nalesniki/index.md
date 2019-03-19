@@ -2,8 +2,6 @@
 title: Naleśniki
 date: '2018-05-06T09:38:00Z'
 required_time: 20min
-category:
- - śniadaniowe
 tags:
  - mączne
  - wegetariańskie

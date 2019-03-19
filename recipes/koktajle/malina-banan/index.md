@@ -2,8 +2,6 @@
 title: Malinowy słodziak
 date: '2019-03-08T19:30:00Z'
 required_time: 10min
-category:
- - koktajle
 tags:
  - słodkie
 ---

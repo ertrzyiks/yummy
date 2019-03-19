@@ -2,8 +2,6 @@
 title: Lemoniada z limonek z pomarańczą
 date: '2018-05-01T20:57:00Z'
 required_time: 10min
-category:
- - koktajle
 tags:
  - kwaśne
  - limonki

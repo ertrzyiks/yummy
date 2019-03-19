@@ -2,8 +2,6 @@
 title: Kurczak w sosie serowo-brokułowym
 date: '2018-04-14T18:38:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - brokuł
  - kurczak

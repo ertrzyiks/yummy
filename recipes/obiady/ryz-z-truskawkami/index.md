@@ -2,8 +2,6 @@
 title: Ryż z truskawkami i bananem
 date: '2019-03-12T10:57:00Z'
 required_time: 20min
-category:
- - obiady
 tags:
  - słodkie
  - wegetariańskie

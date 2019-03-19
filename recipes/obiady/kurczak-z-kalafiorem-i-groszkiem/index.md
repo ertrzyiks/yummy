@@ -2,8 +2,6 @@
 title: Kurczak z kalafiorem i groszkiem
 date: '2019-01-06T23:40:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - kurczak
  - kalafior

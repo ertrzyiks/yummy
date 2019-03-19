@@ -2,8 +2,6 @@
 title: Makaron w sosie pomidorowym z fasolą
 date: '2018-11-11T23:40:00Z'
 required_time: 90min
-category: 
- - obiady
 tags:
  - pomidory
  - wegetariańskie

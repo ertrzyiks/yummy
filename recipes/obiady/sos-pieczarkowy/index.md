@@ -2,8 +2,6 @@
 title: Sos pieczarkowy z ziemniakami
 date: '2019-03-05T18:57:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - ziemniaki
  - pieczarki

@@ -2,8 +2,6 @@
 title: Spaghetti pomidorowe
 date: '2018-03-13-19:41:00Z'
 required_time: 60min
-category:
- - obiady
 tags:
  - pomidory
  - wegetariańskie

@@ -2,8 +2,6 @@
 title: Owoce pod kruszonką
 date: '2019-03-12T20:11:00Z'
 required_time: 60min
-category:
- - desery
 tags:
  - kruche
  - owocowe
