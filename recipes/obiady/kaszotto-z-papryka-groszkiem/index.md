@@ -1,5 +1,5 @@
 ---
-title: Kaszotto z papryka i groszkiem
+title: Kaszotto z papryką i groszkiem
 date: '2019-03-17T11:57:00Z'
 required_time: 60min
 tags:
