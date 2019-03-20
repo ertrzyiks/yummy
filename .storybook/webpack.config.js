@@ -30,6 +30,8 @@ module.exports = ({ config }) => {
   // use @babel/plugin-proposal-class-properties for class arrow functions
   config.module.rules[0].use[0].options.plugins = [
     require.resolve("@babel/plugin-proposal-class-properties"),
+    require.resolve("@babel/plugin-syntax-dynamic-import"),
+    require.resolve('babel-plugin-remove-graphql-queries'),
   ]
 
   // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
