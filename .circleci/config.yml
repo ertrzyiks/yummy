@@ -65,7 +65,7 @@ jobs:
       - run: npm ci
       - run:
           name: npm run build
-          command: for i in {1..5}; do npm run build && break || sleep 5; done
+          command: for i in {1..5}; do npm run build && break; done
           environment:
             NODE_OPTIONS: --max_old_space_size=4096
 
