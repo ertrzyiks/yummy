@@ -1,31 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PostCard from '../components/post-card'
-import Paginator from '../components/paginator'
-import styles from './page.module.sass'
+import PostListContent from './post-list-content'
 
 export default function PostListPage({data, pageContext, location}) {
-  const Posts = data.allRecipe.edges
-    .map((edge, index) => {
-      return (
-        <PostCard
-          key={edge.node.id}
-          post={edge.node}
-          className={styles.single_post}
-          criticalImage={index < 3}
-        />
-      )
-    })
+  const pageInfo = {
+    currentPage: pageContext.currentPage,
+    totalPages: pageContext.totalPages
+  }
 
-  return <div className={styles.layout}>
-    <section className={styles.main}>
-      <div className={styles.posts}>
-        {Posts}
-      </div>
-      <Paginator currentPage={pageContext.currentPage} totalPages={pageContext.totalPages} currentPath={location.pathname} />
-    </section>
-  </div>
+  return (
+    <PostListContent
+      allRecipesData={data.allRecipe}
+      pageInfo={pageInfo}
+      location={location}
+    />
+  )
 }
 
 export const query = graphql`
