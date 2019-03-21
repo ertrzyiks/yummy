@@ -4,6 +4,7 @@ date: '2019-03-08T18:30:00Z'
 required_time: 10min
 tags:
  - słodkie
+ - jogurtowe
 ---
 
 W końcu jogurt bez sztucznego cukru!

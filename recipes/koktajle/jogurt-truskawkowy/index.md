@@ -5,6 +5,7 @@ required_time: 10min
 tags:
  - słodkie
  - truskawki
+ - jogurtowe
 ---
 
 Pachnie i smakuje truskawką
