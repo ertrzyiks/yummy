@@ -76,7 +76,7 @@
     "react-test-renderer": "^16.8.2",
     "start-server-and-test": "^1.7.11",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.6"
+    "webpack": "^4.28.4"
   },
   "optionalDependencies": {
     "fsevents": "^1.2.7"
