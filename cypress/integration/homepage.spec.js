@@ -8,11 +8,4 @@ context('Homepage', () => {
 
     cy.get('img').should('be.visible')
   })
-
-  it('looks good on desktop', () => {
-    cy.viewport('macbook-13')
-    cy.scrollTo('bottom', { duration: 2000 })
-    cy.wait(500)
-    cy.matchImageSnapshot('homepage-desktop')
-  })
 })

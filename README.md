@@ -33,6 +33,28 @@ Update website
 npm run deploy
 ```
 
+## Screenshot comparison
+
+Screenshot comparison is done with [puppeter](https://github.com/GoogleChrome/puppeteer)
+controlling headless browser and [blink-diff](https://github.com/yahoo/blink-diff) to compare
+taken screenshots.
+
+Screenshots are save in `puppeteer/screenshots` folder:
+
+ - current - screenshots take in the last run
+ - golden - perfect screenshots, baseline for testing
+ - diff - comparison between golden and current
+
+To run visual regression tests use:
+```
+npm run test:visual
+```
+
+If you want to accept all the detected changes run:
+```
+npm run test:visual:update
+```
+
 ## Storybook
 
 The project has the react Storybook configured for the ease of testing visual components.
