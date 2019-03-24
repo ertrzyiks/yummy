@@ -23,7 +23,6 @@
     "test:visual:update": "UPDATE_SNAPSHOTS=true npm run test:visual",
     "test:e2e": "GATSBY_SOURCE=test start-server-and-test test:develop http://localhost:8001 cy:open",
     "test:e2e:ci": "npm run test:build && start-server-and-test test:serve http://localhost:8001 cy:run",
-    "test:e2e:ci:update": "npm run test:build && start-server-and-test test:serve http://localhost:8001 cy:run:update",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
