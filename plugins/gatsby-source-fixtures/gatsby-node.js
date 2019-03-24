@@ -16,6 +16,8 @@ function getContent(params) {
     ...params
   }
 
+  const tags = recipe.tags.map(tag => ` - ${tag}`).join('\n')
+
   return `---
 title: ${recipe.title}
 date: ${recipe.date}
@@ -23,7 +25,7 @@ required_time: ${recipe.required_time}
 category:
  - ${recipe.category}
 tags:
- - ${recipe.category}
+${tags}
 featured_image: ${recipe.featuredImage}
 ---
     
