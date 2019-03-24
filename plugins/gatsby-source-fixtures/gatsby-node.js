@@ -48,54 +48,66 @@ function createDateWithOffset(offset) {
   return date.toISOString()
 }
 
-exports.sourceNodes = () => {
+function createRecipeBatch({variant, createNewDate}) {
   createRecipe({
-    relativePath: 'obiady/obiad-a/index.md',
+    relativePath: `obiady/obiad-${variant.toLowerCase()}/index.md`,
     content: getContent({
-      title: 'Obiad A',
-      date: createDateWithOffset(0),
+      title: `Obiad ${variant}`,
+      date: createNewDate(),
       category: 'obiady',
       tags: ['kurczak']
     })
   })
 
   createRecipe({
-    relativePath: 'zupy/zupa-a/index.md',
+    relativePath: `zupy/zupa-${variant.toLowerCase()}/index.md`,
     content: getContent({
-      title: 'Zupa A',
-      date: createDateWithOffset(1),
+      title: `Zupa ${variant}`,
+      date: createNewDate(),
       category: 'zupy',
       tags: ['woda']
     })
   })
 
   createRecipe({
-    relativePath: 'koktajle/zupa-a/index.md',
+    relativePath: `koktajle/zupa-${variant.toLowerCase()}/index.md`,
     content: getContent({
-      title: 'Koktajl A',
-      date: createDateWithOffset(2),
+      title: `Koktajl ${variant}`,
+      date: createNewDate(),
       category: 'koktajle',
       tags: ['woda']
     })
   })
 
   createRecipe({
-    relativePath: 'sniadaniowe/sniadaniowe-a/index.md',
+    relativePath: `sniadaniowe/sniadaniowe-${variant.toLowerCase()}/index.md`,
     content: getContent({
-      title: 'Sniadaniowe A',
-      date: createDateWithOffset(3),
+      title: `Sniadaniowe ${variant}`,
+      date: createNewDate(),
       category: 'sniadaniowe',
       tags: ['woda']
     })
   })
 
   createRecipe({
-    relativePath: 'desery/ciasto-a/index.md',
+    relativePath: `desery/ciasto-${variant.toLowerCase()}/index.md`,
     content: getContent({
-      title: 'Ciasta A',
-      date: createDateWithOffset(4),
+      title: `Desery ${variant}`,
+      date: createNewDate(),
       category: 'desery',
       tags: ['woda']
     })
   })
+}
+
+exports.sourceNodes = () => {
+  let counter = 0
+  const createNewDate = () => createDateWithOffset(counter++)
+
+  for (let i = 0; i < 10; i++) {
+    createRecipeBatch({
+      createNewDate,
+      variant: String.fromCharCode('A'.charCodeAt(0) + i)
+    })
+  }
 }
