@@ -76,7 +76,11 @@ cypress/videos
 cypress/fixtures/obiady
 cypress/fixtures/zupy
 cypress/fixtures/ciasta
+cypress/fixtures/desery
 cypress/fixtures/sniadaniowe
 cypress/fixtures/koktajle
 
 test-results
+
+puppeteer/screenshots/diff/
+puppeteer/screenshots/current/

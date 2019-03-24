@@ -65,7 +65,7 @@ jobs:
       - run: npm ci
       - run:
           name: npm run build
-          command: for i in {1..5}; do npm run build && break; done
+          command: for i in {1..3}; do npm run build && break; done
           environment:
             NODE_OPTIONS: --max_old_space_size=4096
 
@@ -88,11 +88,21 @@ jobs:
             - v2-dependencies-{{ checksum "package.json" }}
             - v2-dependencies-
       - run: npm ci
-      - run: npm run test:e2e:ci
+      - run: npm run test:build
+      - run:
+          name: npm run test:e2e:ci
+          command: npm run test:e2e:ci --silent
+          environment:
+            CI_SKIP_BUILD: true
+      - run:
+          name: npm run test:visual
+          command: npm run test:visual --silent
+          environment:
+            CI_SKIP_BUILD: true
       - store_test_results:
           path: test-results
       - store_artifacts:
-          path: ~/repo/cypress/snapshots
+          path: ~/repo/puppeteer/screenshots
           destination: snapshots
 
   deploy:
