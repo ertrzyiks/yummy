@@ -9,7 +9,7 @@ function getContent(params) {
     required_time: '60min',
     category: 'obiady',
     tags: ['kurczak'],
-    featuredImage: '../../cover.jpg',
+    featuredImage: '../../../cover.jpg',
     headline: 'Nagłówek',
     ingredients: '## Lista zakupów',
     directions: '## Przygotowanie',
@@ -37,7 +37,7 @@ ${recipe.directions}
 }
 
 function createRecipe({content, relativePath}) {
-  const finalPath = path.join(path.resolve('cypress/fixtures/'), relativePath)
+  const finalPath = path.join(path.resolve('cypress/fixtures/recipes'), relativePath)
   mkdirp.sync(path.dirname(finalPath))
   fs.writeFileSync(finalPath, content)
 }
