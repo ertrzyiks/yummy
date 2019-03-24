@@ -70,7 +70,7 @@ function createRecipeBatch({variant, createNewDate}) {
   })
 
   createRecipe({
-    relativePath: `koktajle/zupa-${variant.toLowerCase()}/index.md`,
+    relativePath: `koktajle/koktajl-${variant.toLowerCase()}/index.md`,
     content: getContent({
       title: `Koktajl ${variant}`,
       date: createNewDate(),
@@ -90,7 +90,7 @@ function createRecipeBatch({variant, createNewDate}) {
   })
 
   createRecipe({
-    relativePath: `desery/ciasto-${variant.toLowerCase()}/index.md`,
+    relativePath: `desery/deser-${variant.toLowerCase()}/index.md`,
     content: getContent({
       title: `Desery ${variant}`,
       date: createNewDate(),
