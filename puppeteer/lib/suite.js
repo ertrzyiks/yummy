@@ -8,6 +8,10 @@ class Suite {
     this.snapshots.forEach(cb)
   }
 
+  getByName(name) {
+    return this.snapshots.find(testCase => testCase.name === name)
+  }
+
   add(name) {
     const testCase = {
       name,
