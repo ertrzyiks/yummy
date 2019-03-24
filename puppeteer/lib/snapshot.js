@@ -1,9 +1,11 @@
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const { compareScreenshots } = require('./compare')
+const { scrollThrough } = require('./scroll-through')
 
 async function capture(page, filePath, viewport) {
   await page.setViewport(viewport)
+  await scrollThrough(page)
   await page.screenshot({
     path: filePath,
     fullPage: true
