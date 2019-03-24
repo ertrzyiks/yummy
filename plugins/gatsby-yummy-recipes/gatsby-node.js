@@ -1,5 +1,4 @@
 const crypto = require('crypto')
-const slugify = require('underscore.string/slugify')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { split } = require('./content')
 
