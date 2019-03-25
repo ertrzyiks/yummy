@@ -3,6 +3,7 @@ const {JSDOM} = require('jsdom')
 const localPlugins = [
   'gatsby-yummy-categories',
   'gatsby-yummy-recipes',
+  'gatsby-yummy-pages',
   'gatsby-yummy-search-data',
 ]
 

@@ -7,7 +7,7 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "start": "npm run develop",
-    "lint": "eslint *.js 'src/**/*.js' 'gatsby-node/**/*.js' 'plugins/**/*.js'",
+    "lint": "eslint *.js 'src/**/*.js' 'plugins/**/*.js'",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "gatsby build",
