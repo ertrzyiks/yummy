@@ -5,7 +5,6 @@ required_time: 10min
 tags:
  - słodkie
  - marchew
-featured_image: ./cover.jpg
 ---
 
 Zdrowy orzeźwiający sok
