@@ -1,26 +1,22 @@
-const {testSession, processResults} = require('./lib/browser')
+const {test} = require('./lib/visual-regression')
 
-;(async () => {
-  const suite = await testSession(async ({page, snapshot}) => {
-    const responsiveSnapshot = async (name) => {
-      await snapshot(`${name}`, {width: 1440, height: 960})
-      await snapshot(`${name}-mobile`, {width: 420, height: 700})
+test(async ({page, snapshot}) => {
+  const responsiveSnapshot = async (name) => {
+    await snapshot(`${name}`, {width: 1440, height: 960})
+    await snapshot(`${name}-mobile`, {width: 420, height: 700})
 
-    }
+  }
 
-    await page.goto('http://localhost:8001', {waitUntil: 'networkidle2'})
-    await responsiveSnapshot('homepage')
+  await page.goto('http://localhost:8001', {waitUntil: 'networkidle2'})
+  await responsiveSnapshot('homepage')
 
-    await page.goto('http://localhost:8001/obiady', {waitUntil: 'networkidle2'})
-    await responsiveSnapshot('category')
+  await page.goto('http://localhost:8001/obiady', {waitUntil: 'networkidle2'})
+  await responsiveSnapshot('category')
 
-    await page.goto('http://localhost:8001/tag/kurczak', {waitUntil: 'networkidle2'})
-    await responsiveSnapshot('tag')
+  await page.goto('http://localhost:8001/tag/kurczak', {waitUntil: 'networkidle2'})
+  await responsiveSnapshot('tag')
 
-    await page.goto('http://localhost:8001/zupy/zupa-b', {waitUntil: 'networkidle2'})
-    await responsiveSnapshot('recipe')
-  })
-
-  processResults(suite)
-})()
+  await page.goto('http://localhost:8001/zupy/zupa-b', {waitUntil: 'networkidle2'})
+  await responsiveSnapshot('recipe')
+})
 
