@@ -23,7 +23,7 @@ async function scrollThrough(page) {
   });
 
   // Some extra delay to let images load
-  await wait(100);
+  await wait(500);
 }
 
 async function wait(time) {
