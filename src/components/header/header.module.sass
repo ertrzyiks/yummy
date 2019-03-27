@@ -92,6 +92,14 @@ $line-color: rgba(255, 255, 255, 0.75)
   font-weight: 400
   hyphens: auto
 
+  +media('>phone_l')
+    margin-left: -1%
+    margin-right: -1%
+
+  +media('>tablet')
+    margin-left: 2%
+    margin-right: 2%
+
   &:after
     content: ''
     background: linear-gradient(to bottom, $line-color, $line-color 10%, transparent 10%, transparent 90%, $line-color 90%, $line-color)
@@ -104,3 +112,4 @@ $line-color: rgba(255, 255, 255, 0.75)
 
     +media('>tablet')
       bottom: 68px
+
