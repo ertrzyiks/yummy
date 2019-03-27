@@ -4,6 +4,7 @@ date: '2019-03-20T12:38:00Z'
 required_time: 20min
 tags:
  - mączne
+ - wegetariańskie
 ---
 
 Wygląda i smakuje jak deser
