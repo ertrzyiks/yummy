@@ -4,6 +4,7 @@ date: '2019-03-08T19:30:00Z'
 required_time: 10min
 tags:
  - słodkie
+ - maliny
 ---
 
 Odrobina różowej słodyczy

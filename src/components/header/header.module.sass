@@ -87,10 +87,16 @@ $line-color: rgba(255, 255, 255, 0.75)
   font-size: 40px
   text-transform: uppercase
   color: $grey6
-  padding: 50px 20px 16px 20px
+  padding: 50px 10px 16px 10px
   letter-spacing: 0.15em
   font-weight: 400
   hyphens: auto
+
+  +media('>phone_l')
+    padding: 50px 22px 16px 22px
+
+  +media('>tablet')
+    bottom: 68px
 
   &:after
     content: ''
@@ -101,6 +107,3 @@ $line-color: rgba(255, 255, 255, 0.75)
     position: absolute
     bottom: 48px
     left: 0
-
-    +media('>tablet')
-      bottom: 68px

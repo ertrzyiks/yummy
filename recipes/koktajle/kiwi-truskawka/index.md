@@ -4,6 +4,7 @@ date: '2019-03-06T09:30:00Z'
 required_time: 10min
 tags:
  - kwaśne
+ - truskawki
 ---
 
 Letni powiew
