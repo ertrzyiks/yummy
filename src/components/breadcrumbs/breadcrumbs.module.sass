@@ -1,4 +1,5 @@
 @import '../colors'
+@import '../media'
 
 .breadcrumbs
   list-style: none
@@ -25,3 +26,20 @@
 
   &:active
     color: $grey3
+
+.breadcrumb_homepage_text
+  display: block
+
+  +media('<tablet')
+    display: none
+
+.breadcrumb_homepage_logo
+  display: none
+
+  +media('<tablet')
+    display: block
+
+    .svg_logo
+      height: 34px
+      vertical-align: middle
+      margin-bottom: 3px
