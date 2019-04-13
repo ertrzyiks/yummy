@@ -102,6 +102,9 @@ jobs:
       - store_test_results:
           path: test-results
       - store_artifacts:
+          path: ~/repo/cypress/screenshots
+          destination: cypress_screenshots
+      - store_artifacts:
           path: ~/repo/puppeteer/screenshots
           destination: snapshots
 
