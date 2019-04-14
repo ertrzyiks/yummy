@@ -2,12 +2,18 @@ import React from 'react'
 import { navigate } from 'gatsby'
 import Select from '../select'
 import styles from './searchbar.module.sass'
+import {RecentSearchesCache, LocalStorageClient} from './recent'
 
 const loadLocalSearch = () => import('./local_search')
 
 export default class Searchbar extends React.Component {
   constructor(props) {
     super(props)
+
+    this.cache = new RecentSearchesCache({
+      storage: new LocalStorageClient({name: '_recent_searches'}),
+      historySize: 3
+    })
 
     this.state = {
       visible: !!props.forceVisibility,
@@ -21,6 +27,7 @@ export default class Searchbar extends React.Component {
 
   handleChange = (selectedOption) => {
     this.setState({ selectedOption })
+    this.cache.rememberSelectedOption(selectedOption)
     navigate(selectedOption.value)
   }
 
@@ -50,6 +57,7 @@ export default class Searchbar extends React.Component {
     return (
       <div className={wrapperClasses.join(' ')}>
         <Select
+          defaultOptions={this.cache.getRecentOptions()}
           noOptionsMessage={this.noOptionMessage}
           value={selectedOption}
           onChange={this.handleChange}
