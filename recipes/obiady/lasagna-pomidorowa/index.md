@@ -1,6 +1,6 @@
 ---
 title: Lasagna bolońska z kurczakiem
-date: '2019-03-11-12:41:00Z'
+date: '2019-03-11T12:41:00Z'
 required_time: 120min
 tags:
  - pomidory
