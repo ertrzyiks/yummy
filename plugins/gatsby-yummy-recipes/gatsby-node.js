@@ -20,6 +20,10 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
     const ingredientsId = createRecipePart(node, 'Ingredients', sections[1], {createNode, createNodeId})
     const directionsId = createRecipePart(node, 'Directions', sections[2], {createNode, createNodeId})
 
+    if (isNaN(new Date(node.frontmatter.date).getTime())) {
+      throw new Error(`Invalid date ${node.frontmatter.date} for recipe: ${node.frontmatter.title}`)
+    }
+
     const recipeContent = {
       name: node.frontmatter.title,
       html_title: node.frontmatter.html_title || node.frontmatter.title,

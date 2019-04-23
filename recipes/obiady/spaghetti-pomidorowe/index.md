@@ -1,6 +1,6 @@
 ---
 title: Spaghetti pomidorowe
-date: '2018-03-13-19:41:00Z'
+date: '2018-03-13T19:41:00Z'
 required_time: 60min
 tags:
  - pomidory
