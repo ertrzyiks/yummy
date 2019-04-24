@@ -10,7 +10,7 @@ Searchable repository of recipes we frequently use and are yummy.
 ### NodeJS dependencies
 
 ```
-npm i
+yarn install
 ```
 
 ### Working with gatsby
@@ -30,7 +30,7 @@ gatsby serve
 Update website
 
 ```
-npm run deploy
+yarn deploy
 ```
 
 ## Screenshot comparison
@@ -47,12 +47,12 @@ Screenshots are save in `puppeteer/screenshots` folder:
 
 To run visual regression tests use:
 ```
-npm run test:visual
+yarn test:visual
 ```
 
 If you want to accept all the detected changes run:
 ```
-npm run test:visual:update
+yarn test:visual:update
 ```
 
 ## Storybook
@@ -67,7 +67,7 @@ Storybook scans the contents of the `src` folder for files ending in `.stories.j
 
 To start it use the following command which sends you over to `localhost:6006`:
 ```
-npm run storybook
+yarn storybook
 ```
 
 ## Logo
