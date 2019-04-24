@@ -6,10 +6,23 @@ const { createMainPage } = require('./lists/main')
 
 exports.createPages = ({ actions, graphql }) => {
   return Promise.resolve()
+    .then(() => createError404Page({ actions }))
     .then(() => createMainPage({ actions, graphql }))
     .then(() => createRecipePages({ actions, graphql }))
     .then(() => createTagPages({ actions, graphql }))
     .then(() => createCategoryPages({ actions, graphql }))
+}
+
+async function createError404Page({ actions }) {
+  const { createPage } = actions
+
+  createPage({
+    path: '/404.html',
+    component: path.resolve('./src/templates/error-404.js'),
+    context: {
+      fullHeaderVersion: false
+    }
+  })
 }
 
 async function createRecipePages({ actions, graphql }) {
