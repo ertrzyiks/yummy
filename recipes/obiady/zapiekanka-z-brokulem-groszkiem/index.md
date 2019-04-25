@@ -5,6 +5,7 @@ required_time: 150min
 tags:
  - brokuł
  - groszek
+ - ziemniaki
  - wegetariańskie
 ---
 
