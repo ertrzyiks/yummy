@@ -58,7 +58,7 @@ module.exports = {
     title: 'Yummy',
     description: 'Searchable repository of recipes we frequently use and are yummy.',
     siteUrl: 'https://yummy.ertrzyiks.me',
-    author: 'Author Name'
+    author: 'J. M. Derks'
   },
   plugins: dynamicPlugins.concat([
     'gatsby-transformer-sharp',

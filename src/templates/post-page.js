@@ -8,6 +8,7 @@ import Breadcrumbs from '../components/breadcrumbs'
 import pageStyles from './page.module.sass'
 import postStyles from './post.module.sass'
 import {button as buttonClass} from '../components/button/button.transparent.module.sass'
+import SiteMetadata from '../components/site_metadata'
 
 export default function Template({data}) {
   const { recipe } = data
@@ -18,11 +19,13 @@ export default function Template({data}) {
   })
 
   return <div className={pageStyles.layout}>
-    <Helmet>
-      <title>{recipe.html_title}</title>
-      <meta name="description" content={recipe.html_description}/>
-      <meta property="og:image" content={recipe.featured_image.childImageSharp.fluid.src} />
-    </Helmet>
+    <SiteMetadata render={ ({siteUrl}) =>
+      <Helmet>
+        <title>{recipe.html_title}</title>
+        <meta name="description" content={recipe.html_description}/>
+        <meta property="og:image" content={siteUrl + recipe.featured_image.childImageSharp.fluid.src} />
+      </Helmet>
+    } />
 
     <section className={pageStyles.main}>
       <article className={postStyles.post}>
