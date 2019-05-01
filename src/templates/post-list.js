@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import Page from './page'
 import PostListContent from './post-list-content'
 
 export default function PostListPage({data, pageContext, location}) {
@@ -10,11 +11,13 @@ export default function PostListPage({data, pageContext, location}) {
   }
 
   return (
-    <PostListContent
-      allRecipesData={data.allRecipe}
-      pageInfo={pageInfo}
-      location={location}
-    />
+    <Page>
+      <PostListContent
+        allRecipesData={data.allRecipe}
+        pageInfo={pageInfo}
+        location={location}
+      />
+    </Page>
   )
 }
 

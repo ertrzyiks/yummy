@@ -4,7 +4,7 @@ import Paginator from '../components/paginator'
 
 import styles from './page.module.sass'
 
-export default function PostListContent({allRecipesData, pageInfo, meta, location}) {
+export default function PostListContent({allRecipesData, pageInfo, location}) {
   const Posts = allRecipesData.edges
     .map((edge, index) => {
       return (
@@ -19,7 +19,6 @@ export default function PostListContent({allRecipesData, pageInfo, meta, locatio
 
   return (
     <div className={styles.layout}>
-    {meta}
     <section className={styles.main}>
       <div className={styles.posts}>
         {Posts}
