@@ -47,7 +47,7 @@ async function createRecipePages({ actions, graphql }) {
   }
 
   const collection = result.data.allRecipe.edges
-  const component = path.resolve('./src/templates/post-page.js')
+  const component = path.resolve('./src/templates/post-page/index.js')
 
   collection.forEach(({ node }) => {
     createPage({

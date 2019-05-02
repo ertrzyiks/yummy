@@ -3,13 +3,13 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
 import slugify from 'underscore.string/slugify'
-import TimeToPrepare from '../components/time_to_prepare'
-import Breadcrumbs from '../components/breadcrumbs'
-import pageStyles from './page.module.sass'
+import TimeToPrepare from '../../components/time_to_prepare'
+import Breadcrumbs from '../../components/breadcrumbs'
+import pageStyles from '../page.module.sass'
 import postStyles from './post.module.sass'
-import {button as buttonClass} from '../components/button/button.transparent.module.sass'
-import Page from './page'
-import SiteMetadata from '../components/site_metadata'
+import {button as buttonClass} from '../../components/button/button.transparent.module.sass'
+import Page from '../page'
+import SiteMetadata from '../../components/site_metadata'
 
 export default function PostPage({data}) {
   const { recipe } = data
@@ -24,8 +24,11 @@ export default function PostPage({data}) {
       <SiteMetadata render={({siteUrl}) =>
         <Helmet>
           <title>{recipe.html_title}</title>
-          <meta name="description" content={recipe.html_description}/>
-          <meta property="og:image" content={siteUrl + recipe.featured_image.childImageSharp.fluid.src} />
+          <meta name='description' content={recipe.html_description}/>
+          <meta property='og:image' content={siteUrl + recipe.featured_image.childImageSharp.fluid.src} />
+          <meta property='og:type' content='article' />
+          <meta property='article:section' content={recipe.category.name} />
+          {(recipe.tags || []).map((tag, index) => <meta property='article:tag' content={tag} key={index}/>)}
         </Helmet>
       } />
 
