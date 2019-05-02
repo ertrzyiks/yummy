@@ -25,6 +25,7 @@ export default function Page({children}) {
 
         <meta name="twitter:card" content="summary" />
         <meta property="og:image" content={siteUrl + defaultOgImage} />
+        <meta property="og:type" content='website' />
       </Helmet>
     }/>
 
