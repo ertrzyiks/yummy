@@ -24,12 +24,22 @@ async function snapshotPage({page, name, viewport, forceUpdate}) {
 
   await capture(page, `${directory}/current/${name}.png`, viewport)
 
-  if (!fs.existsSync(goldenPath) || forceUpdate) {
+  if (!fs.existsSync(goldenPath)) {
     fs.copyFileSync(currentPath, goldenPath)
     return {status: 'ok'}
   }
 
-  const matches = await compareScreenshots({ currentPath, goldenPath, diffPath })
+  let matches = await compareScreenshots({ currentPath, goldenPath, diffPath })
+
+  if (!matches && forceUpdate) {
+    matches = true
+    fs.copyFileSync(currentPath, goldenPath)
+  }
+
+  if (matches) {
+    fs.unlinkSync(diffPath)
+  }
+
   return matches ?
     {status: 'ok'} :
     {status: 'error', message: `Screenshot does not match. See ${diffPath}`}
