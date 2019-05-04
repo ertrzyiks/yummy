@@ -9,7 +9,7 @@ function titleize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-class Navbar extends React.Component {
+export default class Navbar extends React.Component {
   constructor(props) {
     super(props)
 
@@ -53,7 +53,7 @@ class Navbar extends React.Component {
         <div className={styles.navbar_menu_overlay} onClick={this.handleMenuCloseClick} />)
       : null;
 
-    const {hasHomepageLink} = this.props
+    const {hasHomepageLink, categories} = this.props
 
     return (
       <nav className={styles.navbar}>
@@ -84,35 +84,19 @@ class Navbar extends React.Component {
               <Logo/>
             </Link>
           }
-          <StaticQuery query={graphql`
-          query LoadCategories {
-            allRecipeCategory (sort: { fields: [position] }) {
-              edges {
-                node {
-                  name
-                  slug
-                }
-              }
-            }
-          }
-        `}
-         render={data => (
-           data.allRecipeCategory.edges
-             .map(({node: {slug, name}}) => (
-               <Link
-                 to={`/${slug}`}
-                 key={slug}
-                 className={styles.navbar_link}
-                 onClick={this.handleMenuCloseClick}
-               >
-               {titleize(name)}
-             </Link>
-           ))
-         )} />
+
+          {categories.map(({slug, name}) =>
+           <Link
+               to={`/${slug}`}
+               key={slug}
+               className={styles.navbar_link}
+               onClick={this.handleMenuCloseClick}
+             >
+             {titleize(name)}
+           </Link>
+          )}
         </div>
     </nav>
     )
   }
 }
-
-export default Navbar
