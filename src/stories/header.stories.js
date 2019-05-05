@@ -3,13 +3,18 @@ import { storiesOf } from '@storybook/react'
 
 import Header from '../components/header'
 
+const categories = [
+  {name: 'Category1', slug: 'category1'},
+  {name: 'Category2', slug: 'category2'}
+]
+
 storiesOf('Header', module)
   .add('full header', () => (
-    <Header fullVersion={true} />
+    <Header categories={categories} fullVersion={true} />
   ))
   .add('header on subsection', () => (
-    <Header fullVersion={false} subsection='obiady' />
+    <Header categories={categories} fullVersion={false} subsection='obiady' />
   ))
   .add('header on a recipe page', () => (
-    <Header fullVersion={false} isSingleRecipe={true} />
+    <Header categories={categories} fullVersion={false} isSingleRecipe={true} />
   ))
