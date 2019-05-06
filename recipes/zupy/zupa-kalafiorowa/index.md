@@ -1,11 +1,11 @@
 ---
 title: Zupa kalafiorowa
-date: '2018-03-10T12:14:00Z'
-required_time: 90min
+date: '2019-05-01T12:14:00Z'
+required_time: 75min
 tags:
  - kalafior
  - ziemniaki
- - kurczak
+ - wegetariańskie
 ---
 
 Jak grochówka z kalafiora bez laktozy
@@ -16,19 +16,17 @@ Jak grochówka z kalafiora bez laktozy
 
 - 1 średni kalafior
 - 1.5kg ziemniaków
-- filet z kurczaka (~400g)
 - 4 marchewki
 - 1 pietruszka
 - nieduży kawałek kapusty
+- 200g groszku
 - 1 cebula
+- 1 ząbek czosnku
 - mały kubek śmietany 18%
-
-### Przyprawy
-
-- 5 kulek ziela angielskiego
-- 2 liście laurowe
-- 2 łyżki sosu sojowego
-- sól, pieprz
+- masło
+- 4 kulki ziela angielskiego, 2 nieduże liście laurowe
+- opcjonalnie 2 łyżki sosu sojowego
+- sól, pieprz, pietruszka zielona
 
 <!---- splitter ---->
 
@@ -36,13 +34,13 @@ Jak grochówka z kalafiora bez laktozy
 
 Kalafior pokroić na mniejsze części według gałązek, umyć i wrzucić do garnka.
 Warzywa obrać, ziemniaki pokroić w kostkę, marchew i pietruszkę w plastry.
-Dodać posiekaną kapustę i przyprawy.
+Dodać posiekaną kapustę, groszek i przyprawy.
 
 Wsypać przyprawy, zalać wrzątkiem i wstawić do gotowania.
 
-Cebulę drobno posiekać i zeszklić na oliwie. Dodać do zupy.
-Kurczaka umyć, pokroić i dorzucić do gotującej się zupy.
+Cebulę i czosnek drobno posiekać i zeszklić najlepiej na oleju kokosowym (nie zostawia dodatkowego posmaku). Dodać do zupy.
+Po podgotowaniu skłądników dodać 2-3 łyżki masła.
 
-Gotować ok 40-50 min. Po tym czasie dodać śmietanę i zagotować.
+Gotować ok 30-40 min. Po tym czasie dodać śmietanę i zagotować.
 
 Zupę najlepiej podawać ze świeżą pyszną bułką z masłem (albo dwiema).
