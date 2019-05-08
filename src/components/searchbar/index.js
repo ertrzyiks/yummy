@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {createRef} from 'react'
 import { navigate } from 'gatsby'
 import Select from '../select'
 import styles from './searchbar.module.sass'
@@ -6,9 +6,21 @@ import {RecentSearchesCache, LocalStorageClient} from './recent'
 
 const loadLocalSearch = () => import('./local_search')
 
+export function isMobileDevice() {
+  try {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  } catch (e) {
+    return false;
+  }
+}
+
 export default class Searchbar extends React.Component {
   constructor(props) {
     super(props)
+
+    this._selectNode = createRef()
 
     this.cache = new RecentSearchesCache({
       storage: new LocalStorageClient({name: '_recent_searches'}),
@@ -44,6 +56,21 @@ export default class Searchbar extends React.Component {
     return 'Nie znaleziono'
   }
 
+  scrollToMenu = () => {
+    if (typeof window.scrollBy !== 'function' || !isMobileDevice()) { return }
+
+    const node = this._selectNode.current
+    if (!node) { return }
+
+    const box = node.getBoundingClientRect()
+
+    window.scrollBy({
+      top: box.top - 10,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
+
   render() {
     const { className } = this.props
     const { visible, selectedOption } = this.state
@@ -55,7 +82,7 @@ export default class Searchbar extends React.Component {
     }
 
     return (
-      <div className={wrapperClasses.join(' ')}>
+      <div ref={this._selectNode} className={wrapperClasses.join(' ')}>
         <Select
           defaultOptions={this.cache.getRecentOptions()}
           noOptionsMessage={this.noOptionMessage}
@@ -63,6 +90,7 @@ export default class Searchbar extends React.Component {
           onChange={this.handleChange}
           placeholder='Wyszukaj przepis'
           loadOptions={this.promiseOptions}
+          onMenuOpen={this.scrollToMenu}
         />
       </div>
     )
