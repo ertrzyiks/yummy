@@ -1,5 +1,5 @@
 import React from 'react'
-import GreenLogo from '../logo_green'
+import GreenLogo from '../icons/logo_green'
 import TagCloud from '../tag_cloud'
 import styles from './sidebar.module.sass'
 

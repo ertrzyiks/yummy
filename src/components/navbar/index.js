@@ -1,8 +1,8 @@
 import React from 'react'
-import { StaticQuery, Link, graphql } from 'gatsby'
-import Logo from '../logo_simple'
-import MenuBarsIcon from '../menu_bars'
-import MenuCloseIcon from '../menu_close'
+import { Link } from 'gatsby'
+import Logo from '../icons/logo_simple'
+import MenuBarsIcon from '../icons/menu_bars'
+import MenuCloseIcon from '../icons/menu_close'
 import styles from './navbar.module.sass'
 
 function titleize(string) {
