@@ -17,17 +17,19 @@ yarn install
 
 Start development server
 ```
-gatsby develop
+yarn start
 ```
 
 
 Preview website in production mode
 
 ```
-gatsby build
-gatsby serve
+yarn build
+yarn serve
 ```
-Update website
+
+Website is update on master push, so everytime a PR is merged.
+You can start a manual deployment with:
 
 ```
 yarn deploy
@@ -53,6 +55,20 @@ yarn test:visual
 If you want to accept all the detected changes run:
 ```
 yarn test:visual:update
+```
+
+## E2e testing
+
+End to end testing is done with Cypress, to start testing session use:
+
+```
+yarn test:e2e
+```
+
+A single run is possible with
+
+```
+yarn test:e2e:ci
 ```
 
 ## Storybook
