@@ -17,7 +17,6 @@
     "deploy": "bash -x ./scripts/deploy.sh",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:update": "cypress run --env updateSnapshots=true",
     "pup:run": "node puppeteer/index.js",
     "test:visual": "yarn test:build && start-server-and-test 'yarn test:serve' http://localhost:8001 'yarn pup:run'",
     "test:visual:update": "UPDATE_SNAPSHOTS=true yarn test:visual",
