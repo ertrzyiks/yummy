@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './paginator.module.sass'
 import buttonStyles from '../button/button.transparent-noborder.module.sass'
-import ChevronLeft from '../chevron-left'
-import ChevronRight from '../chevron-right'
+import ChevronLeft from '../icons/chevron-left'
+import ChevronRight from '../icons/chevron-right'
 
 const removeTrailingSlash = (path) => path.replace(/\/$/, '')
 const removePageNumberSegment = (path) => path.replace(/\/page\/\d+$/, '')
