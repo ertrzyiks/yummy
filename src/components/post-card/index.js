@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import TimeToPrepare from '../time_to_prepare'
-import ChevronRight from '../chevron-right'
-import VegetarianMark from '../vegetarian_mark'
+import ChevronRight from '../icons/chevron-right'
+import VegetarianMark from '../icons/vegetarian_mark'
 
 import styles from './post-card.module.sass'
 
