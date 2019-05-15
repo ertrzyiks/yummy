@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { calculatePages } from '../../utils/paginationHelper';
 import styles from './paginator.module.sass'
 import buttonStyles from '../button/button.transparent-noborder.module.sass'
 import ChevronLeft from '../icons/chevron-left'
@@ -27,10 +28,22 @@ const generatePagePath = (subsectionPath, page) => {
   return`${subsectionPath}/page/${page}`
 }
 
-const generatePaginationLinkElement = (pagePath, pageNumber) => {
+const generatePaginationLinkElement = (pageNumberText, requiresLink, isCurrent, subsectionPath, elementIndex) => {
+  const listItemStyles = isCurrent
+    ? [styles.page_nav_item, styles.current_page].join(' ')
+    : styles.page_nav_item
+
+  const elementContent = requiresLink
+    ? <Link className={styles.page_link} to={generatePagePath(subsectionPath, pageNumberText)}>{pageNumberText}</Link>
+    : pageNumberText
+
+  const elementKey = pageNumberText !== '...'
+    ? `page-${pageNumberText}`
+    : `ellipsis-${elementIndex}`
+
   return (
-    <li className={styles.page_nav_item}>
-      <Link className={styles.page_link} to={pagePath}>{pageNumber}</Link>
+    <li className={listItemStyles} key={elementKey}>
+      { elementContent }
     </li>
   )
 }
@@ -39,24 +52,10 @@ export default function Paginator ({currentPage, totalPages, currentPath}) {
   const subsectionPath = toSubsectionPath(currentPath)
   const nextPagePath = generatePagePath(subsectionPath, currentPage + 1)
   const prevPagePath = generatePagePath(subsectionPath, currentPage - 1)
-  const firstPagePath = generatePagePath(subsectionPath, 1)
-  const lastPagePath = generatePagePath(subsectionPath, totalPages)
-  const prePreviousPagePath = generatePagePath(subsectionPath, currentPage - 2)
-  const postNextPagePath = generatePagePath(subsectionPath, currentPage + 2)
 
-  const ellipsisElement = <li className={styles.page_nav_item}><span>...</span></li>
-
-  const prePreviousIndex = currentPage - 2
-  const postNextIndex = currentPage + 2
-
-  const showFirstPageLink = currentPage > 1
-  const showPreCurrentEllipsis = prePreviousIndex > 2
-  const showPrePreviousPageLink = currentPage > 3
-  const showPreviousPageLink = currentPage > 2
-  const showNextPageLink = currentPage + 1 < totalPages
-  const showPostNextPageLink = currentPage + 2 < totalPages
-  const showPostCurrentEllipsis = postNextIndex < totalPages - 1
-  const showLastPageLink = currentPage < totalPages
+  const pages =
+    calculatePages(2, 2, currentPage, totalPages)
+    .map((p, ndx) => generatePaginationLinkElement(p.displayText, p.requiresLink, p.isCurrent, subsectionPath, ndx))
 
   return (
     <nav className={styles.paginator}>
@@ -75,47 +74,9 @@ export default function Paginator ({currentPage, totalPages, currentPath}) {
           <ChevronRight className={styles.icon}/>
         </Link>
       }
-      
+
       <ol className={styles.page_list}>
-        {
-          showFirstPageLink &&
-            generatePaginationLinkElement(firstPagePath, 1)
-        }
-        {
-          showPreCurrentEllipsis &&
-            ellipsisElement
-        }
-        {
-          showPrePreviousPageLink &&
-            generatePaginationLinkElement(prePreviousPagePath, prePreviousIndex)
-        }
-
-        {
-          showPreviousPageLink &&
-            generatePaginationLinkElement(prevPagePath, currentPage - 1)
-        }
-
-        <li className={[styles.page_nav_item, styles.current_page].join(' ')}>{ currentPage }</li>
-
-        {
-          showNextPageLink &&
-            generatePaginationLinkElement(nextPagePath, currentPage + 1)
-        }
-
-        {
-          showPostNextPageLink &&
-            generatePaginationLinkElement(postNextPagePath, currentPage + 2)
-        }
-
-        {
-          showPostCurrentEllipsis &&
-            ellipsisElement
-        }
-
-        {
-          showLastPageLink &&
-            generatePaginationLinkElement(lastPagePath, totalPages)
-        }
+        { pages }
       </ol>
 
     </nav>
