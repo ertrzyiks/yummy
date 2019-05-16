@@ -1,4 +1,4 @@
-import {calculatePages} from "./paginationHelper";
+import {calculatePages} from './paginationHelper'
 
 describe('Pagination helper - calculatePages', () => {
 
