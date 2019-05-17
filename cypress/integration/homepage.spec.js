@@ -15,7 +15,13 @@ context('Homepage', () => {
     })
 
     cy.get('a').contains('Następna').should('be.visible')
-    cy.get('span').contains('Strona 1 z 6').should('be.visible')
+    cy.get('ol').should($pages => {
+      expect($pages.find('li')).to.contain('1')
+      expect($pages.find('li')).to.contain('2')
+      expect($pages.find('li')).to.contain('3')
+      expect($pages.find('li')).to.contain('...')
+      expect($pages.find('li')).to.contain('6')
+    })
   })
 
   it('allows to search', () => {
