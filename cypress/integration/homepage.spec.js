@@ -19,7 +19,7 @@ context('Homepage', () => {
       expect($pages.find('li')).to.contain('1')
       expect($pages.find('li')).to.contain('2')
       expect($pages.find('li')).to.contain('3')
-      expect($pages.find('li')).to.contain('...')
+      expect($pages.find('li')).to.contain('\u2026')
       expect($pages.find('li')).to.contain('6')
     })
   })
