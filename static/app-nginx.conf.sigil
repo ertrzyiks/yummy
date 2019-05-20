@@ -28,7 +28,7 @@ http {
       try_files $uri $uri/index.html $uri/ =404;
     }
 
-    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|json)$ {
         expires max;
         add_header Cache-Control "public, no-transform";
     }
