@@ -3,6 +3,7 @@ const {JSDOM} = require('jsdom')
 const localPlugins = [
   'gatsby-yummy-categories',
   'gatsby-yummy-recipes',
+  'gatsby-yummy-posts',
   'gatsby-yummy-pages',
   'gatsby-yummy-search-data',
 ]
@@ -29,6 +30,12 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
     options: {
       path: `${__dirname}/recipes`,
       name: 'recipes',
+    },
+  }, {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: `${__dirname}/posts`,
+      name: 'posts',
     },
   }
 ]

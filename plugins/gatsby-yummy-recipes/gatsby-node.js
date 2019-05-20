@@ -5,58 +5,60 @@ const { split } = require('./content')
 exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, actions }) => {
   const { createNode } = actions
 
-  if (node.internal.type === 'MarkdownRemark' && getNode(node.parent).internal.type === 'File') {
-    const slug = createFilePath({ node, getNode, trailingSlash: false })
-    const categorySlug = slug.split('/')[1]
+  if (node.internal.type !== 'MarkdownRemark') { return }
+  if (getNode(node.parent).internal.type !== 'File') { return }
+  if (getNode(node.parent).sourceInstanceName !== 'recipes') { return }
 
-    const content = await loadNodeContent(node)
-    const sections = split(content)
+  const slug = createFilePath({ node, getNode, trailingSlash: false })
+  const categorySlug = slug.split('/')[1]
 
-    if (sections.length !== 3) {
-      throw new Error(`Expected exactly three sections inside node: ${slug}. Check the number of splitters in the content.`)
-    }
+  const content = await loadNodeContent(node)
+  const sections = split(content)
 
-    const headlineId = createRecipePart(node, 'Headline', sections[0], {createNode, createNodeId})
-    const ingredientsId = createRecipePart(node, 'Ingredients', sections[1], {createNode, createNodeId})
-    const directionsId = createRecipePart(node, 'Directions', sections[2], {createNode, createNodeId})
-
-    if (isNaN(new Date(node.frontmatter.date).getTime())) {
-      throw new Error(`Invalid date ${node.frontmatter.date} for recipe: ${node.frontmatter.title}`)
-    }
-
-    const recipeContent = {
-      name: node.frontmatter.title,
-      html_title: node.frontmatter.html_title || node.frontmatter.title,
-      html_description: node.frontmatter.html_description || sections[0].replace(/^<p>(.*)<\/p>$/, '$1'),
-      published_at: node.frontmatter.date,
-      required_time: node.frontmatter.required_time,
-      tags: sortTagsAlphabetically(node.frontmatter.tags),
-      featured_image: node.frontmatter.featured_image || './cover.jpg',
-      headline___NODE: headlineId,
-      ingredients___NODE: ingredientsId,
-      directions___NODE: directionsId,
-      category___NODE: categorySlug
-    }
-
-    const recipeNode = {
-      id: createNodeId(`${recipeContent.name} >>> Recipe`),
-      ...recipeContent,
-      slug,
-      children: [],
-      parent: node.id,
-      internal: {
-        content: JSON.stringify(recipeContent),
-        type: 'Recipe',
-      },
-    }
-
-    recipeNode.internal.contentDigest = crypto
-      .createHash('md5')
-      .update(JSON.stringify(recipeNode))
-      .digest('hex')
-
-    createNode(recipeNode)
+  if (sections.length !== 3) {
+    throw new Error(`Expected exactly three sections inside node: ${slug}. Check the number of splitters in the content.`)
   }
+
+  const headlineId = createRecipePart(node, 'Headline', sections[0], {createNode, createNodeId})
+  const ingredientsId = createRecipePart(node, 'Ingredients', sections[1], {createNode, createNodeId})
+  const directionsId = createRecipePart(node, 'Directions', sections[2], {createNode, createNodeId})
+
+  if (isNaN(new Date(node.frontmatter.date).getTime())) {
+    throw new Error(`Invalid date ${node.frontmatter.date} for recipe: ${node.frontmatter.title}`)
+  }
+
+  const recipeContent = {
+    name: node.frontmatter.title,
+    html_title: node.frontmatter.html_title || node.frontmatter.title,
+    html_description: node.frontmatter.html_description || sections[0].replace(/^<p>(.*)<\/p>$/, '$1'),
+    published_at: node.frontmatter.date,
+    required_time: node.frontmatter.required_time,
+    tags: sortTagsAlphabetically(node.frontmatter.tags),
+    featured_image: node.frontmatter.featured_image || './cover.jpg',
+    headline___NODE: headlineId,
+    ingredients___NODE: ingredientsId,
+    directions___NODE: directionsId,
+    category___NODE: categorySlug
+  }
+
+  const recipeNode = {
+    id: createNodeId(`${recipeContent.name} >>> Recipe`),
+    ...recipeContent,
+    slug,
+    children: [],
+    parent: node.id,
+    internal: {
+      content: JSON.stringify(recipeContent),
+      type: 'Recipe',
+    },
+  }
+
+  recipeNode.internal.contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(recipeNode))
+    .digest('hex')
+
+  createNode(recipeNode)
 }
 
 function sortTagsAlphabetically(tags) {
