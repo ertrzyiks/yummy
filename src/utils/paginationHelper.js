@@ -1,4 +1,8 @@
 export function calculatePages(numPreviousPages, numNextPages, currentPage, totalPages) {
+  if (totalPages === 1) {
+    return []
+  }
+
   const paginationElements = [
     {
       displayText: currentPage,
@@ -8,7 +12,7 @@ export function calculatePages(numPreviousPages, numNextPages, currentPage, tota
   ]
 
   const ellipsis = {
-    displayText: '...',
+    displayText: '\u2026',
     requiresLink: false
   }
 
@@ -35,13 +39,13 @@ export function calculatePages(numPreviousPages, numNextPages, currentPage, tota
     })
   }
 
-  for (let j = 1; j <= numNextPages; j++) {
-    if (currentPage + j > totalPages) {
+  for (let i = 1; i <= numNextPages; i++) {
+    if (currentPage + i > totalPages) {
       break;
     }
 
     paginationElements.push({
-      displayText: currentPage + j,
+      displayText: currentPage + i,
       requiresLink: true
     })
   }

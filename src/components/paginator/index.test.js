@@ -49,11 +49,19 @@ describe('<Paginator>', () => {
     );
 
     expect(getByText('1').getAttribute('href')).toEqual('/')
-    expect(getByText('...').getAttribute('href')).toBeNull()
+    expect(getByText('\u2026').getAttribute('href')).toBeNull()
     expect(getByText('3').getAttribute('href')).toEqual('/page/3')
     expect(getByText('4').getAttribute('href')).toEqual('/page/4')
     expect(getByText('5').getAttribute('href')).toBeNull()
     expect(getByText('5').getAttribute('class')).toEqual('page_nav_item current_page')
     expect(getByText('6').getAttribute('href')).toEqual('/page/6')
+  })
+
+  it('does not render a sole first page', () => {
+    const { container } = render(
+      <Paginator currentPage={1} totalPages={1} currentPath={'/page/1'} />
+    );
+
+    expect(container.innerHTML).toBe('')
   })
 })

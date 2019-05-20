@@ -28,7 +28,7 @@ const generatePagePath = (subsectionPath, page) => {
   return`${subsectionPath}/page/${page}`
 }
 
-const generatePaginationLinkElement = (pageNumberText, requiresLink, isCurrent, subsectionPath, elementIndex) => {
+function PaginationLinkElement({ pageNumberText, requiresLink, isCurrent, subsectionPath, elementIndex }) {
   const listItemStyles = isCurrent
     ? [styles.page_nav_item, styles.current_page].join(' ')
     : styles.page_nav_item
@@ -55,7 +55,20 @@ export default function Paginator ({currentPage, totalPages, currentPath}) {
 
   const pages =
     calculatePages(2, 2, currentPage, totalPages)
-    .map((p, ndx) => generatePaginationLinkElement(p.displayText, p.requiresLink, p.isCurrent, subsectionPath, ndx))
+    .map((p, ndx) => {
+      return (<PaginationLinkElement
+        pageNumberText={p.displayText}
+        requiresLink={p.requiresLink}
+        isCurrent={p.isCurrent}
+        subsectionPath={subsectionPath}
+        elementIndex={ndx}
+        key={ndx}
+      />)
+    })
+
+  if (pages.length === 0) {
+    return null
+  }
 
   return (
     <nav className={styles.paginator}>
