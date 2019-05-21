@@ -1,9 +1,11 @@
 @import '../colors'
 
 .card
+  --box-shadow-color: #{$grey2}
   background: $white
   border-radius: 6px
   box-shadow: 1px 2px 3px $grey2
+  box-shadow: 1px 2px 3px var(--box-shadow-color)
   display: flex
   flex-direction: column
   overflow: hidden
@@ -14,6 +16,11 @@
 
   &:active
     box-shadow: 2px 3px 5px $grey2
+
+  @media (prefers-color-scheme: dark)
+    --box-shadow-color: #{$grey4}
+    background-color: $grey5
+    color: $grey1
 
 .content
   display: flex
@@ -42,12 +49,18 @@
   color: $grey4
   text-transform: uppercase
 
+  @media (prefers-color-scheme: dark)
+    color: $grey2
+
 .content_title
   color: $grey6
   font-size: 28px
   text-decoration: none
   margin: 12px 0
   font-weight: 500
+
+  @media (prefers-color-scheme: dark)
+    color: $grey1
 
 .content_summary
   margin: 20px 0
@@ -70,6 +83,9 @@
   padding: 12px 0
   text-align: center
   text-transform: uppercase
+
+  @media (prefers-color-scheme: dark)
+    color: $grey6
 
 .show_more_icon
   height: 15px
