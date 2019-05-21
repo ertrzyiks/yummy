@@ -8,6 +8,7 @@
   "rules": {
     "import/no-webpack-loader-syntax": [0],
     "eqeqeq": ["error", "smart"],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "no-console": ["error"]
   }
 }
