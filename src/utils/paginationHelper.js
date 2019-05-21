@@ -1,3 +1,5 @@
+import { paginationElementTypes } from './paginationConsts';
+
 export function calculatePages(numPreviousPages, numNextPages, currentPage, totalPages) {
   if (totalPages === 1) {
     return []
@@ -5,15 +7,13 @@ export function calculatePages(numPreviousPages, numNextPages, currentPage, tota
 
   const paginationElements = [
     {
-      displayText: currentPage,
-      requiresLink: false,
-      isCurrent: true
+      pageNumber: currentPage,
+      type: paginationElementTypes.CURRENT_PAGE,
     }
   ]
 
   const ellipsis = {
-    displayText: '\u2026',
-    requiresLink: false
+    type: paginationElementTypes.SEPARATOR,
   }
 
   for (let i = 1; i <= numPreviousPages; i++) {
@@ -22,20 +22,20 @@ export function calculatePages(numPreviousPages, numNextPages, currentPage, tota
     }
 
     paginationElements.unshift({
-      displayText: currentPage - i,
-      requiresLink: true,
+      pageNumber: currentPage - i,
+      type: paginationElementTypes.PAGE
     })
   }
 
-  const firstElementText = paginationElements[0].displayText
-  if (firstElementText > 1) {
-    if (firstElementText > 2) {
+  const firstPageNumber = paginationElements[0].pageNumber
+  if (firstPageNumber > 1) {
+    if (firstPageNumber > 2) {
       paginationElements.unshift(ellipsis)
     }
 
     paginationElements.unshift({
-      displayText: 1,
-      requiresLink: true
+      pageNumber: 1,
+      type: paginationElementTypes.PAGE
     })
   }
 
@@ -45,20 +45,20 @@ export function calculatePages(numPreviousPages, numNextPages, currentPage, tota
     }
 
     paginationElements.push({
-      displayText: currentPage + i,
-      requiresLink: true
+      pageNumber: currentPage + i,
+      type: paginationElementTypes.PAGE
     })
   }
 
-  const lastElementText = paginationElements[paginationElements.length - 1].displayText
-  if (lastElementText < totalPages) {
-    if (lastElementText < totalPages - 1) {
+  const lastPageNumber = paginationElements[paginationElements.length - 1].pageNumber
+  if (lastPageNumber < totalPages) {
+    if (lastPageNumber < totalPages - 1) {
       paginationElements.push(ellipsis)
     }
 
     paginationElements.push({
-      displayText: totalPages,
-      requiresLink: true
+      pageNumber: totalPages,
+      type: paginationElementTypes.PAGE
     })
   }
 
