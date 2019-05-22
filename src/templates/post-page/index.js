@@ -1,22 +1,20 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
-import slugify from 'underscore.string/slugify'
 import TimeToPrepare from '../../components/time_to_prepare'
 import Breadcrumbs from '../../components/breadcrumbs'
 import pageStyles from '../page.module.sass'
 import postStyles from './post.module.sass'
-import {button as buttonClass} from '../../components/button/button.transparent.module.sass'
 import Page from '../page'
 import SiteMetadata from '../../components/site_metadata'
+import Tag from '../../components/tag'
 
 export default function PostPage({data}) {
   const { recipe } = data
 
   const Tags = (recipe.tags || []).map(tag => {
-    const slug = slugify(tag)
-    return <Link to={'/tag/' + slug} key={tag} className={[buttonClass, postStyles.post_tag].join(' ')}>{tag}</Link>
+    return <Tag name={tag} key={tag} className={postStyles.post_tag} />
   })
 
   return <Page>

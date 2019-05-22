@@ -2,18 +2,13 @@
 @import '../media'
 
 .button
+  composes: button from './button.module.sass'
   color: $blue
-  font-size: 16px
-  text-decoration: none
   padding: 6px 20px
-  text-transform: capitalize
   border: 2px solid $blue
-  border-radius: 6px
-  display: inline-block
 
   +media('<tablet')
     padding: 10px 10px
-
 
 .button:hover
   color: $white
