@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { calculatePages } from '../../utils/paginationHelper';
+import { paginationElementTypes } from '../../utils/paginationConsts';
 import styles from './paginator.module.sass'
 import buttonStyles from '../button/button.transparent-noborder.module.sass'
 import ChevronLeft from '../icons/chevron-left'
@@ -16,29 +17,41 @@ const toSubsectionPath = (path) => {
   return subsectionPath === '' ? '/' : subsectionPath
 }
 
-const generatePagePath = (subsectionPath, page) => {
-  if (page === 1) {
+const generatePagePath = (subsectionPath, pageNumber) => {
+  if (pageNumber === 1) {
     return subsectionPath
   }
 
   if (subsectionPath === '/') {
-    return `/page/${page}`
+    return `/page/${pageNumber}`
   }
 
-  return`${subsectionPath}/page/${page}`
+  return`${subsectionPath}/page/${pageNumber}`
 }
 
-function PaginationLinkElement({ pageNumberText, requiresLink, isCurrent, subsectionPath, elementIndex }) {
-  const listItemStyles = isCurrent
+function PaginationLinkElement({ elementType, pageNumber, subsectionPath, elementIndex }) {
+  const listItemStyles = elementType === paginationElementTypes.CURRENT_PAGE
     ? [styles.page_nav_item, styles.current_page].join(' ')
     : styles.page_nav_item
 
-  const elementContent = requiresLink
-    ? <Link className={styles.page_link} to={generatePagePath(subsectionPath, pageNumberText)}>{pageNumberText}</Link>
-    : pageNumberText
+  let elementContent
+  switch (elementType) {
+    case paginationElementTypes.PAGE:
+      elementContent = <Link className={styles.page_link} to={generatePagePath(subsectionPath, pageNumber)}>{pageNumber}</Link>
+      break;
+    case paginationElementTypes.CURRENT_PAGE:
+      elementContent = pageNumber
+      break;
+    case paginationElementTypes.SEPARATOR:
+      elementContent = '\u2026';
+      break;
+    default:
+      elementContent = null
+      break;
+  }
 
-  const elementKey = pageNumberText !== '...'
-    ? `page-${pageNumberText}`
+  const elementKey = elementType !== paginationElementTypes.SEPARATOR
+    ? `page-${pageNumber}`
     : `ellipsis-${elementIndex}`
 
   return (
@@ -57,9 +70,8 @@ export default function Paginator ({currentPage, totalPages, currentPath}) {
     calculatePages(2, 2, currentPage, totalPages)
     .map((p, ndx) => {
       return (<PaginationLinkElement
-        pageNumberText={p.displayText}
-        requiresLink={p.requiresLink}
-        isCurrent={p.isCurrent}
+        elementType={p.type}
+        pageNumber={p.pageNumber}
         subsectionPath={subsectionPath}
         elementIndex={ndx}
         key={ndx}
