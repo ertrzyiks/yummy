@@ -8,7 +8,7 @@ import ChevronLeft from '../icons/chevron-left'
 import ChevronRight from '../icons/chevron-right'
 
 const removeTrailingSlash = (path) => path.replace(/\/$/, '')
-const removePageNumberSegment = (path) => path.replace(/\/page\/\d+$/, '')
+const removePageNumberSegment = (path) => path.replace(/\/strony\/\d+$/, '')
 
 const toSubsectionPath = (path) => {
   const newPath = removeTrailingSlash(path)
@@ -23,10 +23,10 @@ const generatePagePath = (subsectionPath, pageNumber) => {
   }
 
   if (subsectionPath === '/') {
-    return `/page/${pageNumber}`
+    return `/strony/${pageNumber}`
   }
 
-  return`${subsectionPath}/page/${pageNumber}`
+  return`${subsectionPath}/strony/${pageNumber}`
 }
 
 function PaginationLinkElement({ elementType, pageNumber, subsectionPath, elementIndex }) {
