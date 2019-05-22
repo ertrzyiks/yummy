@@ -5,8 +5,8 @@ const {createPaginated} = require('./common')
 async function createTagPages({ actions, graphql }) {
   const result = await graphql(`
     {
-      allMarkdownRemark {
-        group(field: frontmatter___tags) {
+      allRecipe {
+        group(field: tags) {
             fieldValue
           }
       }
@@ -17,7 +17,7 @@ async function createTagPages({ actions, graphql }) {
     return Promise.reject(result.errors)
   }
 
-  const tags = result.data.allMarkdownRemark.group.map(tag => tag.fieldValue)
+  const tags = result.data.allRecipe.group.map(tag => tag.fieldValue)
 
   return Promise.all(tags.map(tag => createTagPage({ tag, actions, graphql })))
 }
