@@ -5,7 +5,7 @@ function createPaginated({collection, component, baseUrl, actions, context}) {
 
   return Array.from({ length: totalPages }).map((_, i) => {
     return createPage({
-      path: i === 0 ? baseUrl : `${baseUrl}page/${i + 1}`,
+      path: i === 0 ? baseUrl : `${baseUrl}strony/${i + 1}`,
       component: component,
       context: {
         limit: itemsPerPage,
