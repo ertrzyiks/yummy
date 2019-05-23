@@ -19,6 +19,7 @@ export default function PostPage({data}) {
     return <Link to={'/tag/' + slug} key={tag} className={[buttonClass, postStyles.post_tag].join(' ')}>{tag}</Link>
   })
 
+  // TODO: why does this import the <Page> element when it's doing all the stuff on its own anyway?
   return <Page>
     <div className={pageStyles.layout}>
       <SiteMetadata render={({siteUrl}) =>

@@ -11,11 +11,14 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
   const slug = createFilePath({ node, getNode, trailingSlash: false })
   const content = await loadNodeContent(node)
 
+  const contentId = createBlogPostPart(node, 'Content', content, {createNode, createNodeId})
+
   const postContent = {
     title: node.frontmatter.title,
     html_title: node.frontmatter.html_title || node.frontmatter.title,
     html_description: node.frontmatter.html_description,
-    published_at: node.frontmatter.date
+    published_at: node.frontmatter.date,
+    content___NODE: contentId
   }
 
   const postNode = {
@@ -27,7 +30,6 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
     internal: {
       content: content,
       type: 'Post',
-      mediaType: 'text/markdown'
     },
   }
 
@@ -39,20 +41,15 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
   createNode(postNode)
 }
 
-function sortTagsAlphabetically(tags) {
-  tags.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-  return tags
-}
-
-function createRecipePart(parent, kind, content, {createNodeId, createNode}) {
-  const id = createNodeId(`${kind} >>> ${parent.id} >>> RecipePart`)
+function createBlogPostPart(parent, kind, content, {createNodeId, createNode}) {
+  const id = createNodeId(`${kind} >>> ${parent.id} >>> BlogPostPart`)
   const node = {
     id: id,
     children: [],
     parent: parent.id,
     internal: {
       content: content,
-      type: 'RecipePart',
+      type: 'BlogPostPart',
       mediaType: 'text/markdown'
     }
   }
