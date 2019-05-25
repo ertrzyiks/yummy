@@ -1,5 +1,6 @@
 const crypto = require('crypto')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { split } = require('../common/content')
 
 exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, actions }) => {
   const { createNode } = actions
@@ -10,14 +11,27 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
 
   const slug = createFilePath({ node, getNode, trailingSlash: false })
   const content = await loadNodeContent(node)
+  const sections = split(content)
 
-  const contentId = createBlogPostPart(node, 'Content', content, {createNode, createNodeId})
+  if (sections.length !== 2) {
+    throw new Error('Expected exactly two sections within a blog post node. Check the number of splitters in the content.')
+  }
+
+  console.log('SECTIONS', sections)
+
+  const headlineId = createBlogPostPart(node, 'Headline', sections[0], {createNode, createNodeId})
+  const contentId = createBlogPostPart(node, 'Content', sections[1], {createNode, createNodeId})
+
+  if (isNaN(new Date(node.frontmatter.date).getTime())) {
+    throw new Error(`Invalid date ${node.frontmatter.date} for recipe: ${node.frontmatter.title}`)
+  }
 
   const postContent = {
     title: node.frontmatter.title,
     html_title: node.frontmatter.html_title || node.frontmatter.title,
     html_description: node.frontmatter.html_description,
     published_at: node.frontmatter.date,
+    headline___NODE: headlineId,
     content___NODE: contentId
   }
 
@@ -28,7 +42,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
     children: [],
     parent: node.id,
     internal: {
-      content: content,
+      content: JSON.stringify(postContent),
       type: 'Post',
     },
   }

@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { split } = require('./content')
+const { split } = require('../common/content')
 
 exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, actions }) => {
   const { createNode } = actions

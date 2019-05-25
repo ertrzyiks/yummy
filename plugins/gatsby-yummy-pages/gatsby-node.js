@@ -41,6 +41,11 @@ async function createBlogPostPages({ actions, graphql}) {
             title
             published_at
             slug
+            headline {
+              childMarkdownRemark {
+                html
+              }
+            }
             content {
               childMarkdownRemark {
                 html
@@ -65,6 +70,8 @@ async function createBlogPostPages({ actions, graphql}) {
       component,
       context: {
         slug: node.slug,
+        fullHeaderVersion: false,
+        isSingleRecipe: true
       }
     })
   })

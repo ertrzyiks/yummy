@@ -3,10 +3,14 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import ChevronRight from '../icons/chevron-right'
 
+import styles from './blog-post-card.module.sass'
+
 export default function BlogPostCard({post, className, criticalImage}) {
 
+  console.log('BLOG POST', post)
+
   return (
-    <Link to={post.slug}>
+    <Link to={post.slug} className={styles.card}>
       {/*<div className={styles.cover_link}>*/}
         {/*<Img*/}
           {/*fluid={post.featured_image.childImageSharp.fluid}*/}
@@ -15,27 +19,20 @@ export default function BlogPostCard({post, className, criticalImage}) {
         {/*/>*/}
       {/*</div>*/}
 
-      <div>
-        <span>BLOG</span>
-        <h2>
+      <div className={styles.content_header}>
+        <span className={styles.content_category}>blog</span>
+        <h2 className={styles.content_title}>
           {post.title}
         </h2>
-        {/*<div className={styles.content_summary} dangerouslySetInnerHTML={ {__html: post.headline.childMarkdownRemark.html} }></div>*/}
-      {/*</div>*/}
-
-      {/*<hr className={styles.separator} />*/}
-
-      {/*<div className={styles.attributes}>*/}
-        {/*<TimeToPrepare>{post.required_time}</TimeToPrepare>*/}
-        {/*{*/}
-          {/*post.tags.indexOf('wegetariańskie') !== -1*/}
-          {/*&& <VegetarianMark className={styles.vegetarian_icon} />*/}
-        {/*}*/}
+        <span className={styles.date_published}>
+          {post.published_at}
+        </span>
+        <div className={styles.content_summary} dangerouslySetInnerHTML={ {__html: post.headline.childMarkdownRemark.html} } />
       </div>
 
-      <span>
-        Pokaż wpis >
-        {/*<ChevronRight/>*/}
+      <span className={styles.show_more}>
+        Czytaj dalej
+        <ChevronRight className={styles.show_more_icon}/>
       </span>
     </Link>
   )

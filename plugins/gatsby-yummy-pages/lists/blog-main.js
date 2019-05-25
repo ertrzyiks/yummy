@@ -21,7 +21,11 @@ function createMainBlogPage({ actions, graphql }) {
       actions,
       collection: result.data.allPost.edges,
       baseUrl: '/blog/',
-      component: path.resolve('./src/templates/blog-post-list.js')
+      component: path.resolve('./src/templates/blog-post-list.js'),
+      context: {
+        fullHeaderVersion: false,
+        subsection: 'Kulinarne dygresje'
+      }
     })
   })
 }

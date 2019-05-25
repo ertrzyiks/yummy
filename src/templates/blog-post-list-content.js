@@ -5,6 +5,7 @@ import Paginator from '../components/paginator'
 import styles from './page.module.sass'
 
 export default function BlogPostListContent({allPostsData, pageInfo, location}) {
+
   const BlogPosts = allPostsData.edges
     .map((edge, index) => {
       return (
@@ -20,7 +21,7 @@ export default function BlogPostListContent({allPostsData, pageInfo, location}) 
   return (
     <div className={styles.layout}>
       <section className={styles.main}>
-        <div className={styles.posts}>
+        <div className={styles.blog_posts}>
           {BlogPosts}
         </div>
         <Paginator currentPage={pageInfo.currentPage} totalPages={pageInfo.totalPages} currentPath={location.pathname} />

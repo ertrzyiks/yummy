@@ -27,8 +27,7 @@ fragment blogPostForList on Post {
   title
   slug
   published_at(formatString: "D MMM YYYY", locale: "pl")
-  content 
-  {
+  headline {
     childMarkdownRemark {
       html
     }
