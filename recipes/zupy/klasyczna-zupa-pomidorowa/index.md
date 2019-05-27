@@ -5,6 +5,7 @@ required_time: 60min
 tags:
  - pomidory
  - włoskie
+ - polskie
  - wegetariańskie
 ---
 

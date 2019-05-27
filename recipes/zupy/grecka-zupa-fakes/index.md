@@ -6,6 +6,7 @@ tags:
  - soczewica
  - ziemniaki
  - wegetariańskie
+ - greckie
 ---
 
 Wystarczy jedna mała miska.
