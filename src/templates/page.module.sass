@@ -32,6 +32,18 @@
     +media('>tablet')
       grid-template-columns: repeat(3, 1fr)
 
+
+.blog_posts
+  display: flex
+  flex-wrap: wrap
+
+  @supports (display: grid)
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-column-gap: 15px
+    grid-row-gap: 40px
+    margin-bottom: 50px
+
 .single_post
   flex-basis: 100%
   margin-bottom: 50px
