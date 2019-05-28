@@ -1,4 +1,4 @@
-import {split} from './content'
+import {split} from '../common/content'
 
 describe('Content util', () => {
   it('splits content into sections', () => {

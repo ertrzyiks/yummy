@@ -1,0 +1,52 @@
+@import '../../components/media'
+@import '../../components/colors'
+
+// TODO: copied over from post.module.sass - maybe both should be using same styles after all if we'll go for a similar look - or we'll change everything for the blog after the initial styling is done
+
+$hPaddingDesktop: 40px
+$hPaddingMobile: 25px
+
+.post
+  background-color: $white
+  border-radius: 6px
+  box-shadow: 1px 2px 3px $grey2
+  padding: 30px $hPaddingMobile
+  margin-bottom: 32px
+
+  +media('>tablet')
+    padding: 30px $hPaddingDesktop
+
+.post_intro
+  > h1
+    font-weight: 500
+
+.post_title
+  font-size: 36px
+  margin-top: 6px
+  margin-bottom: 15px
+
+  +media('>tablet')
+    font-size: 48px
+
+.post_headline
+  margin-top: 1.45em
+
+.post_body
+  display: flex
+  padding-top: 15px
+  padding-bottom: 24px
+  flex-direction: column
+
+  > h1, > h2, > h3
+    font-weight: 500
+
+  +media('>phone_l')
+    padding: 20px 0
+
+  +media('>tablet')
+    flex-direction: row
+
+.date_published
+  display: inline-block
+  font-size: 14px
+  color: $grey3
