@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
 import ChevronRight from '../icons/chevron-right'
 
 import styles from './blog-post-card.module.sass'
