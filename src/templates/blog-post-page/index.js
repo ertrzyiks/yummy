@@ -12,8 +12,6 @@ import postStyles from './blog-post.module.sass'
 export default function BlogPostPage({data}) {
   const { post } = data
 
-  console.log('POST', post)
-
   // TODO: should it be setting all of this meta data? Some of it lives within the Page element itself
   return (
     <Page>
@@ -45,14 +43,7 @@ export default function BlogPostPage({data}) {
               </span>
 
               <div className={postStyles.post_headline} dangerouslySetInnerHTML={{ __html: post.headline.childMarkdownRemark.html }}></div>
-
-              {/*<div className={postStyles.post_tags}>*/}
-                {/*{Tags}*/}
-              {/*</div>*/}
             </div>
-
-            {/* Optionally an image somewhere here or to the side */}
-
             <div className={postStyles.post_body}>
               <div dangerouslySetInnerHTML={{ __html: post.content.childMarkdownRemark.html }}></div>
 

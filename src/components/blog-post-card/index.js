@@ -5,20 +5,10 @@ import ChevronRight from '../icons/chevron-right'
 
 import styles from './blog-post-card.module.sass'
 
-export default function BlogPostCard({post, className, criticalImage}) {
-
-  console.log('BLOG POST', post)
+export default function BlogPostCard({post}) {
 
   return (
     <Link to={post.slug} className={styles.card}>
-      {/*<div className={styles.cover_link}>*/}
-        {/*<Img*/}
-          {/*fluid={post.featured_image.childImageSharp.fluid}*/}
-          {/*className={styles.cover}*/}
-          {/*critical={criticalImage}*/}
-        {/*/>*/}
-      {/*</div>*/}
-
       <div className={styles.content_header}>
         <span className={styles.content_category}>blog</span>
         <h2 className={styles.content_title}>

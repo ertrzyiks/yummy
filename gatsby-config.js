@@ -20,6 +20,13 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
+      path: `${__dirname}/cypress/fixtures/posts`,
+      name: 'posts',
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
       path: `${__dirname}/cypress/fixtures/cover.jpg`,
       name: 'cover',
     },

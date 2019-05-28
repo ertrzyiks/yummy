@@ -17,8 +17,6 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
     throw new Error('Expected exactly two sections within a blog post node. Check the number of splitters in the content.')
   }
 
-  console.log('SECTIONS', sections)
-
   const headlineId = createBlogPostPart(node, 'Headline', sections[0], {createNode, createNodeId})
   const contentId = createBlogPostPart(node, 'Content', sections[1], {createNode, createNodeId})
 
