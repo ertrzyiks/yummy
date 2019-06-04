@@ -20,7 +20,7 @@ Mocno pomidorowa zupa, podpatrzona we włoskiej knajpie
  - 3 duże marchewki
  - pietruszka
  - przecier pomidorowy
- - śmietana
+ - pół małego kubka śmietany 18%
  - ser mozarella
  - makaron
  - 1 łyżeczka masła
@@ -38,7 +38,7 @@ Cebulę przekroić na 4 cześci i dorzucić do reszty warzyw. Dolać trochę wod
 
 Po tym czasie wyłowić cebulę i zblendować zawartość garnka. Jeśli pomidory miały mniej smaku, dolać przecieru. Przyprawić pieprzem i bazylią.
 Całość gotwać ok 10 minut z dodatkiem masła.
-Dodać śmietanę, zamieszać i zagotować.
+Śmietanę wlać do kubka, dodać trochę zupy i wymieszać. Wlać do garnka, zamieszać i zagotować.
 
 Makaron ugotować osobno (badź też w zupie bezpośrednio przed podaniem), zgodnie z instrukcją na opakowaniu.
 Do miski z gorącą zupą dodać pokrojony ser mozarella.
