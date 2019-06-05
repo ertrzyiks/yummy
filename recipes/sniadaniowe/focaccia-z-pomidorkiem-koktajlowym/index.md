@@ -6,6 +6,9 @@ tags:
  - włoskie
  - drożdżowe
  - wegetariańskie
+gallery:
+ - ./gallery/related1.jpg
+ - ./gallery/related2.jpg
 ---
 
 Świetne na przekąskę bez żadnych dodatków
