@@ -9,7 +9,7 @@ function getContent(params) {
     required_time: '60min',
     category: 'obiady',
     tags: ['kurczak'],
-    featuredImage: '../../../cover.jpg',
+    featuredImage: '../../../images/cover.jpg',
     headline: 'Nagłówek',
     ingredients: '## Lista zakupów',
     directions: '## Przygotowanie',
@@ -103,7 +103,7 @@ function createRecipeBatch({variant, createNewDate}) {
       date: createNewDate(),
       category: 'desery',
       tags: ['woda'],
-      gallery: ['../../../related.jpg', '../../../related2.jpg'],
+      gallery: ['../../../images/related.jpg', '../../../images/related2.jpg'],
     })
   })
 }
