@@ -7,11 +7,12 @@ export default function Gallery({ images }) {
     return null
   }
 
-  const GalleryImages = images.map(img => {
+  const GalleryImages = images.map((img, ndx) => {
     return <Img
       fluid={img.childImageSharp.fluid}
       alt={'Picture of the dish'}
       className={styles.gallery_image}
+      key={ndx}
     />
   })
 
