@@ -9,6 +9,7 @@ import postStyles from './post.module.sass'
 import Page from '../page'
 import SiteMetadata from '../../components/site_metadata'
 import Tag from '../../components/tag'
+import Gallery from '../../components/gallery'
 
 export default function PostPage({data}) {
   const { recipe } = data
@@ -63,6 +64,7 @@ export default function PostPage({data}) {
               dangerouslySetInnerHTML={{ __html: recipe.directions.childMarkdownRemark.html}}
             />
           </div>
+          <Gallery images={recipe.gallery}/>
         </article>
       </section>
     </div>
@@ -101,6 +103,13 @@ export const pageQuery = graphql`
       featured_image {
         childImageSharp {
           fluid(maxWidth: 2000, traceSVG: { color: "#e98500" }) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      gallery {
+        childImageSharp {
+          fluid(maxWidth: 500, traceSVG: { color: "#e98500" }) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

@@ -1,0 +1,25 @@
+@import '../../components/media'
+
+.gallery_container
+  margin-top: 0px
+  padding-bottom: 38px
+
+  +media('>tablet')
+    margin-top: 20px
+
+.gallery_header
+  font-weight: 500
+
+.gallery
+  display: flex
+  flex-wrap: wrap
+
+.gallery_image
+  height: 135px
+  width: 135px
+  margin: 0px 15px 15px 0px
+
+  +media('>tablet')
+    height: 200px
+    width: 200px
+    margin: 0px 20px 20px 0px

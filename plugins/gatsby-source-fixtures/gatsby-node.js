@@ -9,14 +9,17 @@ function getContent(params) {
     required_time: '60min',
     category: 'obiady',
     tags: ['kurczak'],
-    featuredImage: '../../../cover.jpg',
+    featuredImage: '../../../images/cover.jpg',
     headline: 'Nagłówek',
     ingredients: '## Lista zakupów',
     directions: '## Przygotowanie',
+    gallery: [],
     ...params
   }
 
   const tags = recipe.tags.map(tag => ` - ${tag}`).join('\n')
+
+  const galleryImages = recipe.gallery.map(img => ` - ${img}`).join('\n')
 
   return `---
 title: ${recipe.title}
@@ -27,6 +30,8 @@ category:
 tags:
 ${tags}
 featured_image: ${recipe.featuredImage}
+gallery:
+${galleryImages}
 ---
     
 ${recipe.headline}  
@@ -97,7 +102,8 @@ function createRecipeBatch({variant, createNewDate}) {
       title: `Desery ${variant}`,
       date: createNewDate(),
       category: 'desery',
-      tags: ['woda']
+      tags: ['woda'],
+      gallery: ['../../../images/related.jpg', '../../../images/related2.jpg'],
     })
   })
 }
