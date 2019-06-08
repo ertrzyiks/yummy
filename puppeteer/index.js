@@ -18,5 +18,8 @@ test(async ({page, snapshot}) => {
 
   await page.goto('http://localhost:8001/zupy/zupa-b', {waitUntil: 'networkidle2'})
   await responsiveSnapshot('recipe')
+
+  await page.goto('http://localhost:8001/desery/deser-a', {waitUntil: 'networkidle2'})
+  await responsiveSnapshot('recipe-with-gallery')
 })
 

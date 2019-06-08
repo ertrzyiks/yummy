@@ -6,6 +6,8 @@ tags:
  - biszkoptowe
  - ciasta
  - owocowe
+gallery:
+ - ./gallery/related2.jpg
 ---
 
 Lekki, pysznie truskawkowy deser
