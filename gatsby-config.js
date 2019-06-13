@@ -77,6 +77,7 @@ module.exports = {
   plugins: dynamicPlugins.concat([
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-svgr',
     {
       'resolve': 'gatsby-transformer-remark',
       'options': {

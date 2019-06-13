@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar'
 import Searchbar from '../searchbar'
-import Logo from '../icons/logo'
+import {ReactComponent as Logo} from '../icons/logo.svg'
 import { Link } from 'gatsby'
 import styles from './header.module.sass'
 
