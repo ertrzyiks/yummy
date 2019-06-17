@@ -63,9 +63,21 @@ const typographyPlugins = process.env.GATSBY_SOURCE === 'test' ? [
   }
 ]
 
+// Enable analytics on in production
+const analyticsPlugins = process.env.GATSBY_SOURCE === 'test' ? [] : [
+  {
+    resolve: 'gatsby-plugin-fathom',
+    options: {
+      trackingUrl: 'fathom.ertrzyiks.me',
+      siteId: 'YSCGJ'
+    }
+  }
+]
+
 const dynamicPlugins = localPlugins
   .concat(sourcePlugins)
   .concat(typographyPlugins)
+  .concat(analyticsPlugins)
 
 module.exports = {
   siteMetadata: {
