@@ -47,6 +47,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-image-lightbox": "^5.1.0",
     "react-select": "2.3.0",
     "react-testing-library": "^6.0.0",
     "react-typography": "^0.16.18",
