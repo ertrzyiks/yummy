@@ -47,9 +47,8 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   }, {
     resolve: 'gatsby-plugin-webpack-bundle-analyzer',
     options: {
-      options: {
-        analyzerPort: 3000,
-      },
+      analyzerPort: 3005,
+      openAnalyzer: false
     }
   }
 ]
