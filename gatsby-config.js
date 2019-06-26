@@ -44,6 +44,12 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
       path: `${__dirname}/posts`,
       name: 'posts',
     },
+  }, {
+    resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+    options: {
+      analyzerPort: 3005,
+      openAnalyzer: false
+    }
   }
 ]
 

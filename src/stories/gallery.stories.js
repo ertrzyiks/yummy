@@ -12,3 +12,6 @@ storiesOf('Gallery', module)
   .add('default', () => (
     <Gallery images={images}/>
   ))
+  .add('single image', () => (
+    <Gallery images={[images[0]]}/>
+  ))

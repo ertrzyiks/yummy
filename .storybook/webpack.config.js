@@ -37,5 +37,11 @@ module.exports = ({ config }) => {
   // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
   config.resolve.mainFields = ["browser", "module", "main"]
 
+  // use svgr for svg files
+  config.module.rules.unshift({
+    test: /\.svg$/,
+    use: ["@svgr/webpack", "url-loader"],
+  })
+
   return config
 }
