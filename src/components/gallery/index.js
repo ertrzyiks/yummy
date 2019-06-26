@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import styles from './gallery.module.sass'
-import Lightbox from 'react-image-lightbox'
+import Loadable from 'react-loadable'
 import 'react-image-lightbox/style.css';
 import { getPrevImgUrl, getNextImgUrl, getPrevPhotoIndex, getNextPhotoIndex } from '../../utils/galleryBrowserHelper'
+
+const LoadableLightbox = Loadable({
+  loader: () => import('react-image-lightbox'),
+  loading() {
+    return null
+  },
+  delay: 200
+});
 
 export default class Gallery extends Component {
   constructor(props) {
@@ -50,7 +58,7 @@ export default class Gallery extends Component {
           {GalleryImages}
         </div>
         {isLightboxOpen &&
-          <Lightbox
+          <LoadableLightbox
             mainSrc={imgSources[photoIndex]}
             prevSrc={getPrevImgUrl(photoIndex, imgSources)}
             nextSrc={getNextImgUrl(photoIndex, imgSources)}
