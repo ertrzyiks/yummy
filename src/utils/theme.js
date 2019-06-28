@@ -15,9 +15,6 @@ export default {
     },
     'p:last-child': {
       marginBottom: 0,
-    },
-    'li:last-child': {
-      marginBottom: 0,
     }
   })
 }
