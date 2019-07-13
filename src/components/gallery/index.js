@@ -40,7 +40,7 @@ export default class Gallery extends Component {
           })
         }} key={ndx}>
           <Img
-            fluid={img.childImageSharp.fluid}
+            fluid={img.childImageSharp.small}
             alt={'Picture of the dish'}
             className={styles.gallery_image}
             key={ndx}
@@ -49,7 +49,7 @@ export default class Gallery extends Component {
       )
     })
 
-    const imgSources = images.map(img => img.childImageSharp.fluid.src)
+    const imgSources = images.map(img => img.childImageSharp.large.src)
 
     return (
       <div className={styles.gallery_container}>

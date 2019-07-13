@@ -109,7 +109,10 @@ export const pageQuery = graphql`
       }
       gallery {
         childImageSharp {
-          fluid(maxWidth: 500, traceSVG: { color: "#e98500" }) {
+          small: fluid(maxWidth: 500, traceSVG: { color: "#e98500" }) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+          large: fluid(maxWidth: 5000, traceSVG: { color: "#e98500" }) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
