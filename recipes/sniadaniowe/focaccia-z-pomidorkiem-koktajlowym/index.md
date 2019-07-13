@@ -9,6 +9,8 @@ tags:
 gallery:
  - ./gallery/related1.jpg
  - ./gallery/related2.jpg
+ - ./gallery/related3.jpg
+ - ./gallery/related4.jpg
 ---
 
 Świetne na przekąskę bez żadnych dodatków
@@ -25,10 +27,11 @@ gallery:
 - 4 łyżki oliwy
 - 350 ml ciepłej wody
 - 600g mąki
+- oregano
 
 ### Przybranie
 - oliwa
-- oregano, pieprz, sól
+- pieprz, sól
 - pomidorki koktajlowe
 
 <!---- splitter ---->
@@ -37,15 +40,23 @@ gallery:
 
 Drożdże pokruszyć do miski, dodać ciepłe mleko i łyżeczkę cukru. Wymieszać i odstawić pod szmatką do wyrośnięcia na 10 min.
 
-Mąkę przesiać, dodać oliwę, sól, wodę, wyrośnięte drożdże, trochę oregano i świeżo mielonego pieprzu. Ugniatać ciasto przez rękami przez 15 min aż stanie się typowo drożdżyście sprężyste.
+Mąkę przesiać, dodać oliwę, sól, wodę, wyrośnięte drożdże, trochę oregano
+i świeżo mielonego pieprzu. Ugniatać ciasto przez rękami przez 15 min aż
+stanie się typowo drożdżyście sprężyste.
 
-Odstawić pod szmatką na 1.5 godziny w ciepłe miejsce. Po tym czasie ciasto powinno podwoić swoją objętość.
+Odstawić pod szmatką na 1.5 godziny w ciepłe miejsce.
+Po tym czasie ciasto powinno podwoić swoją objętość.
 
 Ciasto zagnieść i rozłożyć do wyłożonej papierem do pieczenia blachy.
 Możliwe, że potrzebne będą 2 foremki.
 Zrobić okrągłe zagłębienia na całym cieście i całość posmarować dobrze oliwą.
 W zagłębienia włożyć połówki pomidorków koktajlowych.
 Ciasto oprószyć solą i świeżo mielonym pieprzem.
+
+Alternatywnie można zamiast wypełniać jedną dużą blachę można pourywać
+kawałki, ulepić kulki i rozpłaszczyć je na blasze.
+Zamiast pomidora można posmarować ciasto koncetratem pomidorowym i ułożyć
+kawałki mozarelli.
 
 Odstawić na jeszcze pół godziny do podrośnięcia.
 
