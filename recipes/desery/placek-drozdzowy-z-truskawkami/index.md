@@ -50,4 +50,4 @@ i rozpłaszczyć na dnie blachy.
 Na ciasto nałożyć pocięte truskawki. Z kruszonki odrywać małe kawałki ciasta zasypując owoce.
 Odstawić do wyrośnięcia jeszcze na 25 minut.
 
-Bułeczki piec w 180 stopniach przez 35 minuty, grzanie góra-dół.
+Ciasto piec w 180 stopniach przez 35 minuty, grzanie góra-dół.
