@@ -86,6 +86,15 @@ To start it use the following command which sends you over to `localhost:6006`:
 yarn storybook
 ```
 
+## Recipe template
+
+There is a recipe template available for new recipes:
+```
+yarn new-recipe
+```
+
+The script puts the new file into the correct recipe directory according to the selected category and title, and populates it with the required sections. 
+
 ## Logo
 
 Huge thanks to [@zuuritaly](https://github.com/zuuritaly) for the logo.

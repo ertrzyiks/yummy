@@ -23,7 +23,8 @@
     "test:e2e": "GATSBY_SOURCE=test start-server-and-test 'yarn test:develop' http://localhost:8001 'yarn cy:open'",
     "test:e2e:ci": "yarn test:build && start-server-and-test 'yarn test:serve' http://localhost:8001 'yarn cy:run'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "new-recipe": "hygen recipe new"
   },
   "dependencies": {
     "@svgr/webpack": "^4.3.0",
@@ -44,6 +45,7 @@
     "gatsby-source-filesystem": "^2.0.21",
     "gatsby-transformer-remark": "^2.1.17",
     "gatsby-transformer-sharp": "^2.1.9",
+    "hygen": "^4.0.7",
     "jsdom": "^13.2.0",
     "node-sass": "^4.11.0",
     "react": "^16.5.1",
