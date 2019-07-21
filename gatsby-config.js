@@ -35,13 +35,13 @@ const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      path: `${__dirname}/recipes`,
+      path: `${__dirname}/../yummy-content/recipes`,
       name: 'recipes',
     },
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
-      path: `${__dirname}/posts`,
+      path: `${__dirname}/../yummy-content/posts`,
       name: 'posts',
     },
   }, {

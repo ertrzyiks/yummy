@@ -7,7 +7,6 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-
       - restore_cache:
           keys:
             - v3-dependencies-{{ checksum "package.json" }}
@@ -55,6 +54,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - run: git clone https://github.com/ertrzyiks/yummy-content.git ../yummy-content
 
       - restore_cache:
           keys:
