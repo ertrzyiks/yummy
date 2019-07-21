@@ -88,6 +88,7 @@ async function createRecipePages({ actions, graphql }) {
         edges {
           node {
             slug
+            absolutePathRegex
           }
         }
       }
@@ -108,7 +109,8 @@ async function createRecipePages({ actions, graphql }) {
       context: {
         slug: node.slug,
         fullHeaderVersion: false,
-        isSingleRecipe: true
+        isSingleRecipe: true,
+        absolutePathRegex: node.absolutePathRegex
       }
     })
   })
