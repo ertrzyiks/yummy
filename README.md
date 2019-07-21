@@ -5,12 +5,25 @@
 # yummy
 Searchable repository of recipes we frequently use and are yummy.
 
+This repository contains only the blog source code. The recipes, posts and
+other content of the blog is versioned in https://github.com/ertrzyiks/yummy-content
+
 ## Development
 
 ### NodeJS dependencies
 
 ```
 yarn install
+```
+
+### Content
+
+Clone https://github.com/ertrzyiks/yummy-content next to this repo:
+
+```
+.
+yummy/
+yummy-content/
 ```
 
 ### Working with gatsby
@@ -85,15 +98,6 @@ To start it use the following command which sends you over to `localhost:6006`:
 ```
 yarn storybook
 ```
-
-## Recipe template
-
-There is a recipe template available for new recipes:
-```
-yarn new-recipe
-```
-
-The script puts the new file into the correct recipe directory according to the selected category and title, and populates it with the required sections. 
 
 ## Logo
 
