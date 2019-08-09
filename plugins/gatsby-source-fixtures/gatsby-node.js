@@ -13,13 +13,10 @@ function getContent(params) {
     headline: 'Nagłówek',
     ingredients: '## Lista zakupów',
     directions: '## Przygotowanie',
-    gallery: [],
     ...params
   }
 
   const tags = recipe.tags.map(tag => ` - ${tag}`).join('\n')
-
-  const galleryImages = recipe.gallery.map(img => ` - ${img}`).join('\n')
 
   return `---
 title: ${recipe.title}
@@ -30,8 +27,6 @@ category:
 tags:
 ${tags}
 featured_image: ${recipe.featuredImage}
-gallery:
-${galleryImages}
 ---
     
 ${recipe.headline}  
@@ -43,10 +38,19 @@ ${recipe.directions}
 `
 }
 
-function createRecipe({content, relativePath}) {
+function createRecipe({content, relativePath, gallery}) {
   const finalPath = path.join(path.resolve('cypress/fixtures/recipes'), relativePath)
   mkdirp.sync(path.dirname(finalPath))
   fs.writeFileSync(finalPath, content)
+
+  if (gallery) {
+    const galleryPath = path.join(path.dirname(finalPath), 'gallery')
+    mkdirp.sync(galleryPath)
+
+    gallery.forEach(imgPath => {
+      fs.copyFileSync(path.resolve(imgPath), path.join(galleryPath, path.basename(imgPath)))
+    })
+  }
 }
 
 function createDateWithOffset(offset) {
@@ -98,12 +102,12 @@ function createRecipeBatch({variant, createNewDate}) {
 
   createRecipe({
     relativePath: `desery/deser-${variant.toLowerCase()}/index.md`,
+    gallery: ['cypress/fixtures/images/related.jpg', 'cypress/fixtures/images/related2.jpg'],
     content: getContent({
       title: `Desery ${variant}`,
       date: createNewDate(),
       category: 'desery',
       tags: ['woda'],
-      gallery: ['../../../images/related.jpg', '../../../images/related2.jpg'],
     })
   })
 }

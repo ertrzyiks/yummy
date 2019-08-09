@@ -12,7 +12,7 @@ import Tag from '../../components/tag'
 import Gallery from '../../components/gallery'
 
 export default function PostPage({data}) {
-  const { recipe } = data
+  const { recipe, gallery } = data
 
   const Tags = (recipe.tags || []).map(tag => {
     return <Tag name={tag} key={tag} className={postStyles.post_tag} />
@@ -64,7 +64,7 @@ export default function PostPage({data}) {
               dangerouslySetInnerHTML={{ __html: recipe.directions.childMarkdownRemark.html}}
             />
           </div>
-          <Gallery images={recipe.gallery}/>
+          <Gallery images={gallery.nodes}/>
         </article>
       </section>
     </div>
@@ -72,7 +72,25 @@ export default function PostPage({data}) {
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query($slug: String!, $absolutePathRegex: String) {
+      gallery: allFile (
+          filter: {
+              absolutePath: { regex: $absolutePathRegex }
+              extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+          }
+          sort: { fields: name, order: ASC }
+      ){
+          nodes {
+              childImageSharp {
+                  small: fluid(maxWidth: 500, traceSVG: { color: "#e98500" }) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                  large: fluid(maxWidth: 5000, traceSVG: { color: "#e98500" }) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                  }
+              }
+          }
+      }
     recipe(slug: { eq: $slug }) {
       headline {
         childMarkdownRemark {
@@ -107,16 +125,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      gallery {
-        childImageSharp {
-          small: fluid(maxWidth: 500, traceSVG: { color: "#e98500" }) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
-          large: fluid(maxWidth: 5000, traceSVG: { color: "#e98500" }) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
-        }
-      }
+      
     }
   }
 `

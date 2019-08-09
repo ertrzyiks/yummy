@@ -33,7 +33,10 @@ describe('PostPage', () => {
       }
     }
 
-    const data = {recipe}
+    const gallery = {
+      nodes: []
+    }
+    const data = {recipe, gallery}
 
     render(<PostPage data={data} />)
 

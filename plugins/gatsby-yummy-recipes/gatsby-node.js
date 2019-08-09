@@ -1,6 +1,7 @@
 const crypto = require('crypto')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { split } = require('../common/content')
+const path = require('path')
 
 exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, actions }) => {
   const { createNode } = actions
@@ -48,6 +49,7 @@ exports.onCreateNode = async ({ node, getNode, loadNodeContent, createNodeId, ac
     slug,
     children: [],
     parent: node.id,
+    absolutePathRegex: `/^${path.dirname(node.fileAbsolutePath.replace(/\//g, '\\/'))}\\/gallery/`,
     internal: {
       content: JSON.stringify(recipeContent),
       type: 'Recipe',
