@@ -89,7 +89,7 @@ module.exports = {
   siteMetadata: {
     title: 'Yummy',
     description: 'Searchable repository of recipes we frequently use and are yummy.',
-    siteUrl: 'https://yummy.ertrzyiks.me',
+    siteUrl: 'https://kuchnia-yummy.pl',
     author: 'J. M. Derks'
   },
   plugins: dynamicPlugins.concat([
