@@ -8,50 +8,81 @@ const localPlugins = [
   'gatsby-yummy-search-data',
 ]
 
-const sourcePlugins = process.env.GATSBY_SOURCE === 'test' ? [
-  'gatsby-source-fixtures',
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: `${__dirname}/cypress/fixtures/recipes`,
-      name: 'recipes',
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: `${__dirname}/cypress/fixtures/posts`,
-      name: 'posts',
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: `${__dirname}/cypress/fixtures/images`,
-      name: 'images',
-    },
+function getSourcePlugins() {
+  switch (process.env.GATSBY_SOURCE) {
+    case 'test':
+      return [
+        'gatsby-source-fixtures',
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/cypress/fixtures/recipes`,
+            name: 'recipes',
+          },
+        },
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/cypress/fixtures/posts`,
+            name: 'posts',
+          },
+        },
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/cypress/fixtures/images`,
+            name: 'images',
+          },
+        }
+      ]
+    case 'mini':
+      return [
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/../mini-yummy-content/recipes`,
+            name: 'recipes',
+          },
+        }, {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/../mini-yummy-content/posts`,
+            name: 'posts',
+          },
+        }, {
+          resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+          options: {
+            analyzerPort: 3005,
+            openAnalyzer: false
+          }
+        }
+      ]
+
+    default:
+      return [
+        {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/../yummy-content/recipes`,
+            name: 'recipes',
+          },
+        }, {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+            path: `${__dirname}/../yummy-content/posts`,
+            name: 'posts',
+          },
+        }, {
+          resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+          options: {
+            analyzerPort: 3005,
+            openAnalyzer: false
+          }
+        }
+      ]
   }
-] : [
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: `${__dirname}/../yummy-content/recipes`,
-      name: 'recipes',
-    },
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: `${__dirname}/../yummy-content/posts`,
-      name: 'posts',
-    },
-  }, {
-    resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-    options: {
-      analyzerPort: 3005,
-      openAnalyzer: false
-    }
-  }
-]
+}
+const sourcePlugins = getSourcePlugins()
 
 const typographyPlugins = process.env.GATSBY_SOURCE === 'test' ? [
   {

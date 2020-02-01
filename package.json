@@ -26,6 +26,10 @@
     "build-storybook": "build-storybook",
     "new-recipe": "hygen recipe new"
   },
+  "resolutions": {
+    "sharp": "0.22.1",
+    "fsevents": "1.2.9"
+  },
   "dependencies": {
     "@svgr/webpack": "^4.3.0",
     "emotion": "9",
@@ -47,7 +51,7 @@
     "gatsby-transformer-sharp": "^2.1.9",
     "hygen": "^4.0.7",
     "jsdom": "^13.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
@@ -90,6 +94,6 @@
     "webpack": "^4.28.4"
   },
   "optionalDependencies": {
-    "fsevents": "^1.2.7"
+    "fsevents": "^1.2.9"
   }
 }
