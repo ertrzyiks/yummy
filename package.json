@@ -15,6 +15,7 @@
     "test:serve": "gatsby serve --port 8001",
     "test:develop": "gatsby develop --port 8001",
     "deploy": "bash -x ./scripts/deploy.sh",
+    "minideploy": "bash -x ./scripts/mini_deploy.sh",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "pup:run": "node puppeteer/index.js",
